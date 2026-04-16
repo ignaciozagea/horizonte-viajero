@@ -1,0 +1,810 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= LINEAS SUPERIORES ================= */
+.top-line {
+    height: 8px;
+    background: #0077b6;
+}
+
+.top-line1 {
+    height: 2px;
+    background: #addaf3;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    width: 100%;
+}
+
+/* LOGO - Versión mejorada */
+.logo {
+    width: 100%;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+/* Cuando el navbar tiene la clase 'scrolled', el logo desaparece */
+.navbar.scrolled .logo {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar.scrolled .logo img {
+    height: 0;
+}
+
+
+
+/* ================= BOTÓN HAMBURGUESA CON FONDO BLANCO ================= */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2.5px;
+    background: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger:hover {
+    background: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger.active {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* MENU OVERLAY */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.menu-principal {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.menu-principal a:hover {
+    color: #0077b6;
+}
+
+.menu-principal a i {
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.submenu a {
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* ================= SECCIONES GENERALES ================= */
+.guias {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo-guias {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #555;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 12px;
+    display: inline-block;
+    width: auto;
+}
+
+/* CONTENEDOR TARJETAS */
+.contenedor-guias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* TARJETAS DE INICIO */
+.card-guia {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-guia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card-guia img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-guia:hover img {
+    transform: scale(1.05);
+}
+
+.titulo-card {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #111;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+/* ================= SECCIÓN CONSEJOS ================= */
+.seccion {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.seccion h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0077b6;
+}
+
+.grid-consejos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.consejo {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.consejo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #0f2f44;
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* ================= RESPONSIVE (MÓVIL) ================= */
+@media (max-width: 768px) {
+    /* NAVBAR */
+    .logo img {
+        height: 120px;
+    }
+
+    /* Botón hamburguesa visible */
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger {
+        top: 15px;
+        right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+    
+    .hamburger span {
+        width: 20px;
+        margin: 2.5px 0;
+    }
+
+    /* Menú oculto por defecto en móvil */
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 20px 20px;
+        margin: 0;
+        box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        overflow-y: auto;
+        border-top: none;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    /* Menú principal en columna */
+    .menu-principal {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .menu-principal li {
+        width: 100%;
+    }
+
+    .menu-principal a {
+        display: block;
+        padding: 10px 0;
+        font-size: 16px;
+        white-space: normal;
+    }
+
+    /* Dropdown en móvil */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown > a i {
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active > a i {
+        transform: rotate(180deg);
+    }
+
+    .submenu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8f9fa;
+        margin-top: 5px;
+        display: none;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .submenu li {
+        padding: 8px 15px;
+        text-align: left;
+    }
+
+    .submenu a {
+        white-space: normal;
+    }
+
+    /* Buscador en móvil */
+    .buscador {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .buscador input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* HEADER DESTINO */
+    .header-destino {
+        height: 300px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 32px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    /* CONTENIDO */
+    .contenido {
+        padding: 30px 20px;
+        margin: 0 15px;
+    }
+
+    .contenido h2 {
+        font-size: 24px;
+    }
+
+    /* TARJETAS DE LUGARES */
+    .tarjeta {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .tarjeta-img img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    /* GALERIA DE CARDS (iconos) */
+    .galeria-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* SECCIONES GENERALES */
+    .guias {
+        padding: 30px 15px;
+    }
+
+    .titulo-guias {
+        font-size: 24px;
+        display: block;
+        text-align: center;
+    }
+
+    .contenedor-guias {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-guia img {
+        height: 220px;
+    }
+
+    .titulo-card {
+        font-size: 18px;
+        padding: 8px;
+        top: 15px;
+        margin: 0 10px;
+    }
+
+    /* SECCIÓN CONSEJOS */
+    .seccion {
+        padding: 30px 15px;
+    }
+
+    .seccion h2 {
+        font-size: 24px;
+    }
+
+    .grid-consejos {
+        grid-template-columns: 1fr;
+    }
+
+    /* SECCIÓN PRECIOS (tres columnas) */
+    .tres-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .columna:first-child,
+    .columna:last-child {
+        border: none;
+        border-top: 1px solid #f0e2d0;
+    }
+
+    .pais-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pais-bandera {
+        margin-left: 0;
+    }
+
+    /* TARJETAS DE SABORES Y PRECIOS */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* MAPA */
+    .mapa {
+        margin: 30px 15px;
+        padding: 10px;
+    }
+
+    .mapa iframe {
+        height: 300px;
+    }
+
+    /* GALERÍA DE FOTOS */
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .galeria img {
+        height: 120px;
+    }
+
+    /* TABLAS */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    td:before {
+        position: absolute;
+        left: 12px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        content: attr(data-label);
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ================= TABLET (entre 769px y 1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-guias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-principal {
+        gap: 15px;
+    }
+    
+    .menu-principal a {
+        font-size: 14px;
+    }
+    
+    .card-guia img {
+        height: 280px;
+    }
+
+    .galeria-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================= PANTALLAS MUY PEQUEÑAS (menos de 480px) ================= */
+@media (max-width: 480px) {
+    .hamburger {
+        width: 38px;
+        height: 38px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    .hamburger span {
+        width: 18px;
+        margin: 2px 0;
+    }
+
+    .header-destino {
+        height: 250px;
+        margin: 10px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .contenido {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+
+    .contenido h2 {
+        font-size: 20px;
+    }
+
+    .galeria-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 180px;
+    }
+
+    .boton-hotel {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .pais-nombre {
+        font-size: 1.3rem;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .historia {
+        font-size: 0.85rem;
+    }
+}
+
+/* ================= ANIMACIONES ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .tarjeta, .pais-fila {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.2s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.3s; }
