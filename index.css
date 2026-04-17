@@ -223,8 +223,8 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 85vh;
-    min-height: 550px;
+    height: 70vh;           /* ANTES: 85vh / AHORA: 50vh - MUCHO MÁS PEQUEÑO */
+    min-height: 350px;      /* ANTES: 550px / AHORA: 350px */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,21 +232,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 0;  /* El navbar es fixed, así que el hero empieza abajo */
+    margin-top: 0;
 }
 
-/* Overlay oscuro para que el texto se lea mejor */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.4) 100%);
-    z-index: 1;
-}
-
-/* Contenido del hero (por encima del overlay) */
+/* Contenido del hero */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -256,97 +245,47 @@
 }
 
 .hero-titulo {
-    font-size: 58px;
+    font-size: 48px;        /* ANTES: 58px / AHORA: 48px - más pequeño */
     font-weight: 700;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    letter-spacing: -0.5px;
 }
 
 .hero-descripcion {
-    font-size: 20px;
+    font-size: 18px;        /* ANTES: 20px / AHORA: 18px */
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 35px;
+    color: rgba(10, 10, 10, 0.95);
+    margin-bottom: 25px;
     line-height: 1.5;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Botón del hero */
+/* Botón más pequeño */
 .btn-descubrir {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     background: linear-gradient(135deg, #0077b6, #00b4d8);
     color: white;
-    padding: 14px 32px;
+    padding: 10px 28px;     /* ANTES: 14px 32px / AHORA: más pequeño */
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;        /* ANTES: 16px / AHORA: 15px */
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px rgba(0, 119, 182, 0.3);
-    border: none;
-    cursor: pointer;
-}
-
-.btn-descubrir i {
-    transition: transform 0.3s ease;
-}
-
-.btn-descubrir:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 119, 182, 0.4);
-    background: linear-gradient(135deg, #006699, #0096c7);
-}
-
-.btn-descubrir:hover i {
-    transform: translateX(5px);
-}
-
-/* Animación fadeInUp */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* ================= RESPONSIVE HERO ================= */
 @media (max-width: 968px) {
     .hero {
-        height: 70vh;
-        min-height: 480px;
+        height: 40vh;           /* En móvil, más pequeño */
+        min-height: 300px;
     }
     
     .hero-titulo {
-        font-size: 42px;
-    }
-    
-    .hero-descripcion {
-        font-size: 18px;
-        padding: 0 15px;
-    }
-    
-    .btn-descubrir {
-        padding: 12px 28px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero {
-        height: 60vh;
-        min-height: 400px;
-    }
-    
-    .hero-titulo {
-        font-size: 32px;
+        font-size: 36px;        /* ANTES: 42px */
     }
     
     .hero-descripcion {
@@ -354,10 +293,32 @@
     }
     
     .btn-descubrir {
-        padding: 10px 24px;
+        padding: 8px 24px;
         font-size: 14px;
     }
 }
+
+@media (max-width: 600px) {
+    .hero {
+        height: 35vh;
+        min-height: 280px;
+    }
+    
+    .hero-titulo {
+        font-size: 28px;
+    }
+    
+    .hero-descripcion {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-descubrir {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+}
+
 
     /* ================= SECCIONES GENERALES ================= */
     main {

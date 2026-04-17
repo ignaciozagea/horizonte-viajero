@@ -1,0 +1,22 @@
+/* ================= LOGO ================= */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 55px;          /* Cambia este valor */
+    width: auto;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+.navbar.scrolled .logo img {
+    height: 32px;          /* Más pequeño al hacer scroll */
+}

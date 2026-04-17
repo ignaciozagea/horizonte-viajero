@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Islandia en campervan - Guía completa</title>
 <link rel="stylesheet" href="ciudad.css">
+<link rel="stylesheet" href="logo.css">
 <!-- Fuentes Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 
@@ -25,38 +26,40 @@
 
 <body>
 
-<nav class="navbar">
-<div class="logo">
-    
-<a href="index.html">🌍 Horizonte Viajero</a>
-</div>
+<!-- ================= NAVBAR MODERNO ================= -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- LOGO: cambia la ruta por tu imagen -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo17.png" alt="Horizonte Viajero">
+                <!-- Si no tienes imagen, descomenta esto y comenta el img -->
+                <!-- <span class="logo-text">🌍 Horizonte Viajero</span> -->
+            </a>
+        </div>
 
-<!-- Botón hamburguesa -->
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- Botón hamburguesa (móvil) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#guia">Guía práctica</a></li>
+            <li><a href="#alojamiento">Donde alojarse</a></li>
+            <li><a href="#visitar">Qué visitar</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#comida">Comida típica</a></li>
+            <li><a href="#comer">Dónde comer</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
     </div>
-
-<ul class="nav-links">
-
-<li><a href="#guia">Guía práctica</a></li>
-<li><a href="#alojamiento">Donde alojarse</a></li>
-<li><a href="#app">Aplicaciones</a></li>
-<li><a href="#visitar">Que visitar</a></li>
-<li><a href="#precios">Precios</a></li>
-<li><a href="#comida">Comida típica</a></li>
-<li><a href="#comer">Dónde comer</a></li>
-<li><a href="#consejos">Consejos</a></li>
-<li><a href="#galeria">Galería</a></li>
-
-
-
-
-
-</ul>
-
 </nav>
+
+<div class="menu-overlay" id="overlay"></div>
 
 <header class="header-destino" style="background-image:url('img/islandia1.jpg')">
     <div class="header-text">

@@ -1,31 +1,11 @@
-// ================= MENÚ HAMBURGUESA - SCRIPT EXTERNO =================
-
-(function() {
-    document.addEventListener('DOMContentLoaded', function() {
-        
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const body = document.querySelector('body');
-        
-        if (!hamburger || !navLinks) return;
-        
-        let overlay = document.querySelector('.menu-overlay');
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'menu-overlay';
-            body.appendChild(overlay);
-        }
-        
-        let isMobile = window.innerWidth <= 768;
+ // ================= MENÚ HAMBURGUESA (abre desde IZQUIERDA) =================
+    (function() {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
         let menuOpen = false;
-        
-        window.addEventListener('resize', function() {
-            isMobile = window.innerWidth <= 768;
-            if (!isMobile && menuOpen) {
-                closeMenu();
-            }
-        });
-        
+
         function openMenu() {
             hamburger.classList.add('active');
             navLinks.classList.add('active');
@@ -33,7 +13,7 @@
             body.style.overflow = 'hidden';
             menuOpen = true;
         }
-        
+
         function closeMenu() {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
@@ -41,32 +21,38 @@
             body.style.overflow = '';
             menuOpen = false;
         }
-        
-        function toggleMenu() {
-            if (menuOpen) {
-                closeMenu();
-            } else {
-                openMenu();
-            }
-        }
-        
-        hamburger.addEventListener('click', toggleMenu);
+
+        hamburger.addEventListener('click', () => {
+            if (menuOpen) closeMenu();
+            else openMenu();
+        });
+
         overlay.addEventListener('click', closeMenu);
-        
+
+        // Cerrar menú al hacer clic en un enlace
         const allLinks = document.querySelectorAll('.nav-links a');
         allLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                closeMenu();
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 968) {
+                    closeMenu();
+                }
             });
         });
-        
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768 && menuOpen) {
+
+        // Cerrar menú al redimensionar a escritorio
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 968 && menuOpen) {
                 closeMenu();
             }
         });
-        
-    });
-})();
+    })();
 
-// NOTA: Logo siempre visible (sin función de scroll)
+    // ================= EFECTO SCROLL =================
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
