@@ -52,14 +52,14 @@
     }
 
     .logo img {
-        height: 55px;
+        height: 65px;
         width: auto;
         transition: all 0.3s ease;
         object-fit: contain;
     }
 
     .navbar.scrolled .logo img {
-        height: 42px;
+        height: 45px;
     }
 
     /* ================= MENÚ ================= */
@@ -219,103 +219,218 @@
         visibility: visible;
     }
 
-    /* ================= HERO / BIENVENIDA ================= */
+/* ================= HERO / BIENVENIDA CON LÍNEAS LATERALES ================= */
 .hero {
     position: relative;
     width: 100%;
-    height: 60vh;           /* ANTES: 85vh / AHORA: 50vh - MUCHO MÁS PEQUEÑO */
-    min-height: 550px;      /* ANTES: 550px / AHORA: 350px */
+    height: 85vh;
+    min-height: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 0;
+    overflow: hidden;
+    /* Curva inferior con clip-path */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    /* REDONDEO DE LOS BORDES DE LA FOTO - SOLO LAS ESQUINAS SUPERIORES */
+    border-radius: 30px 30px 0 0;
+}
+
+/* Línea blanca izquierda (vertical) - SIGUE RECTA */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 18px;
+    height: 100%;
+    background: white;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    /* Las líneas NO se redondean */
+    border-radius: 0;
+}
+
+/* Línea blanca derecha (vertical) - SIGUE RECTA */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 18px;
+    height: 100%;
+    background: white;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    /* Las líneas NO se redondean */
+    border-radius: 0;
+}
+
+/* Overlay oscuro para que el texto se lea mejor */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
 }
 
 /* Contenido del hero */
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
-    animation: fadeInUp 0.8s ease-out;
+    animation: fadeInUp 1s ease-out;
 }
 
+/* Título */
 .hero-titulo {
-    font-size: 48px;        /* ANTES: 58px / AHORA: 48px - más pequeño */
-    font-weight: 700;
-    color: rgb(10, 9, 9);
-    margin-bottom: 15px;
-    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    font-size: 64px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFE4B5 50%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.5px;
+    animation: fadeInDown 0.8s ease-out;
 }
 
+/* Descripción */
 .hero-descripcion {
-    font-size: 18px;        /* ANTES: 20px / AHORA: 18px */
+    font-size: 20px;
     font-weight: 400;
-    color: rgba(6, 6, 6, 0.95);
-    margin-bottom: 25px;
-    line-height: 1.5;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 35px;
+    line-height: 1.6;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-/* Botón más pequeño */
+/* Botón */
 .btn-descubrir {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     background: linear-gradient(135deg, #0077b6, #00b4d8);
     color: white;
-    padding: 10px 28px;     /* ANTES: 14px 32px / AHORA: más pequeño */
+    padding: 14px 36px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;        /* ANTES: 16px / AHORA: 15px */
+    font-size: 16px;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 119, 182, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 119, 182, 0.4);
+    border: none;
+    cursor: pointer;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
-/* ================= RESPONSIVE HERO ================= */
+.btn-descubrir i {
+    transition: transform 0.3s ease;
+}
+
+.btn-descubrir:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 119, 182, 0.5);
+    background: linear-gradient(135deg, #006699, #0096c7);
+    gap: 15px;
+}
+
+.btn-descubrir:hover i {
+    transform: translateX(5px);
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 968px) {
     .hero {
-        height: 40vh;           /* En móvil, más pequeño */
-        min-height: 300px;
+        height: 70vh;
+        min-height: 500px;
+        background-attachment: scroll;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    /* Líneas más finas y cerca del borde en móvil */
+    .hero::before {
+        left: 15px;
+        width: 3px;
+    }
+    
+    .hero::after {
+        right: 15px;
+        width: 3px;
     }
     
     .hero-titulo {
-        font-size: 36px;        /* ANTES: 42px */
+        font-size: 42px;
     }
     
     .hero-descripcion {
-        font-size: 16px;
+        font-size: 18px;
+        padding: 0 20px;
     }
     
     .btn-descubrir {
-        padding: 8px 24px;
-        font-size: 14px;
+        padding: 12px 28px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 600px) {
     .hero {
-        height: 35vh;
-        min-height: 280px;
+        height: 60vh;
+        min-height: 450px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    /* Líneas laterales más finas */
+    .hero::before,
+    .hero::after {
+        width: 2px;
     }
     
     .hero-titulo {
-        font-size: 28px;
+        font-size: 32px;
     }
     
     .hero-descripcion {
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
-    
-    .btn-descubrir {
-        padding: 8px 20px;
-        font-size: 13px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -492,7 +607,7 @@
         }
 
         .logo img {
-            height: 45px;
+            height: 55px;
         }
 
         .navbar.scrolled .logo img {
