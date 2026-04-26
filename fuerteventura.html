@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Viaje a Fuerteventura - Guía completa</title>
+
+<link rel="stylesheet" href="ciudades1.css">
+<link rel="stylesheet" href="logos1.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR MODERNO ================= -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- LOGO: cambia la ruta por tu imagen -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo17.png" alt="Horizonte Viajero">
+                <!-- Si no tienes imagen, descomenta esto y comenta el img -->
+                <!-- <span class="logo-text">🌍 Horizonte Viajero</span> -->
+            </a>
+        </div>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#guia">Guía práctica</a></li>
+            <li><a href="#alojamiento">Donde alojarse</a></li>
+            <li><a href="#visitar">Qué visitar</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#comida">Comida típica</a></li>
+            <li><a href="#comer">Dónde comer</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="menu-overlay" id="overlay"></div>
+
+<header class="header-destino" style="background-image:url('img/fuerteventura/fuerteventura-header.jpg')">
+    <div class="header-text">
+        <h1>Fuerteventura en 7 días</h1>
+        <p>Playas infinitas, dunas doradas y el paraíso del windsurf y kitesurf</p>
+    </div>
+</header>
+
+<section class="contenido">
+
+<h2>1. Introducción</h2>
+
+<p>
+Fuerteventura es la segunda isla más grande de las Canarias, conocida como la "isla de los vientos" o la "isla de las dunas". Declarada <strong>Reserva de la Biosfera por la UNESCO</strong> en 2009, ofrece un paisaje único de playas infinitas de arena blanca y dorada, dunas móviles, montañas volcánicas y un clima primaveral durante todo el año. Es el paraíso indiscutible para los amantes del <strong>windsurf, kitesurf y surf</strong>, con spots de fama mundial como Sotavento y Corralejo.
+</p>
+
+<p>
+Esta guía de 7 días te llevará por los lugares más espectaculares de Fuerteventura: el <strong>Parque Natural de las Dunas de Corralejo</strong> (con sus playas de arena blanca y dunas fósiles), la <strong>Punta de Jandía</strong> (el extremo sur con playas vírgenes), los <strong>Pueblos de Betancuria</strong> (antigua capital) y <strong>Pájara</strong>, las <strong>Islas de Lobos</strong> (excursión imprescindible), las <strong>Playas de Sotavento</strong> (en la costa este) y los <strong>Miradores del Parque Rural de Betancuria</strong>. Alquilar un coche es imprescindible para recorrer la isla (Fuerteventura es grande: 100 km de largo).
+</p>
+
+---
+
+<!-- ================= SECCIÓN INFORMACIÓN PRÁCTICA ================= -->
+<div class="section-title" id="guia">
+    2. 📅 Información práctica para tu viaje a Fuerteventura
+</div>
+
+<div class="pais-fila">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Fuerteventura - Guía práctica</span>
+        <span class="pais-fecha">Temporada 2025-2026</span>
+        <span class="pais-bandera">🏄‍♂️🌊</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Mejor época para viajar -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-calendar-alt"></i> Mejor época para viajar</div>
+            
+            <div class="sabor-plato">🌸 Primavera (marzo - mayo)</div>
+            <div class="sabor-precio">🌡️ 22-26°C | 🌸 Clima perfecto</div>
+            <div class="sabor-historia">La mejor época para visitar Fuerteventura. Las temperaturas son ideales, los vientos moderados y hay pocos turistas. Perfecta para surf, senderismo y playas.</div>
+        
+            <div class="sabor-plato">☀️ Verano (junio - septiembre)</div>
+            <div class="sabor-precio">🌡️ 26-34°C | 🏖️ Temporada alta</div>
+            <div class="sabor-historia">Hace calor pero los vientos alisios refrescan. Es temporada alta, especialmente en agosto. Las playas están llenas y los precios más elevados. Ideal para disfrutar del mar.</div>
+        
+            <div class="sabor-plato">🍂 Otoño (octubre - noviembre)</div>
+            <div class="sabor-precio">🌡️ 23-27°C | 🍂 Buen clima y menos turistas</div>
+            <div class="sabor-historia">El agua sigue caliente (23-24°C) y los vientos son constantes. Sigue siendo buena época para windsurf. Hay menos turistas. El mar aún está cálido.</div>
+        
+            <div class="sabor-plato">❄️ Invierno (diciembre - febrero)</div>
+            <div class="sabor-precio">🌡️ 18-22°C | 💰 Precios bajos</div>
+            <div class="sabor-historia">Es la temporada baja, con precios más bajos y pocos turistas. Las temperaturas son suaves y agradables para pasear. El agua está fresca (19°C) pero se puede nadar. Ideal para escapar del frío europeo.</div>
+        </div>
+        
+        <!-- Columna 2 - Vuelos baratos -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-plane"></i> Vuelos baratos</div>
+            
+            <div class="sabor-plato">✈️ Aeropuerto de Fuerteventura (FUE)</div>
+            <div class="sabor-precio">📍 Aeropuerto El Matorral - Puerto del Rosario</div>
+            <div class="sabor-historia">El aeropuerto de Fuerteventura está situado a 5 km de Puerto del Rosario (capital). Hay vuelos directos desde Madrid, Barcelona, Bilbao, Sevilla y muchas ciudades europeas con Iberia, Vueling, Ryanair, Air Europa, EasyJet, Jet2 y TUI.</div>
+        
+            <div class="sabor-plato">✈️ Duración del vuelo</div>
+            <div class="sabor-precio">🕐 2,5 - 3 horas (desde Madrid/Barcelona)</div>
+            <div class="sabor-historia">El vuelo directo desde Madrid a Fuerteventura dura aproximadamente 2 horas y 45 minutos. Desde Barcelona, unas 3 horas. Es un destino muy accesible desde toda España y Europa.</div>
+        
+            <div class="proxima-item">
+                <strong>💡 Consejo viajero:</strong>
+                <div class="proxima-texto">Para encontrar vuelos baratos, reserva con varios meses de antelación y sé flexible con las fechas. Utiliza comparadores como Skyscanner o Google Flights. Los vuelos en primavera y otoño son más baratos que en verano. Los martes y miércoles son los días más baratos para volar.</div>
+            </div>
+        </div>
+        
+        <!-- Columna 3 - Traslado desde el aeropuerto -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-bus"></i> Traslado desde el aeropuerto</div>
+            
+            <div class="sabor-plato">🚗 Alquiler de coche (IMPRESCINDIBLE)</div>
+            <div class="sabor-precio">💰 25-55€/día | ⏱️ 5 minutos</div>
+            <div class="sabor-historia">La mejor forma de recorrer Fuerteventura es alquilando un coche. Las oficinas de alquiler están en el aeropuerto. Imprescindible para llegar a las playas vírgenes de Jandía, a las Dunas de Corralejo y al interior de la isla.</div>
+            <div class="proxima-item">
+                <a class="boton-hotel" href="https://www.rentalcars.com/" target="_blank">Ver ofertas de alquiler</a>
+            </div>
+        
+            <div class="sabor-plato">🚌 Autobús (Tiadhe)</div>
+            <div class="sabor-precio">💰 1-10€ | ⏱️ 30-90 minutos</div>
+            <div class="sabor-historia">Hay autobuses (líneas 3, 10, 16) que conectan el aeropuerto con Puerto del Rosario, Corralejo, Caleta de Fuste y Morro Jable. Son económicos pero no llegan a las playas remotas ni a los pueblos del interior.</div>
+        
+            <div class="sabor-plato">🚕 Taxi</div>
+            <div class="sabor-precio">💰 20-70€ | ⏱️ 15-60 minutos</div>
+            <div class="sabor-historia">Los taxis son caros. Desde el aeropuerto a Corralejo cuesta unos 50-60€, a Morro Jable unos 70-80€. Recomendado solo si viajas en grupo o con mucho equipaje.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE ALOJARSE EN FUERTEVENTURA ================= -->
+<h2 class="section-title" id="alojamiento">3. 🏨 Dónde alojarse en Fuerteventura</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Corralejo -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏄 Corralejo <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 70-180€/noche</div>
+            <div class="alojamiento-descripcion">El principal centro turístico del norte de Fuerteventura. Tiene las mejores playas (Dunas de Corralejo, Grandes Playas), una gran oferta de restaurantes, bares, tiendas y mucha vida nocturna. Es la zona más animada y el punto de salida para las Islas de Lobos.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> primera visita, vida nocturna, familias, surf, cerca de las dunas</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Buena oferta de restaurantes, playas increíbles, ambiente animado, ferry a Lobos</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Muy turístico, masificado en verano, más caro que otras zonas</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Recomendable para excursiones</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏄 surf | 🍽️ restaurantes | 🌙 vida nocturna</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Morro Jable (Jandía) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🌊 Morro Jable <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 80-200€/noche</div>
+            <div class="alojamiento-descripcion">Pueblo costero en el sur de Fuerteventura, dentro de la península de Jandía. Tiene una de las playas más largas de la isla (Playa del Matorral) y está cerca de las playas vírgenes de Cofete y Sotavento. Es más tranquilo que Corralejo.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> familias, tranquilidad, playas vírgenes, relax</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Tranquilo, playas enormes, cerca de Jandía, buen paseo marítimo</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Más alejado del aeropuerto, menos vida nocturna que Corralejo</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Recomendable</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🌊 tranquilo | 🏖️ playas vírgenes | 🌅 atardecer</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Caleta de Fuste (El Castillo) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏖️ Caleta de Fuste <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 60-150€/noche</div>
+            <div class="alojamiento-descripcion">Zona turística en el centro-este de la isla, cerca del aeropuerto. Tiene una playa artificial resguardada, ideal para familias. Es más familiar y tranquila, con buena oferta de restaurantes y campos de golf.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> familias, golf, cerca del aeropuerto, primera escala</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Cerca del aeropuerto, playa tranquila, familiar, más económico</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Playas más pequeñas, menos auténtico, masificado</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Recomendable</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏖️ familiar | ⛳ golf | ✈️ cerca aeropuerto</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Puerto del Rosario (Capital) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏛️ Puerto del Rosario <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 50-130€/noche</div>
+            <div class="alojamiento-descripcion">La capital de Fuerteventura. Es una ciudad más auténtica y menos turística. Tiene el Puerto, la Casa Museo de Unamuno, la Iglesia de Nuestra Señora del Rosario y una interesante ruta de esculturas al aire libre.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> presupuesto ajustado, autenticidad, cultura, compras</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Más barato, auténtico, buena comunicación, cerca del aeropuerto</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Menos turístico, no tiene playas destacadas</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Recomendable</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏛️ capital | 💰 económico | 🎨 esculturas</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - El Cotillo (Norte) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏄 El Cotillo <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 60-160€/noche</div>
+            <div class="alojamiento-descripcion">Pequeño pueblo de pescadores en el noroeste de Fuerteventura, famoso por sus lagunas de aguas cristalinas (Las Conchas) y sus playas salvajes. Es ideal para surfistas y amantes de la tranquilidad.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> surfistas, mochileros, autenticidad, tranquilidad</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Auténtico, lagunas para bañarse, surf, ambiente relajado</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Pueblo pequeño, pocos restaurantes, viento fuerte</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏄 surf | 🌊 lagunas | 🎒 mochilero</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 - Betancuria (Interior) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>⛪ Betancuria <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 70-150€/noche</div>
+            <div class="alojamiento-descripcion">Pueblo histórico en el interior de Fuerteventura, antigua capital de la isla. Rodeado de montañas, es el lugar más verde y con más encanto histórico. Cerca está el Mirador de Morro Velosa y el Parque Rural de Betancuria.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> historia, naturaleza, tranquilidad, parejas</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Paisaje espectacular, patrimonio histórico, tranquilidad</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Alejado de las playas, pocos servicios</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">⛪ historia | 🌿 naturaleza | 🏡 tranquilo</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="consejo-viajero">
+    💡 <b>Consejo viajero:</b>  
+    <p>Mi recomendación personal es dividir el alojamiento en <strong>2 zonas</strong> para no perder tiempo en desplazamientos. Por ejemplo: 3-4 noches en <strong>Corralejo</strong> (norte, dunas, Lobos, surf) y 2-3 noches en <strong>Morro Jable</strong> (sur, Jandía, Cofete, Sotavento).</p>
+    <p style="margin-top: 10px;">🚗 <strong>Coche en Fuerteventura:</strong> Es ABSOLUTAMENTE IMPRESCINDIBLE. La isla tiene 100 km de largo y las atracciones están muy dispersas. El transporte público no llega a playas como Cofete o a los miradores del interior. Reserva con antelación.</p>
+    <p style="margin-top: 10px;">🏄 <strong>Surf/Windsurf/Kitesurf:</strong> Fuerteventura es un paraíso para los deportes de viento. Las mejores playas: Corralejo (surf), Sotavento (windsurf/kitesurf), El Cotillo (surf), Flag Beach (kitesurf). Hay escuelas para todos los niveles.</p>
+    <p style="margin-top: 10px;">🏝️ <strong>Isla de Lobos:</strong> La excursión a Lobos es imprescindible. Solo se puede llegar en ferry desde Corralejo. Hay que reservar con antelación porque limitan el número de visitantes diarios.</p>
+</div>
+
+---
+
+<h2 id="visitar">4. 🏄 Qué ver en Fuerteventura</h2>
+
+<!-- ================= DUNAS DE CORRALEJO ================= -->
+
+<!-- Tarjeta 1 - Parque Natural de las Dunas de Corralejo -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/dunas-corralejo.jpg" alt="Dunas de Corralejo - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>1. 🏜️ Parque Natural de las Dunas de Corralejo (El desierto de Fuerteventura)</h3>
+    <p>
+      El Parque Natural de las Dunas de Corralejo es uno de los paisajes más emblemáticos de Fuerteventura. Se extiende a lo largo de 10 km de costa, con dunas de arena blanca y dorada que parecen un pequeño desierto. Está protegido como Parque Natural desde 1982.
+    </p>
+    <p>
+      Las playas dentro del parque son infinitas: <strong>Playa de Corralejo, Grandes Playas, Playa de los Matos, Playa del Pozo</strong>. Son playas vírgenes, sin edificaciones, con aguas cristalinas de tonos turquesa. El viento es constante, ideal para kitesurf y windsurf. Hay zonas nudistas. El acceso es libre y gratuito.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El aparcamiento es gratuito a lo largo de la carretera. Lleva protección solar y agua (no hay sombra). El viento puede ser muy fuerte. Las dunas son frágiles (no subas a las dunas no señalizadas).
+    </div>
+  </div>
+</div>
+
+<!-- ================= ISLA DE LOBOS ================= -->
+
+<!-- Tarjeta 2 - Isla de Lobos -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/isla-lobos.jpg" alt="Isla de Lobos - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>2. 🏝️ Isla de Lobos (El paraíso al lado de Corralejo)</h3>
+    <p>
+      La Isla de Lobos es un pequeño islote situado a 2 km de Corralejo, declarado <strong>Parque Natural</strong>. Es un paraíso virgen con senderos, una playa espectacular (Playa de la Concha) y un faro. El nombre proviene de las focas monje (lobos marinos) que habitaban la isla.
+    </p>
+    <p>
+      Para llegar, se toma un <strong>ferry</strong> desde Corralejo (15 minutos). Una vez en la isla, se puede recorrer a pie hasta el Faro de Lobos (1 hora de caminata) o quedarse en la playa. La <strong>Playa de la Concha</strong> es una cala de arena blanca y aguas turquesas, ideal para nadar y hacer snorkel. Hay un pequeño embarcadero y un restaurante.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El ferry cuesta 15-20€ ida y vuelta. Hay que reservar con antelación (limitan visitantes a 500-800 por día). No hay servicios (excepto un bar). Lleva agua, comida y protección solar. No se puede acampar.
+    </div>
+  </div>
+</div>
+
+<!-- ================= PLAYAS DE JANDÍA Y COFETE ================= -->
+
+<!-- Tarjeta 3 - Playa de Cofete y Península de Jandía -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/playa-cofete.jpg" alt="Playa de Cofete - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>3. 🏔️ Playa de Cofete (La playa salvaje de Jandía)</h3>
+    <p>
+      La Playa de Cofete es una de las playas más espectaculares y vírgenes de Fuerteventura. Está situada en la costa oeste de la península de Jandía, al pie de las montañas. Tiene 12 km de arena dorada, sin ninguna edificación, con fuertes olas y viento constante. Es impresionante por su inmensidad y lo remoto del lugar.
+    </p>
+    <p>
+      El acceso es por una <strong>pista de tierra de 18 km</strong> desde Morro Jable (se puede hacer con coche normal, con cuidado). En el camino se pasa por el <strong>Mirador de Cofete</strong> (vistas espectaculares) y la <strong>Villa Winter</strong> (una casa misteriosa construida por los nazis). No hay servicios, solo la naturaleza salvaje.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El acceso es por pista de tierra (18 km). Un coche normal puede ir, pero despacio (30-40 minutos). Lleva agua y comida (no hay nada). El mar tiene fuertes corrientes (nadar con precaución). No olvides combustible.
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 4 - Playas de Sotavento (Jandía) -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/sotavento.jpg" alt="Playas de Sotavento - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>4. 🏄 Playas de Sotavento (El paraíso del windsurf)</h3>
+    <p>
+      Las Playas de Sotavento están en la costa este de la península de Jandía, protegidas del viento (sotavento significa "a favor del viento"). Son famosas en todo el mundo por ser el escenario de campeonatos de windsurf y kitesurf gracias a sus aguas cristalinas y vientos constantes.
+    </p>
+    <p>
+      El conjunto de playas incluye <strong>Playa de la Barca, Playa del Hierro, Playa del Jable, Playa del Matorral</strong> (la más familiar). Cuando baja la marea, se forman lagunas de aguas turquesas poco profundas, ideales para bañarse sin olas. Hay escuelas de windsurf y kitesurf.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El mejor momento para ver las lagunas es en bajamar. El aparcamiento es fácil a lo largo de la carretera. Hay chiringuitos en algunas playas.
+    </div>
+  </div>
+</div>
+
+<!-- ================= PARQUE RURAL DE BETANCURIA ================= -->
+
+<!-- Tarjeta 5 - Betancuria (Antigua capital) -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/betancuria.jpg" alt="Betancuria - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>5. ⛪ Betancuria (El corazón histórico de Fuerteventura)</h3>
+    <p>
+      Betancuria fue la primera capital de Fuerteventura, fundada en 1404 por el conquistador francés Jean de Béthencourt. Está situada en un valle rodeado de montañas, en el interior de la isla. Es el lugar más histórico y uno de los más bonitos de Fuerteventura.
+    </p>
+    <p>
+      Los lugares imprescindibles son: la <strong>Iglesia de Santa María de Betancuria</strong> (del siglo XV), el <strong>Convento de San Buenaventura</strong> (actual Museo de Arte Sacro), el <strong>Mirador de Guise y Ayose</strong> (estatuas de los reyes guanches) y el <strong>Mirador de Morro Velosa</strong> (vistas panorámicas del Parque Rural). El pueblo es pequeño y tranquilo, con restaurantes típicos.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Dedicar medio día al Parque Rural de Betancuria. La carretera de acceso es sinuosa pero en buen estado. Visita el Mirador de Morro Velosa (gratuito, vistas espectaculares).
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 6 - Pájara -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/pajara.jpg" alt="Pájara - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>6. ⛲ Pájara (La iglesia más singular de Canarias)</h3>
+    <p>
+      Pájara es un pueblo del interior-suroeste de Fuerteventura, famoso por la <strong>Iglesia de Nuestra Señora de Regla</strong>, uno de los templos más singulares de Canarias. Su fachada tiene relieves de motivos prehispánicos, geométricos y marinos, con influencias indígenas americanas.
+    </p>
+    <p>
+      La iglesia data del siglo XVIII y es de estilo mudéjar. Los relieves representan guerreros, frutos tropicales, soles y símbolos. También hay un bonito patio con una palmera centenaria. El pueblo tiene una plaza con restaurantes y tiendas de artesanía.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Dedicar 1-2 horas. La iglesia abre por la mañana y tarde. Cerca está el Mirador de la Pared (frontera entre el norte y sur de la isla).
+    </div>
+  </div>
+</div>
+
+<!-- ================= OTRAS ATRACCIONES IMPRESCINDIBLES ================= -->
+
+<!-- Tarjeta 7 - El Cotillo y sus lagunas -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/el-cotillo.jpg" alt="El Cotillo - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>7. 🌊 El Cotillo (Las lagunas de aguas cristalinas)</h3>
+    <p>
+      El Cotillo es un pequeño pueblo de pescadores en el noroeste de Fuerteventura. La zona es famosa por sus <strong>lagunas de aguas cristalinas y poco profundas</strong> (Las Conchas, Los Lagos), ideales para bañarse sin olas, especialmente para familias. Las lagunas se forman entre rocas volcánicas y arena blanca.
+    </p>
+    <p>
+      También hay playas salvajes de arena blanca (Playa del Castillo, Playa de los Lagos) con fuertes olas, perfectas para surfistas. El pueblo tiene un faro (Faro de Tostón) y un pequeño puerto con restaurantes de pescado fresco. Es un lugar muy fotogénico.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Las lagunas están a 1 km del pueblo (aparcamiento gratuito). Lleva calzado de agua (las rocas pueden ser afiladas). El atardecer en el Faro de Tostón es espectacular.
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 8 - Mirador de Morro Velosa -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/morro-velosa.jpg" alt="Mirador de Morro Velosa - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>8. 🌄 Mirador de Morro Velosa (Las mejores vistas de Fuerteventura)</h3>
+    <p>
+      El Mirador de Morro Velosa está situado en el Parque Rural de Betancuria, a 600 metros de altitud. Es el mirador más famoso de la isla, con vistas panorámicas espectaculares de las montañas del interior, el valle de Betancuria y la costa. Fue diseñado por el artista canario César Manrique (el mismo de Lanzarote).
+    </p>
+    <p>
+      El edificio está integrado en la roca, con un restaurante y una terraza con vistas 360 grados. Desde aquí se puede ver la isla de Lanzarote al norte y la península de Jandía al sur. Es el lugar perfecto para entender la geografía de Fuerteventura.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Entrada gratuita. El restaurante es caro pero las vistas lo valen. Abre de 10am a 6pm. Llega en coche por carretera sinuosa.
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 9 - Ajuy y las Cuevas del Água -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/ajuy.jpg" alt="Ajuy - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>9. 🦇 Ajuy y las Cuevas del Água (La costa más antigua)</h3>
+    <p>
+      Ajuy es un pequeño pueblo de pescadores en la costa oeste de Fuerteventura, famoso por su <strong>playa de arena negra</strong> (formada por piedras volcánicas) y por las <strong>Cuevas del Água</strong>, cuevas marinas formadas por la erosión del mar. Es uno de los pocos lugares de la isla con arena negra.
+    </p>
+    <p>
+      Se puede recorrer un sendero de 1 km que bordea los acantilados hasta llegar a las cuevas (se puede entrar, pero con cuidado). La puesta de sol es espectacular. En el pueblo hay varios restaurantes de pescado fresco. Las rocas tienen fósiles marinos de hace millones de años.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El sendero es fácil (30 minutos ida y vuelta). Lleva calzado adecuado (rocas resbaladizas). Las cuevas se pueden visitar con marea baja. No te bañes en la playa (corrientes fuertes).
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 10 - La Pared -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/fuerteventura/la-pared.jpg" alt="La Pared - Fuerteventura">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>10. 🧱 La Pared (El muro que divide la isla)</h3>
+    <p>
+      La Pared es una zona de acantilados en el istmo que separa la península de Jandía del resto de Fuerteventura. Históricamente, una muralla natural de piedra (de ahí el nombre "La Pared") se usaba para separar el norte (más poblado) del sur (tierra de los reyes guanches).
+    </p>
+    <p>
+      El <strong>Mirador de la Pared</strong> ofrece vistas espectaculares de la costa oeste, con el mar golpeando los acantilados. Es un lugar ideal para observar el atardecer y sentir la fuerza del viento. Cerca está el pueblo de La Pared, con algunas casas y restaurantes.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El mirador es gratuito. El viento suele ser muy fuerte (lleva chaqueta). Está en la carretera Morro Jable – Betancuria.
+    </div>
+  </div>
+</div>
+
+<div class="consejo-viajero">
+💡 <b>Consejo viajero:</b>  
+<p>Fuerteventura es una isla para viajar con calma. Dedica al menos 7 días para poder disfrutar del norte (Corralejo, Lobos, El Cotillo) y del sur (Jandía, Cofete, Sotavento, Morro Jable). La isla tiene 100 km de largo, así que planifica los desplazamientos.</p>
+<p><strong>Playa de Cofete</strong> es uno de los lugares más impresionantes pero el acceso es una pista de tierra. Un coche normal puede ir, pero con cuidado. Llena el depósito de gasolina antes de salir (no hay gasolineras cerca).</p>
+<p><strong>Isla de Lobos</strong>: reserva el ferry con antelación, especialmente en temporada alta. El paseo hasta el Faro de Lobos es fácil y las vistas merecen la pena. Lleva tu propia comida y mucha agua.</p>
+<p>Los <strong>deportes de viento</strong> (windsurf, kitesurf) son una de las grandes atracciones de Fuerteventura. Si no has practicado nunca, las escuelas en Corralejo y Sotavento ofrecen clases para principiantes.</p>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PRECIOS - FUERTEVENTURA ================= -->
+<div class="section-title" id="precios">
+    5. <i class="fas fa-utensils"></i> 💰 Precios en Fuerteventura: cuánto cuesta viajar en 2026
+</div>
+
+<div class="pais-fila" id="fuerteventura">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Fuerteventura - Precios 2026</span>
+        <span class="pais-fecha">Junio 2026 · 7 días</span>
+        <span class="pais-bandera">💰🏄‍♂️</span>
+    </div>
+    <div class="tres-columnas">
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-landmark"></i> Monumentos y atracciones</div>
+            <div class="sabor-plato">🏜️ Parque Natural Dunas de Corralejo</div>
+            <div class="sabor-precio">💰 Gratuito</div>
+            <div class="sabor-historia">Las mejores playas del norte. Aparcamiento gratuito.</div>
+        
+            <div class="sabor-plato">🏝️ Isla de Lobos</div>
+            <div class="sabor-precio">💰 15-20€ (ferry ida y vuelta)</div>
+            <div class="sabor-historia">Excursión imprescindible. Reserva con antelación.</div>
+        
+            <div class="sabor-plato">🏔️ Playa de Cofete</div>
+            <div class="sabor-precio">💰 Gratuito (acceso por pista de tierra)</div>
+            <div class="sabor-historia">La playa más salvaje. Lleva agua y comida.</div>
+        
+            <div class="sabor-plato">⛪ Betancuria (Iglesia Museo)</div>
+            <div class="sabor-precio">💰 3-5€</div>
+            <div class="sabor-historia">Museo de Arte Sacro en el Convento de San Buenaventura.</div>
+        
+            <div class="sabor-plato">🌄 Mirador de Morro Velosa</div>
+            <div class="sabor-precio">💰 Gratuito</div>
+            <div class="sabor-historia">Las mejores vistas de la isla. Diseñado por César Manrique.</div>
+        
+            <div class="sabor-plato">⛲ Iglesia de Pájara</div>
+            <div class="sabor-precio">💰 Gratuito (donativo)</div>
+            <div class="sabor-historia">Fachada única con relieves prehispánicos.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-ticket-alt"></i> Excursiones y actividades</div>
+            <div class="sabor-plato">🚗 Alquiler de coche</div>
+            <div class="sabor-precio">💰 25-55€/día</div>
+            <div class="sabor-historia">IMPRESCINDIBLE para recorrer la isla. Reserva con antelación.</div>
+        
+            <div class="sabor-plato">🏄 Clase de surf (Corralejo)</div>
+            <div class="sabor-precio">💰 35-60€ (2-3 horas con equipo)</div>
+            <div class="sabor-historia">Aprende a surfear en las playas del norte.</div>
+        
+            <div class="sabor-plato">🪁 Clase de kitesurf (Sotavento)</div>
+            <div class="sabor-precio">💰 70-120€ (clase de 3-4 horas)</div>
+            <div class="sabor-historia">Sotavento es el mejor spot de kitesurf del mundo.</div>
+        
+            <div class="sabor-plato">🐪 Paseo en camello en Corralejo</div>
+            <div class="sabor-precio">💰 10-15€</div>
+            <div class="sabor-historia">Paseo por las dunas. Familiar y divertido.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos para ahorrar</div>
+            <div class="proxima-item">
+                <strong>✅ Viaja en primavera u otoño</strong>
+                <div class="proxima-texto">Los precios bajan significativamente fuera de temporada alta. El clima sigue siendo excelente.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🍱 Picnic en las playas vírgenes</strong>
+                <div class="proxima-texto">En playas como Cofete o Sotavento no hay chiringuitos. Compra en supermercados (HiperDino, Lidl, Mercadona) y lleva tu comida.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🚫 No compres agua embotellada</strong>
+                <div class="proxima-texto">El agua del grifo en Fuerteventura es desalinizada y perfectamente potable. Llena tu botella en el hotel.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🕒 Reserva ferry a Lobos online</strong>
+                <div class="proxima-texto">Reservar online es más barato que en taquilla y te asegura plaza (limitan visitantes).</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PLATOS TÍPICOS DE FUERTEVENTURA ================= -->
+<h2 class="section-title" id="comida">6. 🍽️ Qué comer en Fuerteventura</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Papas arrugadas con mojo -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥔 Papas arrugadas con mojo <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> El plato más típico de Canarias</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 5-8€ (como acompañamiento)</div>
+            <div class="historia">
+                Las papas arrugadas son patatas pequeñas cocidas con abundante sal marina, que se sirven con la piel arrugada. Se acompañan de <strong>mojo rojo</strong> (con pimienta picante) y <strong>mojo verde</strong> (con cilantro o perejil). Es el acompañamiento más típico de cualquier comida canaria.
+            </div>
+            <div class="moraleja">🥔 Las papas arrugadas son el acompañamiento perfecto para cualquier plato. Pide los dos mojos (rojo y verde) para probar ambos.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥔 papas | 🌶️ mojo | 🇪🇸 canario</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Gofio -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🌾 Gofio <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Harina de cereales tostados</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 2-5€</div>
+            <div class="historia">
+                El gofio es una harina de cereales tostados (trigo, maíz o cebada) de origen aborigen canario (guanche). Se utiliza en sopas, potajes, postres (gofio con miel) o se mezcla con caldo de pescado. Es un superalimento canario.
+            </div>
+            <div class="moraleja">🌾 El gofio escaldado (mezclado con caldo de pescado) es una delicia tradicional. Pruébalo en un restaurante local.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🌾 gofio | 🥣 escaldón | 🇪🇸 tradicional</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Queso majorero -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🧀 Queso Majorero <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Queso con denominación de origen</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 6-18€ la pieza</div>
+            <div class="historia">
+                El Queso Majorero es el queso más famoso de Canarias y tiene Denominación de Origen Protegida. Se elabora con leche de cabra de la raza majorera (autóctona de Fuerteventura). Hay tres tipos: fresco (suave), semicurado (cremoso) y curado (fuerte). El queso curado se sirve con mojo o con miel de palma.
+            </div>
+            <div class="moraleja">🧀 El queso majorero curado con miel de palma es una combinación espectacular. Cómpralo en un mercado local o en las queserías artesanales.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🧀 queso majorero | 🐐 cabra majorera | 🇪🇸 D.O.</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Sancocho canario -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🐟 Sancocho canario <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Pescado en salazón</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 15-25€</div>
+            <div class="historia">
+                El sancocho es un plato de pescado en salazón (normalmente cherne o abade), cocido con papas arrugadas, mojo y gofio. Es el plato más típico de las fiestas canarias. El pescado se desala durante 24-48 horas antes de cocinarlo.
+            </div>
+            <div class="moraleja">🐟 El sancocho se sirve los viernes en muchos restaurantes canarios. Pregunta si lo tienen. Es un plato muy sabroso.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🐟 sancocho | 🥔 papas | 🇪🇸 fiesta</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - Vino de Fuerteventura -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍷 Vino de Fuerteventura <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Vinos volcánicos</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 3-5€ la copa / 10-18€ la botella</div>
+            <div class="historia">
+                Fuerteventura produce vinos de calidad con Denominación de Origen Protegida (D.O. Fuerteventura). Las bodegas se concentran en la zona de La Oliva (norte) y en la península de Jandía. Las variedades principales son Listán Blanco, Malvasía y Listán Negro. Son vinos con carácter salino y mineral.
+            </div>
+            <div class="moraleja">🍷 Visita una bodega en La Oliva (Bodega Conatín, Bodega Finca del Pueblo). El vino blanco Listán Blanco es el más fresco.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍷 vino | 🌋 volcánico | 🇪🇸 D.O. Fuerteventura</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 - Carne de cabra majorera -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍖 Carne de cabra en salsa <span class="destino-badge">🇪🇸 Fuerteventura</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Carne de cabra majorera</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 15-25€</div>
+            <div class="historia">
+                La carne de cabra majorera (de la misma raza que da la leche para el queso) es muy apreciada en Fuerteventura. Se cocina en salsa (con vino, tomate, cebolla y especias) y se sirve con papas arrugadas. Es un plato contundente y sabroso, típico de los restaurantes rurales de Betancuria y Pájara.
+            </div>
+            <div class="moraleja">🍖 La carne de cabra es más sabrosa que la de cordero. Pruébala en un restaurante del interior (Betancuria, Pájara).</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍖 cabra | 🥘 salsa | 🇪🇸 tradicional</span>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE COMER ================= -->
+<div class="section-title" id="comer">
+    7. <i class="fas fa-utensils"></i> 🍽️ Fuerteventura: restaurantes recomendados
+</div>
+
+<div class="cards-grid">
+
+    <!-- Tarjeta 1 - Restaurante Mahoh (Corralejo) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🐟 Restaurante Mahoh <span class="destino-badge">🇪🇸 Fuerteventura - Corralejo</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Calle El Hierro, 5, Corralejo</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Pescado fresco: 15-25€ / Sancocho: 18€</div>
+            <div class="historia">
+                Mahoh es un restaurante familiar con cocina tradicional canaria y pescado fresco. Es muy popular entre los locales. La especialidad es el <strong>sancocho canario</strong> (los viernes) y el <strong>pescado a la plancha</strong> (cherne, vieja, corvina). También tienen carne de cabra y gofio escaldado.
+            </div>
+            <div class="moraleja">🐟 Pide el pescado del día a la plancha con papas arrugadas y mojo. Es un lugar auténtico y asequible para Corralejo.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🐟 pescado | 🥘 canario | 👪 familiar</span>
+            <a href="https://www.bing.com/maps/search?q=Restaurante+Mahoh+Corralejo" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Casa Marcos (Betancuria) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍖 Casa Marcos <span class="destino-badge">🇪🇸 Fuerteventura - Betancuria</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Calle Roberto Roldán, Betancuria</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Carne de cabra: 18-24€ / Queso asado: 10€</div>
+            <div class="historia">
+                Casa Marcos es un restaurante rústico en el corazón de Betancuria, especializado en cocina tradicional majorera. Su especialidad es la <strong>carne de cabra en salsa</strong> y el <strong>queso majorero asado con mojo</strong>. También tienen conejo en salmorejo y potaje de berros. El ambiente es acogedor y tiene terraza con vistas a las montañas.
+            </div>
+            <div class="moraleja">🍖 Pide el queso majorero asado como entrante y la carne de cabra en salsa de segundo. Reserva los fines de semana.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍖 cabra | 🧀 queso asado | 🏔️ vistas</span>
+            <a href="https://www.bing.com/maps/search?q=Casa+Marcos+Betancuria" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - La Jaira (El Cotillo) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🌊 La Jaira <span class="destino-badge">🇪🇸 Fuerteventura - El Cotillo</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Calle la Tortuga, El Cotillo</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Pescado fresco: 15-25€ / Paella: 12-18€</div>
+            <div class="historia">
+                La Jaira es un restaurante con terraza junto al puerto de El Cotillo, especializado en pescado fresco y arroces. El <strong>pescado a la brasa</strong> y la <strong>paella de marisco</strong> son sus platos estrella. Tienen vistas al mar y el ambiente es relajado. Es un lugar ideal después de visitar las lagunas.
+            </div>
+            <div class="moraleja">🐟 Pide el pescado a la brasa o la paella de marisco para dos. Las vistas al atardecer son espectaculares.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🐟 pescado | 🍚 paella | 🌅 vistas al mar</span>
+            <a href="https://www.bing.com/maps/search?q=La+Jaira+El+Cotillo" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN CONSEJOS ================= -->
+<div class="section-title" id="consejos">
+    8. <i class="fas fa-lightbulb"></i> 💡 Consejos prácticos para Fuerteventura
+</div>
+
+<div class="pais-fila" id="consejos">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Consejos y recomendaciones</span>
+        <span class="pais-fecha">Guía práctica 2026</span>
+        <span class="pais-bandera">🏄‍♂️🌊</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Consejos generales -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos generales</div>
+            
+            <div class="sabor-plato">🚗 Alquila coche SÍ o SÍ</div>
+            <div class="sabor-precio">💰 25-55€ por día</div>
+            <div class="sabor-historia">Fuerteventura es grande (100 km de largo) y las atracciones están muy dispersas. Sin coche, no podrás ver Cofete, Betancuria ni el Mirador de Morro Velosa. Reserva con antelación.</div>
+        
+            <div class="sabor-plato">🏄 Protección solar y viento</div>
+            <div class="sabor-precio">☀️ Factor 50+ y labial con protección</div>
+            <div class="sabor-historia">El sol en Fuerteventura es muy fuerte y el viento constante puede provocar quemaduras sin que te des cuenta. Lleva protección solar de factor alto y reaplica cada 2 horas.</div>
+        
+            <div class="sabor-plato">💵 Lleva efectivo</div>
+            <div class="sabor-precio">💰 En puestos de playa y algunos chiringuitos</div>
+            <div class="sabor-historia">En los chiringuitos de las playas vírgenes y en los puestos de artesanía no siempre aceptan tarjeta. Lleva efectivo para emergencias.</div>
+
+            <div class="sabor-plato">📱 Descarga apps útiles</div>
+            <div class="sabor-precio">🗺️ Maps.me, Google Maps offline</div>
+            <div class="sabor-historia">En zonas rurales (Cofete, Betancuria) la cobertura puede fallar. Descarga los mapas sin conexión antes de salir.</div>
+        </div>
+        
+        <!-- Columna 2 - Equipaje y sostenibilidad -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-suitcase"></i> Equipaje y respeto</div>
+            
+            <div class="sabor-plato">👙 Ropa de playa y calzado de agua</div>
+            <div class="sabor-precio">🥾 Escarpines para rocas y lava</div>
+            <div class="sabor-historia">En playas como El Cotillo o Ajuy, las rocas volcánicas son afiladas. Lleva escarpines. También sombrero y protector solar.</div>
+        
+            <div class="sabor-plato">♻️ Respeta las dunas y las playas vírgenes</div>
+            <div class="sabor-precio">🚫 No subas a las dunas no señalizadas</div>
+            <div class="sabor-historia">Las dunas de Corralejo son frágiles. No subas a las dunas fuera de los caminos señalizados. No dejes basura en ninguna playa.</div>
+        
+            <div class="sabor-plato">💧 Ahorra agua</div>
+            <div class="sabor-precio">🚿 El agua es desalinizada (energía cara)</div>
+            <div class="sabor-historia">Fuerteventura no tiene fuentes naturales de agua. Toda el agua se obtiene por desalinización. Dúchate rápido y no dejes grifos abiertos.</div>
+        </div>
+        
+        <!-- Columna 3 - Gastronomía y horarios -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-utensils"></i> Gastronomía y horarios</div>
+            
+            <div class="sabor-plato">🛒 Compra en queserías locales</div>
+            <div class="sabor-precio">🧀 Queso majorero D.O.</div>
+            <div class="sabor-historia">Visita una quesería artesanal en el norte (La Oliva) o en el sur (Jandía). El queso majorero curado es uno de los mejores de España.</div>
+        
+            <div class="sabor-plato">🍷 Prueba los vinos de La Oliva</div>
+            <div class="sabor-precio">🍇 D.O. Fuerteventura, Listán Blanco</div>
+            <div class="sabor-historia">Las bodegas en La Oliva (Bodega Conatín) ofrecen catas de vino. El vino blanco Listán Blanco es perfecto con pescado.</div>
+        
+            <div class="sabor-plato">🥐 Horarios de comida</div>
+            <div class="sabor-precio">⏰ Comida: 13-16h / Cena: 20-23h</div>
+            <div class="sabor-historia">Los horarios canarios son similares a los peninsulares. Muchos restaurantes cierran la cocina entre las 16 y las 20h. Planifica tus horarios.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<h2>Mapa de la ruta</h2>
+
+<div class="mapa">
+<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1aBcDeFgHiJkLmNoPqRsTuVwXyZ&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+---
+
+<h2 id="galeria">Galería de Fuerteventura</h2>
+
+<div class="galeria">
+<a href="img/fuerteventura/fuerteventura1.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura1.jpg"></a>
+<a href="img/fuerteventura/fuerteventura2.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura2.jpg"></a>
+<a href="img/fuerteventura/fuerteventura3.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura3.jpg"></a>
+<a href="img/fuerteventura/fuerteventura4.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura4.jpg"></a>
+<a href="img/fuerteventura/fuerteventura5.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura5.jpg"></a>
+<a href="img/fuerteventura/fuerteventura6.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura6.jpg"></a>
+<a href="img/fuerteventura/fuerteventura7.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura7.jpg"></a>
+<a href="img/fuerteventura/fuerteventura8.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura8.jpg"></a>
+<a href="img/fuerteventura/fuerteventura9.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura9.jpg"></a>
+<a href="img/fuerteventura/fuerteventura10.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura10.jpg"></a>
+<a href="img/fuerteventura/fuerteventura11.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura11.jpg"></a>
+<a href="img/fuerteventura/fuerteventura12.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura12.jpg"></a>
+<a href="img/fuerteventura/fuerteventura13.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura13.jpg"></a>
+<a href="img/fuerteventura/fuerteventura14.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura14.jpg"></a>
+<a href="img/fuerteventura/fuerteventura15.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura15.jpg"></a>
+<a href="img/fuerteventura/fuerteventura16.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura16.jpg"></a>
+<a href="img/fuerteventura/fuerteventura17.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura17.jpg"></a>
+<a href="img/fuerteventura/fuerteventura18.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura18.jpg"></a>
+<a href="img/fuerteventura/fuerteventura19.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura19.jpg"></a>
+<a href="img/fuerteventura/fuerteventura20.jpg" data-lightbox="fuerteventura"><img src="img/fuerteventura/fuerteventura20.jpg"></a>
+</div>
+
+</section>
+
+<!-- Importar script del menú hamburguesa -->
+<script src="ciudades1.js"></script>
+
+</body>
+</html>

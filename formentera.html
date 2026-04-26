@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Viaje a Formentera - Guía completa</title>
+
+<link rel="stylesheet" href="ciudades1.css">
+<link rel="stylesheet" href="logos1.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR MODERNO ================= -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- LOGO: cambia la ruta por tu imagen -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo17.png" alt="Horizonte Viajero">
+                <!-- Si no tienes imagen, descomenta esto y comenta el img -->
+                <!-- <span class="logo-text">🌍 Horizonte Viajero</span> -->
+            </a>
+        </div>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#guia">Guía práctica</a></li>
+            <li><a href="#alojamiento">Donde alojarse</a></li>
+            <li><a href="#visitar">Qué visitar</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#comida">Comida típica</a></li>
+            <li><a href="#comer">Dónde comer</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="menu-overlay" id="overlay"></div>
+
+<header class="header-destino" style="background-image:url('img/formentera/formentera.jpg')">
+    <div class="header-text">
+        <h1>Formentera en 5 días</h1>
+        <p>Aguas turquesas, playas vírgenes y el paraíso mediterráneo de las Pitiusas</p>
+    </div>
+</header>
+
+<section class="contenido">
+
+<h2>1. Introducción</h2>
+
+<p>
+Formentera es la isla más pequeña y meridional de las Islas Baleares, conocida como el "Caribe mediterráneo". Con sus <strong>aguas turquesas</strong>, playas de arena blanca y un ambiente hippie-chic que perdura desde los años 60, es un destino ideal para los amantes de la naturaleza, la tranquilidad y el mar. Declarada <strong>Reserva de la Biosfera por la UNESCO</strong> en 2020, la isla mantiene un desarrollo turístico sostenible, sin grandes complejos hoteleros y con una extensa red de caminos para bicicletas.
+</p>
+
+<p>
+Esta guía de 5 días te llevará por los paraísos playeros más espectaculares: la <strong>Playa de Ses Illetes</strong> (considerada una de las mejores playas del mundo), <strong>Cala Saona</strong>, <strong>Playa de Migjorn</strong> y <strong>Es Caló</strong>; así como por sus puntos más emblemáticos: el <strong>Faro de la Mola</strong>, el <strong>Pueblo de Sant Francesc</strong>, las <strong>Salinas</strong> y la <strong>Laguna de Estany Pudent</strong>. Formentera no tiene aeropuerto, por lo que se accede en ferry desde Ibiza (30 minutos). Alquilar una bici o una moto es la mejor forma de recorrer la isla.
+</p>
+
+---
+
+<!-- ================= SECCIÓN INFORMACIÓN PRÁCTICA ================= -->
+<div class="section-title" id="guia">
+    2. 📅 Información práctica para tu viaje a Formentera
+</div>
+
+<div class="pais-fila">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Formentera - Guía práctica</span>
+        <span class="pais-fecha">Temporada 2025-2026</span>
+        <span class="pais-bandera">🏝️🌊</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Mejor época para viajar -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-calendar-alt"></i> Mejor época para viajar</div>
+            
+            <div class="sabor-plato">🌸 Primavera (abril - junio)</div>
+            <div class="sabor-precio">🌡️ 20-26°C | 🌸 Clima perfecto</div>
+            <div class="sabor-historia">La mejor época sin duda. Las temperaturas son cálidas pero no agobiantes, el mar empieza a estar templado (21°C en junio) y no hay masificación. Los precios son más bajos y se respira tranquilidad.</div>
+        
+            <div class="sabor-plato">☀️ Verano (julio - agosto)</div>
+            <div class="sabor-precio">🌡️ 28-34°C | 🏖️ Temporada alta extrema</div>
+            <div class="sabor-historia">Hace calor y la isla se llena. Las playas como Ses Illetes se llenan al amanecer. Los precios se disparan (alojamiento y restaurantes). Recomendable solo si no te importa el bullicio.</div>
+        
+            <div class="sabor-plato">🍂 Septiembre - octubre</div>
+            <div class="sabor-precio">🌡️ 24-28°C | 🍂 El mejor verano posible</div>
+            <div class="sabor-historia">El agua sigue caliente (25°C), las temperaturas ideales y los turistas desaparecen después del 15 de septiembre. Es la temporada ideal para quienes buscan calidad sin aglomeraciones.</div>
+        
+            <div class="sabor-plato">❄️ Invierno (noviembre - marzo)</div>
+            <div class="sabor-precio">🌡️ 14-18°C | 💰 Precios bajos</div>
+            <div class="sabor-historia">Muchos establecimientos cierran, pero es ideal para caminar, hacer fotografía y disfrutar de la isla más auténtica. El agua está fría (14-16°C) pero algunos días se puede nadar.</div>
+        </div>
+        
+        <!-- Columna 2 - Cómo llegar -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-plane"></i> Cómo llegar</div>
+            
+            <div class="sabor-plato">✈️ Aeropuerto de Ibiza (IBZ)</div>
+            <div class="sabor-precio">📍 Ibiza - 20 km</div>
+            <div class="sabor-historia">Formentera no tiene aeropuerto. Se vuela a Ibiza (vuelos directos desde Madrid, Barcelona, Valencia, Palma, Málaga y muchas ciudades europeas con Iberia, Vueling, Ryanair, EasyJet).</div>
+        
+            <div class="sabor-plato">⛴️ Ferry Ibiza - Formentera</div>
+            <div class="sabor-precio">💰 20-35€ (ida y vuelta) | ⏱️ 30-35 minutos</div>
+            <div class="sabor-historia">Desde el puerto de Ibiza (ciudad) salen ferrys cada 30-60 minutos. Las compañías son Mediterránea Pitiusa, Balearia y Trasmapi. Hay salidas también desde el aeropuerto de Ibiza (bus + ferry combinado).</div>
+            
+            <div class="sabor-plato">🚤 Ferry rápido desde Denia/Barcelona</div>
+            <div class="sabor-precio">💰 80-120€ | ⏱️ 3-5 horas</div>
+            <div class="sabor-historia">En verano hay conexiones directas desde Denia y Barcelona con Balearia y Trasmapi. Sale más caro pero evitas pasar por Ibiza.</div>
+        </div>
+        
+        <!-- Columna 3 - Traslado desde el ferry -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-bus"></i> Traslado desde el ferry</div>
+            
+            <div class="sabor-plato">🚲 Alquiler de bicicleta o moto (IMPRESCINDIBLE)</div>
+            <div class="sabor-precio">💰 Bici 10-15€/día | Moto 30-50€/día</div>
+            <div class="sabor-historia">La isla es pequeña (19 km de largo) y llana. La mejor forma de recorrerla es en bici o moto. Hay múltiples empresas de alquiler en el puerto de La Savina.</div>
+            <div class="proxima-item">
+                <a class="boton-hotel" href="https://www.bicicletasformentera.com/" target="_blank">Ver ofertas de alquiler</a>
+            </div>
+        
+            <div class="sabor-plato">🚌 Autobús (Líneas regulares)</div>
+            <div class="sabor-precio">💰 1-3€ | ⏱️ 30-45 minutos</div>
+            <div class="sabor-historia">Hay autobuses (líneas L1, L2, L3) que conectan La Savina con Sant Francesc, Es Pujols, Migjorn y la Mola. Son económicos pero no llegan a las calas remotas como Ses Illetes o Cala Saona.</div>
+        
+            <div class="sabor-plato">🚕 Taxi</div>
+            <div class="sabor-precio">💰 10-30€ | ⏱️ 10-20 minutos</div>
+            <div class="sabor-historia">Los taxis son caros y escasos en temporada alta (las colas pueden ser de 1 hora). Recomendado solo para trayectos cortos o emergencias.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE ALOJARSE EN FORMENTERA ================= -->
+<h2 class="section-title" id="alojamiento">3. 🏨 Dónde alojarse en Formentera</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Es Pujols -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏖️ Es Pujols <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 100-250€/noche</div>
+            <div class="alojamiento-descripcion">El núcleo turístico principal de Formentera. Tiene la playa más céntrica, gran oferta de restaurantes, bares, tiendas y la mayor vida nocturna de la isla (aunque tranquila). Es ideal para quien busca cercanía a todo.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> primera visita, vida social, familias, cerca de todo</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Playas cercanas, restaurantes, animación moderada</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Más caro que otras zonas, masificado en verano</div>
+                <div class="coche">🚗 <strong>Bici:</strong> No necesaria, todo cerca</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏖️ turístico | 🍽️ restaurantes | 🌙 animación</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Playa de Migjorn -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🌊 Playa de Migjorn <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 150-400€/noche</div>
+            <div class="alojamiento-descripcion">Zona residencial y hotelera de lujo a lo largo de los casi 5 km de playa de Migjorn. Hay casas, villas y agroturismos. Es más tranquila que Es Pujols, con calas semiprivadas.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> parejas, tranquilidad, lujo, escapada romántica</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Muy tranquilo, playa enorme, atardeceres únicos</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Caro, alejado de servicios (necesitas vehículo)</div>
+                <div class="coche">🚗 <strong>Vehículo:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🌊 lujo | 🏝️ tranquilo | 🌅 atardecer</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - La Savina (Puerto) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>⚓ La Savina <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 90-200€/noche</div>
+            <div class="alojamiento-descripcion">El puerto de entrada a la isla. Es una zona pequeña con tiendas de alquiler de bicis, restaurantes de pescado y alguna discoteca. Está muy cerca de las mejores playas (Ses Illetes a 2 km).</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> mochileros, alquiler de bici, movilidad, llegada en ferry</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Bien conectado, cerca de Ses Illetes, ambiente marinero</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Pequeño, no tiene playa propia</div>
+                <div class="coche">🚗 <strong>Bici:</strong> Perfecta, llano a las playas</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">⚓ puerto | 🚲 bicis | 🐟 pescado</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Sant Francesc Xavier -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏛️ Sant Francesc <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 80-180€/noche</div>
+            <div class="alojamiento-descripcion">La capital administrativa de Formentera. Es un pueblo blanco y tranquilo con la iglesia fortificada del siglo XVIII, tiendas de artesanía y algunos restaurantes. Es la opción más auténtica.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> autenticidad, presupuesto medio, cultura</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Más barato, auténtico, centro histórico</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> No está en la playa, más alejado del norte</div>
+                <div class="coche">🚗 <strong>Vehículo:</strong> Recomendable</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏛️ auténtico | ⛪ historia | 🛍️ artesanía</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - El Pilar de la Mola -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🌄 El Pilar de la Mola <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 100-220€/noche</div>
+            <div class="alojamiento-descripcion">Pueblo en el altiplano del norte de la isla, cerca del Faro de la Mola y de los acantilados más espectaculares. Es tranquilo y conserva el espíritu hippie de los años 60 (mercado los miércoles y domingos).</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> hippies, naturaleza, tranquilidad, atardeceres</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Vistas espectaculares, ambiente alternativo, paz total</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Lejos de playas (10-15 min en coche), viento fuerte</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🌄 acantilados | ✌️ hippie | 🎨 mercado</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="consejo-viajero">
+    💡 <b>Consejo viajero:</b>  
+    <p>Mi recomendación personal es alojarse en <strong>Es Pujols</strong> si es tu primera vez y quieres tener servicios cerca, o en algún <strong>agroturismo en Migjorn</strong> si buscas tranquilidad y lujo. Formentera es pequeña, así que aunque te alojes en un extremo, nunca tardarás más de 20 minutos en llegar a cualquier playa.</p>
+    <p style="margin-top: 10px;">🚲 <strong>Bici o moto:</strong> La isla es perfecta para bicicletas (llana y con carriles bici). Alquila con antelación en verano. Las motos son más rápidas pero el encanto de Formentera se disfruta más en bici.</p>
+    <p style="margin-top: 10px;">🌊 <strong>Playa de Ses Illetes:</strong> Llega antes de las 9:30am en verano si quieres encontrar sitio. En julio y agosto, a las 10am ya está llena. El aparcamiento es de pago (5-10€).</p>
+    <p style="margin-top: 10px;">🎫 <strong>Límite de vehículos:</strong> En verano, el acceso a Ses Illetes está restringido cuando el aparcamiento se llena (sobre las 10:30am). Ve pronto o ve en bici desde La Savina.</p>
+</div>
+
+---
+
+<h2 id="visitar">4. 🌊 Qué ver en Formentera</h2>
+
+<!-- ================= PLAYA DE SES ILLETES ================= -->
+
+<!-- Tarjeta 1 - Playa de Ses Illetes -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera1.jpg" alt="Playa de Ses Illetes - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>1. 🏝️ Playa de Ses Illetes (La mejor playa del Mediterráneo)</h3>
+    <p>
+      Ses Illetes es la playa más famosa de Formentera y considerada repetidamente como una de las mejores playas del mundo. Es un paraíso de arena blanca y aguas turquesas, situada en el norte de la isla, dentro del <strong>Parque Natural de Ses Salines</strong> (compartido con Ibiza). Desde la playa se ven las islas de Espalmador y Espardell.
+    </p>
+    <p>
+      La playa tiene varios tramos: el más concurrido cerca del aparcamiento, y zonas más salvajes al final (donde se puede llegar andando por la arena). No tiene servicios, solo un chiringuito de lujo. El agua es transparente y poco profunda, ideal para familias. El acceso cuesta 5-10€ por coche en temporada alta.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Llega antes de las 9:30am en verano. El aparcamiento es de pago (solo efectivo). Lleva agua y comida. La mejor hora es al atardecer, cuando la playa se vacía.
+    </div>
+  </div>
+</div>
+
+<!-- ================= CALA SAONA ================= -->
+
+<!-- Tarjeta 2 - Cala Saona -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera2.jpg" alt="Cala Saona - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>2. 🌅 Cala Saona (El atardecer más famoso de la isla)</h3>
+    <p>
+      Cala Saona es una pequeña cala en la costa oeste de Formentera, famosa por sus aguas turquesas y por ser el mejor lugar para ver el atardecer. Está rodeada de acantilados rojizos y tiene un chiringuito (El Mirador) con vistas espectaculares.
+    </p>
+    <p>
+      La playa es de arena fina y el fondo es suavemente inclinado, ideal para bañarse. Es más pequeña que Ses Illetes, por lo que en verano se llena rápido. También hay un restaurante con terraza sobre el mar (Can Rafalet). Es imprescindible llegar a las 19:30 para ver cómo el sol se pone frente a la isla de Conejera.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El aparcamiento es pequeño (llega temprano). El chiringuito El Mirador cierra a las 20:00. Para ver el atardecer, trae una toalla y siéntate en las rocas del lado izquierdo.
+    </div>
+  </div>
+</div>
+
+<!-- ================= PLAYA DE MIGJORN ================= -->
+
+<!-- Tarjeta 3 - Playa de Migjorn -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera4.jpg" alt="Playa de Migjorn - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>3. 🌊 Playa de Migjorn (5 km de arena y calas vírgenes)</h3>
+    <p>
+      Migjorn es la playa más larga de Formentera (casi 5 km), situada en la costa sur. En realidad es una sucesión de pequeñas calas y playas vírgenes: Es Arenals, Es Ram, Sa Roqueta, Ca Marí, Ses Platgetes... Son playas de arena blanca y aguas transparentes, mucho menos masificadas que Ses Illetes.
+    </p>
+    <p>
+      A lo largo de Migjorn hay varios chiringuitos (Blue Bar, 10.7, Beso Beach) y restaurantes con tumbonas. Algunas calas son nudistas. Es ideal para pasear, encontrar tu propia cala y disfrutar de la tranquilidad. El acceso es por caminos de tierra desde la carretera principal (se aparca al borde de la carretera).
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! No hay aparcamientos organizados (aparca donde puedas sin bloquear). Lleva calzado de agua en algunas calas con piedras. Hay servicio de bus que para en varias paradas.
+    </div>
+  </div>
+</div>
+
+<!-- ================= FARO DE LA MOLA ================= -->
+
+<!-- Tarjeta 4 - Faro de la Mola -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera8.jpg" alt="Faro de la Mola - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>4. 🗼 Faro de la Mola (El fin del mundo mediterráneo)</h3>
+    <p>
+      El Faro de la Mola está situado en el altiplano del este de Formentera, sobre acantilados de 120 metros de altura. Es el lugar más emblemático de la isla, famoso por las puestas de sol más espectaculares (el sol se pone justo detrás del horizonte marino sin obstáculos). El faro fue construido en 1861 y es uno de los más altos de Baleares.
+    </p>
+    <p>
+      Alrededor del faro hay un restaurante (El Faro, de alta cocina), una cafetería, una tienda y varios miradores. El poeta francés Jules Verne mencionó este faro en su novela "Héctor Servadac". En el camino de acceso, encontrarás el <strong>Mercado Hippie de la Mola</strong> (miércoles y domingos en verano).
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El mejor momento es al atardecer (llega 1 hora antes para aparcar). El viento suele ser fuerte (lleva chaqueta). El mercado hippie abre de 10am a 3pm (miércoles y domingos).
+    </div>
+  </div>
+</div>
+
+<!-- ================= ESTANY PUDENT Y SALINAS ================= -->
+
+<!-- Tarjeta 5 - Estany Pudent y Salinas -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera9.jpg" alt="Estany Pudent y Salinas - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>5. 🧂 Estany Pudent y Salinas (Aves y flamencos rosas)</h3>
+    <p>
+      El Estany Pudent es una laguna de agua hipersalina en el norte de Formentera (junto a las Salinas). Es uno de los humedales más importantes de Baleares, donde se pueden observar flamencos rosas, avocetas, cigüeñuelas y otras aves migratorias. Hay un centro de interpretación (Ses Salines) y un sendero de madera que bordea la laguna.
+    </p>
+    <p>
+      Las <strong>Salinas de Formentera</strong> (aún en explotación artesanal) producen sal de forma tradicional. El paisaje es muy fotogénico, con montones de sal blanca y las aguas rosadas por las bacterias halófilas. Se puede visitar la <strong>Ecomuseo de la Sal</strong>.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! La mejor hora para ver flamencos es al amanecer o al atardecer (trae prismáticos). Hay un aparcamiento gratuito junto a la laguna. La visita dura 1-2 horas.
+    </div>
+  </div>
+</div>
+
+<!-- ================= ISLA DE ESPALMADOR ================= -->
+
+<!-- Tarjeta 6 - Isla de Espalmador -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera10.jpg" alt="Isla de Espalmador - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>6. 🏝️ Isla de Espalmador (El paraíso prohibido)</h3>
+    <p>
+      Espalmador es una pequeña isla deshabitada situada al norte de Ses Illetes, accesible solo en barco. Es famosa por su <strong>laguna de lodo</strong> (fangos con propiedades curativas) y por sus playas vírgenes y aguas cristalinas. La isla es de propiedad privada, pero se puede desembarcar en sus playas para bañarse (no se puede acceder al interior). 
+    </p>
+    <p>
+      Para llegar, puedes alquilar una <strong>lancha</strong> (con o sin patrón) en La Savina, o tomar un <strong>taxi-boat</strong> desde el embarcadero de Ses Illetes (recorrido de 5 minutos). La experiencia es única: bañarte en el fango, nadar en aguas turquesas y sentirte en una isla desierta.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El taxi-boat cuesta unos 20€ ida y vuelta. Lleva agua, comida y protección solar (no hay servicios). No te lleves conchas ni arena (está prohibido). El mejor momento es por la mañana.
+    </div>
+  </div>
+</div>
+
+<!-- ================= SANT FRANCESC XAVIER ================= -->
+
+<!-- Tarjeta 7 - Sant Francesc Xavier -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera11.jpg" alt="Sant Francesc Xavier - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>7. ⛪ Sant Francesc Xavier (El corazón blanco de Formentera)</h3>
+    <p>
+      Sant Francesc es la capital de la isla, un pueblo blanco y tranquilo con calles empedradas. Su centro es la <strong>Iglesia de Sant Francesc</strong> (siglo XVIII), una iglesia fortificada con cañones, construida para defenderse de los piratas. La plaza de la iglesia es el punto de encuentro, con cafeterías y tiendas.
+    </p>
+    <p>
+      Alrededor, encontrarás el <strong>Museo de Formentera</strong> (historia y etnografía), el <strong>Ajuntament</strong> y varias galerías de arte. Los jueves por la mañana hay un mercado de agricultores. Es el lugar ideal para pasear y comprar artesanía local (cerámica, jabones, sal).
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Dedicar 1-2 horas. El aparcamiento es fácil y gratuito. Visita la iglesia por dentro (es pequeña pero bonita). En agosto hay conciertos en la plaza.
+    </div>
+  </div>
+</div>
+
+<!-- ================= ES CALÓ ================= -->
+
+<!-- Tarjeta 8 - Es Caló -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/formentera/formentera7.jpg" alt="Es Caló - Formentera">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>8. ⚓ Es Caló (El puerto de pescadores más auténtico)</h3>
+    <p>
+      Es Caló es un pequeño puerto pesquero en la costa este de Formentera, famoso por sus <strong>restaurantes de pescado fresco</strong> (langosta, san Jaime, pescado a la brasa). El pueblo conserva el espíritu marinero y no está muy masificado. Hay una pequeña cala de piedras (no arena) donde algunos nadan.
+    </p>
+    <p>
+      Es el lugar perfecto para comer pescado o marisco recién sacado del mar, con vistas a los barcos de pesca. Muy cerca está la <strong>Torre de la Savina</strong> (vigía antigua) y el <strong>cami de sa pujada</strong> (ruta de senderismo al faro).
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Los restaurantes más famosos son Can Rafalet y Es Caló (reserva con antelación). El aparcamiento es pequeño. Los precios son altos pero calidad excelente.
+    </div>
+  </div>
+</div>
+
+<div class="consejo-viajero">
+💡 <b>Consejo viajero:</b>  
+<p>Formentera es una isla para disfrutar con calma. No intentes verlo todo en 2 días. Dedica al menos 4-5 días: 2 días para las playas imprescindibles (Ses Illetes, Cala Saona, Migjorn) y 1 día para Espalmador, 1 día para la Mola y Sant Francesc.</p>
+<p>El alquiler de <strong>bicicleta o moto</strong> es imprescindible para disfrutar de la libertad que ofrece la isla. Las carreteras son tranquilas y hay carriles bici en la mayoría de los trayectos.</p>
+<p><strong>Espalmador</strong> es una experiencia increíble pero cara. Si tu presupuesto es limitado, puedes ver la isla desde la playa de Ses Illetes (se ve perfectamente). El fango no es para todos (olor fuerte a azufre).</p>
+<p>🌅 Los <strong>atardeceres</strong> en Formentera son sagrados: Cala Saona, Faro de la Mola y la punta de Migjorn son los mejores lugares.</p>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PRECIOS - FORMENTERA ================= -->
+<div class="section-title" id="precios">
+    5. <i class="fas fa-utensils"></i> 💰 Precios en Formentera: cuánto cuesta viajar en 2026
+</div>
+
+<div class="pais-fila" id="formentera">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Formentera - Precios 2026</span>
+        <span class="pais-fecha">Junio 2026 · 5 días</span>
+        <span class="pais-bandera">💰🏝️</span>
+    </div>
+    <div class="tres-columnas">
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-landmark"></i> Playas y atracciones</div>
+            <div class="sabor-plato">🏝️ Playa de Ses Illetes</div>
+            <div class="sabor-precio">💰 Acceso coche: 5-10€ (efectivo)</div>
+            <div class="sabor-historia">La mejor playa. Gratis en bici o a pie. El aparcamiento se llena a las 9:30am.</div>
+        
+            <div class="sabor-plato">🗼 Faro de la Mola</div>
+            <div class="sabor-precio">💰 Gratuito (restaurante caro)</div>
+            <div class="sabor-historia">Vistas imprescindibles al atardecer. Aparcamiento gratuito.</div>
+        
+            <div class="sabor-plato">🧂 Estany Pudent / Salinas</div>
+            <div class="sabor-precio">💰 Gratuito (centro interpretación 3€)</div>
+            <div class="sabor-historia">Observación de flamencos y salinas tradicionales.</div>
+        
+            <div class="sabor-plato">🏝️ Isla de Espalmador</div>
+            <div class="sabor-precio">💰 taxi-boat 20€ ida/vuelta</div>
+            <div class="sabor-historia">Excursión de medio día al paraíso deshabitado.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-ticket-alt"></i> Transporte y actividades</div>
+            <div class="sabor-plato">⛴️ Ferry Ibiza - La Savina</div>
+            <div class="sabor-precio">💰 25-35€ ida y vuelta</div>
+            <div class="sabor-historia">Travesía de 30 minutos. Compra online con antelación.</div>
+        
+            <div class="sabor-plato">🚲 Alquiler de bicicleta</div>
+            <div class="sabor-precio">💰 10-15€/día</div>
+            <div class="sabor-historia">La mejor forma de moverte (la isla es llana). Reserva en verano.</div>
+        
+            <div class="sabor-plato">🛵 Alquiler de moto</div>
+            <div class="sabor-precio">💰 30-50€/día</div>
+            <div class="sabor-historia">Ideal si quieres recorrer toda la isla rápido.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos para ahorrar</div>
+            <div class="proxima-item">
+                <strong>✅ Ve en junio o septiembre</strong>
+                <div class="proxima-texto">Los precios bajan un 30-40% y las playas no están llenas. El agua sigue caliente.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🍱 Lleva tu propia comida</strong>
+                <div class="proxima-texto">Los chiringuitos son muy caros (15-25€ por una hamburguesa). Compra en el supermercado de Es Pujols y haz picnic en la playa.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🚫 No compres agua embotellada</strong>
+                <div class="proxima-texto">El agua del grifo en Formentera es perfectamente potable (desalinizada). Llena tu botella.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🛒 Compra en supermercados locales</strong>
+                <div class="proxima-texto">Supermercados en Es Pujols, Sant Francesc o La Savina tienen buenos precios para hacer picnic.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PLATOS TÍPICOS DE FORMENTERA ================= -->
+<h2 class="section-title" id="comida">6. 🍽️ Qué comer en Formentera</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Langosta de Formentera -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🦞 Langosta de Formentera <span class="destino-badge">🇪🇸 Formentera</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> La joya de la cocina pitiusa</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 25-40€ la ración</div>
+            <div class="historia">
+                La langosta de Formentera (langosta roja) es un tesoro gastronómico con denominación de origen. Se prepara tradicionalmente "a la brasa" (a la parrilla) o en "langostada" (sopa de langosta con arroz). El sabor es dulce y la carne muy tierna. Se pesca de forma artesanal en las aguas de la isla.
+            </div>
+            <div class="moraleja">🦞 El mejor lugar para comer langosta es en Es Caló o en los restaurantes de La Savina. Es cara pero vale la pena (comparte ración).</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🦞 langosta | 🍲 langostada | 🇪🇸 pescado</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - San Jaime (Sepia) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🐟 San Jaime (Sepia) <span class="destino-badge">🇪🇸 Formentera</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> La sepia plana mediterránea</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 18-28€</div>
+            <div class="historia">
+                El San Jaime (conocido en castellano como "sepia" o "sepión") es un molusco muy apreciado en Formentera. Se captura en aguas poco profundas y se prepara a la plancha con un poco de ajo y perejil, o en su tinta. La carne es firme y sabrosa. Es el segundo plato más típico después de la langosta.
+            </div>
+            <div class="moraleja">🐟 Pide el San Jaime a la plancha con patatas y ali oli. En Es Caló lo hacen espectacular.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🐟 san jaime | 🦑 sepia | 🇪🇸 plancha</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Sal de Formentera -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🧂 Sal de Formentera (Flor de Sal) <span class="destino-badge">🇪🇸 Formentera</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> El oro blanco de las salinas</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 5-15€ el tarro</div>
+            <div class="historia">
+                La sal de Formentera (flor de sal) es un producto artesanal de alta calidad, recolectada manualmente en las Salinas de Formentera. Se utiliza para condimentar carnes, pescados, ensaladas e incluso postres (con chocolate). Tiene un sabor suave y mineral, sin amargor.
+            </div>
+            <div class="moraleja">🧂 Cómprala en las salinas o en el Ecomuseo. La flor de sal es la más apreciada y la mejor para terminar platos.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🧂 flor de sal | 🧂 artesanal | 🇪🇸 salinas</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Guisat de peix -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍝 Guisat de peix (Pescado guisado) <span class="destino-badge">🇪🇸 Formentera</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Sopa marinera tradicional</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 15-22€</div>
+            <div class="historia">
+                El guisat de peix es un guiso de pescado tradicional de Formentera (y de Ibiza). Se elabora con pescado de roca (morralla), patatas, cebolla, tomate, ajo, perejil y un toque de azafrán. Es un plato contundente, sabroso y muy reconfortante. Se sirve caliente y suele acompañarse con pan rústico.
+            </div>
+            <div class="moraleja">🍲 Es el plato de los pescadores. Muy popular en los restaurantes de Migjorn y La Savina. Pide una copa de vino blanco de Ibiza.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍲 guisado | 🐟 pescado de roca | 🇪🇸 tradicional</span>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE COMER ================= -->
+<div class="section-title" id="comer">
+    7. <i class="fas fa-utensils"></i> 🍽️ Formentera: restaurantes recomendados
+</div>
+
+<div class="cards-grid">
+
+    <!-- Tarjeta 1 - Can Rafalet -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🦞 Can Rafalet <span class="destino-badge">🇪🇸 Formentera - Es Caló</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Puerto de Es Caló</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Langosta: 40-60€ | San Jaime: 25€</div>
+            <div class="historia">
+                Can Rafalet es el restaurante más famoso de Formentera para comer pescado y langosta. Situado en el pequeño puerto de Es Caló, con mesas sobre el mar. La especialidad es la langosta a la brasa y el San Jaime a la plancha. Es caro pero la calidad es excelente y el ambiente marinero es único.
+            </div>
+            <div class="moraleja">🦞 Reserva con semanas de antelación en verano. Pide la langosta a la brasa y de segundo San Jaime. Prepara el bolsillo.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🦞 langosta | 🌊 vistas al mar | 🍽️ alta cocina</span>
+            <a href="https://www.bing.com/maps/search?q=Can+Rafalet+Formentera" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Beso Beach -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🌊 Beso Beach <span class="destino-badge">🇪🇸 Formentera - Migjorn</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Playa de Migjorn (km 8)</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Arroces: 20-30€ | Cócteles: 12-18€</div>
+            <div class="historia">
+                Beso Beach es el chiringuito de moda en Formentera, famoso por su ambiente chic y sus arroces. Es parte de un grupo con sedes en Ibiza y otros destinos. Los arroces caldosos de pescado y la paella son excelentes. Por la tarde, se convierte en un lounge con música chill-out. Ideal para comer con los pies en la arena.
+            </div>
+            <div class="moraleja">🍚 El arroz caldoso de bogavante es increíble. Reserva en verano. Después de comer, tumbona en la playa.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍚 arroces | 🎵 chill-out | 🏖️ beach club</span>
+            <a href="https://www.bing.com/maps/search?q=Beso+Beach+Formentera" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Es Pins -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥘 Es Pins <span class="destino-badge">🇪🇸 Formentera - Sant Francesc</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Carretera de la Mola, km 3</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Carta: 15-30€ | Menú del día: 18-22€</div>
+            <div class="historia">
+                Es Pins es un restaurante familiar, más económico que la mayoría. Especializado en cocina casera pitiusa: guisat de peix, frito de pescado, conejo al ajillo, carnes a la brasa. Tiene una bonita terraza con pinos y es muy popular entre los locales. Excelente relación calidad-precio.
+            </div>
+            <div class="moraleja">🥘 Prueba el guisat de peix y el flan casero de postre. Pide el menú del día (muy completo).</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍲 cocina casera | 💰 económico | 👪 familiar</span>
+            <a href="https://www.bing.com/maps/search?q=Es+Pins+Formentera" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - El Mirador de Cala Saona -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🌅 El Mirador de Cala Saona <span class="destino-badge">🇪🇸 Formentera - Cala Saona</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> Cala Saona, junto al aparcamiento</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Cócteles 10-15€ | Tapas 8-15€</div>
+            <div class="historia">
+                El Mirador es el chiringuito más famoso para ver el atardecer en Cala Saona. Tiene una terraza elevada sobre las rocas con vistas increíbles. Es más para tomar una copa, un cóctel o picar algo (tostadas de jamón, queso, pescado ahumado) que para comer formalmente. El ambiente es muy agradable y la música suave.
+            </div>
+            <div class="moraleja">🍹 Llega a las 18:30 para coger mesa en la terraza. Pide un cóctel y comparte una tabla de quesos. El atardecer es inolvidable.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍹 cócteles | 🌅 atardecer | 🎵 chill-out</span>
+            <a href="https://www.bing.com/maps/search?q=Mirador+Cala+Saona+Formentera" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN CONSEJOS ================= -->
+<div class="section-title" id="consejos">
+    8. <i class="fas fa-lightbulb"></i> 💡 Consejos prácticos para Formentera
+</div>
+
+<div class="pais-fila" id="consejos">
+    <div class="pais-header">
+        <span class="pais-nombre">🇪🇸 Consejos y recomendaciones</span>
+        <span class="pais-fecha">Guía práctica 2026</span>
+        <span class="pais-bandera">🏝️🌊</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Consejos generales -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos generales</div>
+            
+            <div class="sabor-plato">🚲 Alquila bici o moto al llegar</div>
+            <div class="sabor-precio">💰 10-50€ por día</div>
+            <div class="sabor-historia">Hay decenas de empresas en el puerto de La Savina. Alquila por días completos para recorrer la isla con libertad. El carril bici conecta casi todos los pueblos.</div>
+        
+            <div class="sabor-plato">⏰ Madrugar para las playas</div>
+            <div class="sabor-precio">🌅 Ses Illetes llena a las 9:30am en verano</div>
+            <div class="sabor-historia">En temporada alta, las playas se llenan. Ve antes de las 9am a Ses Illetes y antes de las 11am a Cala Saona.</div>
+        
+            <div class="sabor-plato">💧 Lleva agua y comida</div>
+            <div class="sabor-precio">🏪 Compra en supermercados de Es Pujols</div>
+            <div class="sabor-historia">Los chiringuitos en las playas son caros y algunos no aceptan tarjeta. Lleva tu propio picnic y ahorra bastante dinero.</div>
+
+            <div class="sabor-plato">📱 Descarga apps útiles</div>
+            <div class="sabor-precio">🗺️ Maps.me, Google Maps offline</div>
+            <div class="sabor-historia">En algunas calas la cobertura móvil puede fallar. Descarga los mapas sin conexión.</div>
+        </div>
+        
+        <!-- Columna 2 - Equipaje y sostenibilidad -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-suitcase"></i> Equipaje y sostenibilidad</div>
+            
+            <div class="sabor-plato">👙 Calzado de agua y gafas de snorkel</div>
+            <div class="sabor-precio">🤿 El fondo marino es increíble</div>
+            <div class="sabor-historia">Las playas tienen algunos tramos con piedras (Cala Saona, Migjorn). Lleva escarpines y gafas de snorkel (verás peces y posidonia).</div>
+        
+            <div class="sabor-plato">♻️ No lleves arena ni conchas</div>
+            <div class="sabor-precio">🚫 Está prohibido y multan</div>
+            <div class="sabor-historia">Formentera es Reserva de la Biosfera. Sacar arena, conchas o posidonia está prohibido y puedes ser multado con hasta 3000€.</div>
+        
+            <div class="sabor-plato">🚮 Basura cero</div>
+            <div class="sabor-precio">🗑️ Lleva tu basura contigo</div>
+            <div class="sabor-historia">No hay papeleras en las playas vírgenes. Lleva una bolsa y recoge toda tu basura (colillas, plásticos).</div>
+        </div>
+        
+        <!-- Columna 3 - Gastronomía y horarios -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-utensils"></i> Gastronomía y horarios</div>
+            
+            <div class="sabor-plato">🛒 Compra en mercados locales</div>
+            <div class="sabor-precio">📅 Mercado de la Mola (miércoles y domingos)</div>
+            <div class="sabor-historia">El mercado hippie de la Mola es el más famoso (artesanía, ropa, comida). También hay mercado de agricultores en Sant Francesc los jueves.</div>
+        
+            <div class="sabor-plato">🍷 Prueba los vinos de Ibiza</div>
+            <div class="sabor-precio">🍇 D.O. Ibiza (vinos blancos y tintos)</div>
+            <div class="sabor-historia">En Formentera se beben vinos de Ibiza (bodegas Can Rich, Sa Cova). Los blancos jóvenes son frescos y van bien con pescado.</div>
+        
+            <div class="sabor-plato">🥐 Horarios de comida</div>
+            <div class="sabor-precio">⏰ Comida: 13-16h / Cena: 20-23h</div>
+            <div class="sabor-historia">Los chiringuitos de playa sirven todo el día, pero los restaurantes formales cierran la cocina entre las 16:30 y las 20h.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<h2>Mapa de la ruta</h2>
+
+<div class="mapa">
+<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1F3XOPdXdYbIK-aLqq3rv8q3jZzFfLTE&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+---
+
+<h2 id="galeria">Galería de Formentera</h2>
+
+<div class="galeria">
+<a href="img/formentera/formentera1.jpg" data-lightbox="formentera"><img src="img/formentera/formentera1.jpg"></a>
+<a href="img/formentera/formentera2.jpg" data-lightbox="formentera"><img src="img/formentera/formentera2.jpg"></a>
+<a href="img/formentera/formentera3.jpg" data-lightbox="formentera"><img src="img/formentera/formentera3.jpg"></a>
+<a href="img/formentera/formentera4.jpg" data-lightbox="formentera"><img src="img/formentera/formentera4.jpg"></a>
+<a href="img/formentera/formentera5.jpg" data-lightbox="formentera"><img src="img/formentera/formentera5.jpg"></a>
+<a href="img/formentera/formentera6.jpg" data-lightbox="formentera"><img src="img/formentera/formentera6.jpg"></a>
+<a href="img/formentera/formentera7.jpg" data-lightbox="formentera"><img src="img/formentera/formentera7.jpg"></a>
+<a href="img/formentera/formentera8.jpg" data-lightbox="formentera"><img src="img/formentera/formentera8.jpg"></a>
+<a href="img/formentera/formentera9.jpg" data-lightbox="formentera"><img src="img/formentera/formentera9.jpg"></a>
+<a href="img/formentera/formentera10.jpg" data-lightbox="formentera"><img src="img/formentera/formentera10.jpg"></a>
+<a href="img/formentera/formentera11.jpg" data-lightbox="formentera"><img src="img/formentera/formentera11.jpg"></a>
+<a href="img/formentera/formentera12.jpg" data-lightbox="formentera"><img src="img/formentera/formentera12.jpg"></a>
+<a href="img/formentera/formentera13.jpg" data-lightbox="formentera"><img src="img/formentera/formentera13.jpg"></a>
+<a href="img/formentera/formentera14.jpg" data-lightbox="formentera"><img src="img/formentera/formentera14.jpg"></a>
+<a href="img/formentera/formentera15.jpg" data-lightbox="formentera"><img src="img/formentera/formentera15.jpg"></a>
+<a href="img/formentera/formentera16.jpg" data-lightbox="formentera"><img src="img/formentera/formentera16.jpg"></a>
+<a href="img/formentera/formentera17.jpg" data-lightbox="formentera"><img src="img/formentera/formentera17.jpg"></a>
+<a href="img/formentera/formentera18.jpg" data-lightbox="formentera"><img src="img/formentera/formentera18.jpg"></a>
+<a href="img/formentera/formentera19.jpg" data-lightbox="formentera"><img src="img/formentera/formentera19.jpg"></a>
+<a href="img/formentera/formentera20.jpg" data-lightbox="formentera"><img src="img/formentera/formentera20.jpg"></a>
+
+</div>
+
+</section>
+
+<!-- Importar script del menú hamburguesa -->
+<script src="ciudades1.js"></script>
+
+</body>
+</html>
