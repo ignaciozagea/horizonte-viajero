@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Viaje a Alsacia - Guía completa</title>
+
+<link rel="stylesheet" href="ciudades1.css">
+<link rel="stylesheet" href="logos1.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR MODERNO ================= -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- LOGO: cambia la ruta por tu imagen -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo17.png" alt="Horizonte Viajero">
+                <!-- Si no tienes imagen, descomenta esto y comenta el img -->
+                <!-- <span class="logo-text">🌍 Horizonte Viajero</span> -->
+            </a>
+        </div>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#guia">Guía práctica</a></li>
+            <li><a href="#alojamiento">Donde alojarse</a></li>
+            <li><a href="#visitar">Qué visitar</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#comida">Comida típica</a></li>
+            <li><a href="#comer">Dónde comer</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="menu-overlay" id="overlay"></div>
+
+<header class="header-destino" style="background-image:url('img/alsacia/alsacia.jpg')">
+    <div class="header-text">
+        <h1>Alsacia en 4 días</h1>
+        <p>Pueblos de cuento, casas con entramado de madera y la Ruta del Vino</p>
+    </div>
+</header>
+
+<section class="contenido">
+
+<h2>1. 🍷 Introducción</h2>
+
+<p>
+Alsacia es una de las regiones más encantadoras de Francia, situada en la frontera con Alemania y Suiza. Conocida por sus <strong>pueblos de ensueño</strong> de casas con entramado de madera (colombage), sus canales, sus viñedos interminables y su gastronomía única (chucrut, flammekueche, vinos blancos), Alsacia parece sacada de un cuento de hadas, especialmente en Navidad.
+</p>
+
+<p>
+Esta guía de 7 días te llevará por los cinco pueblos imprescindibles de Alsacia: <strong>Estrasburgo</strong> (la capital europea, con su catedral gótica y el barrio de la Petite France), <strong>Colmar</strong> (la "pequeña Venecia" alsaciana), <strong>Riquewihr</strong> (el pueblo más bonito de Alsacia), <strong>Ribeauvillé</strong> (rodeado de viñedos y castillos) y <strong>Eguisheim</strong> (el pueblo circular, cuna de la viticultura alsaciana). La mejor forma de recorrer la región es alquilando un coche para disfrutar de la Ruta del Vino de Alsacia.
+</p>
+
+---
+
+<!-- ================= SECCIÓN INFORMACIÓN PRÁCTICA ================= -->
+<div class="section-title" id="guia">
+    2. 📅 Información práctica para tu viaje a Alsacia
+</div>
+
+<div class="pais-fila">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 Alsacia - Guía práctica</span>
+        <span class="pais-fecha">Temporada 2026</span>
+        <span class="pais-bandera">🍇🏰</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Mejor época para viajar -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-calendar-alt"></i> Mejor época para viajar</div>
+            
+            <div class="sabor-plato">🌸 Primavera (abril - junio)</div>
+            <div class="sabor-precio">🌡️ 12-22°C | 🌸 Flores y viñedos verdes</div>
+            <div class="sabor-historia">Una época fantástica para visitar Alsacia. Los pueblos se llenan de flores (geranios en las ventanas), los viñedos están verdes y las temperaturas son suaves. Ideal para caminar por la Ruta del Vino sin agobios.</div>
+        
+            <div class="sabor-plato">☀️ Verano (julio - agosto)</div>
+            <div class="sabor-precio">🌡️ 18-30°C | 🍷 Temporada alta</div>
+            <div class="sabor-historia">Es temporada alta, con más turistas y precios elevados. El clima es cálido y agradable, perfecto para disfrutar de las terrazas y las catas de vino. Los pueblos pueden estar masificados, especialmente Colmar y Riquewihr.</div>
+        
+            <div class="sabor-plato">🍂 Otoño (septiembre - octubre)</div>
+            <div class="sabor-precio">🌡️ 10-20°C | 🍇 Vendimia y colores otoñales</div>
+            <div class="sabor-historia">La mejor época para los amantes del vino: es la temporada de la vendimia. Los viñedos se tiñen de dorado y rojo, los pueblos están menos llenos y se celebran muchas fiestas del vino. Es mi favorita personal.</div>
+        
+            <div class="sabor-plato">❄️ Diciembre (Navidad)</div>
+            <div class="sabor-precio">🌡️ 0-8°C | 🎄 Mercadillos navideños mágicos</div>
+            <div class="sabor-historia">Alsacia es la capital europea de la Navidad. Estrasburgo, Colmar y los pueblos pequeños tienen los mercadillos más bonitos del mundo. Eso sí, hace mucho frío y hay muchísima gente. Reserva con meses de antelación.</div>
+        </div>
+        
+        <!-- Columna 2 - Vuelos baratos -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-plane"></i> Vuelos baratos</div>
+            
+            <div class="sabor-plato">✈️ Aeropuerto de Estrasburgo (SXB)</div>
+            <div class="sabor-precio">📍 Entzheim - a 10 km del centro</div>
+            <div class="sabor-historia">Estrasburgo tiene un aeropuerto internacional con vuelos desde París, Lyon, Niza y algunas ciudades europeas. Desde España, los vuelos suelen ser con escala (Air France vía París).</div>
+        
+            <div class="sabor-plato">✈️ Aeropuerto de Basilea-Mulhouse (BSL/MLH)</div>
+            <div class="sabor-precio">📍 A 60 km de Colmar</div>
+            <div class="sabor-historia">Es el aeropuerto más grande de la región, compartido entre Francia y Suiza. Tiene vuelos directos desde Barcelona, Madrid, Palma y muchas ciudades europeas con EasyJet, Ryanair, Vueling. Es la mejor opción.</div>
+        
+            <div class="sabor-plato">⏱️ Duración del vuelo</div>
+            <div class="sabor-precio">🕐 1 hora y 45 minutos (Barcelona - Basilea)</div>
+            <div class="sabor-historia">El vuelo directo desde Barcelona a Basilea-Mulhouse dura aproximadamente 1 hora y 45 minutos. Desde Madrid, unas 2 horas. Es un destino muy accesible.</div>
+        
+            <div class="proxima-item">
+                <strong>💡 Consejo viajero:</strong>
+                <div class="proxima-texto">Para encontrar vuelos baratos, vuela a Basilea-Mulhouse (BSL) en low-cost (EasyJet, Ryanair). Desde allí, alquila un coche o toma un tren directo a Colmar o Estrasburgo. Los vuelos a Estrasburgo suelen ser más caros.</div>
+            </div>
+        </div>
+        
+        <!-- Columna 3 - Cómo moverse por Alsacia -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-car"></i> Cómo moverse por Alsacia</div>
+            
+            <div class="sabor-plato">🚗 Alquiler de coche (RECOMENDADO)</div>
+            <div class="sabor-precio">💰 40-80€/día | ⏱️ Flexible</div>
+            <div class="sabor-historia">La mejor forma de recorrer la Ruta del Vino y los pueblos pequeños. Los pueblos están cerca unos de otros (10-20 minutos en coche). Desde Basilea o Estrasburgo, alquila un coche para explorar con libertad.</div>
+            <div class="proxima-item">
+                <a class="boton-hotel" href="https://www.rentalcars.com/" target="_blank">Ver ofertas de alquiler</a>
+            </div>
+        
+            <div class="sabor-plato">🚆 Tren (TER)</div>
+            <div class="sabor-precio">💰 10-30€ | ⏱️ 30-60 minutos</div>
+            <div class="sabor-historia">La red de trenes regionales (TER) conecta Estrasburgo, Colmar, Sélestat y otras ciudades. No llega a los pueblos pequeños como Riquewihr o Eguisheim, pero hay autobuses lanzadera en temporada alta.</div>
+        
+            <div class="sabor-plato">🚴‍♂️ Ruta del Vino en bicicleta</div>
+            <div class="sabor-precio">💰 15-25€/día (alquiler)</div>
+            <div class="sabor-historia">Alsacia tiene una red de carriles bici que conecta los pueblos de la Ruta del Vino. Es la forma más auténtica y sostenible de recorrer la región. El terreno es llano o con suaves colinas.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE ALOJARSE EN ALSACIA ================= -->
+<h2 class="section-title" id="alojamiento">3. 🏨 Dónde alojarse en Alsacia</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Estrasburgo (Centro) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏛️ Estrasburgo - Centro (Petite France) <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 90-200€/noche</div>
+            <div class="alojamiento-descripcion">El corazón de Estrasburgo, alrededor de la Catedral y el barrio de la Petite France. Canales, casas con entramado de madera, restaurantes y tiendas. Es la zona más bonita y animada de la ciudad.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> primera visita, parejas, ambiente navideño</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Cerca de todo, precioso, lleno de vida</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Caro, ruidoso, lleno de turistas</div>
+                <div class="coche">🚆 <strong>Tren:</strong> Estación central a 15 min</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏛️ céntrico | 🏰 Petite France | 🚶‍♂️ todo a pie</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Colmar (Centro Histórico) -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🛶 Colmar - Centro (La Petite Venise) <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 80-180€/noche</div>
+            <div class="alojamiento-descripcion">El centro histórico de Colmar es un museo al aire libre. La "Petite Venise" (Pequeña Venecia) es el barrio más bonito, con casas de colores a orillas del canal. Es la base ideal para explorar la Ruta del Vino.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> base para explorar la Ruta del Vino, parejas, romántico</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Precioso, bien ubicado, buena oferta gastronómica</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Muy turístico, caro en temporada alta</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Aparcamiento en las afueras</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🛶 canales | 🏰 casas de colores | 🍷 Ruta del Vino</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Riquewihr -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏰 Riquewihr <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 100-250€/noche</div>
+            <div class="alojamiento-descripcion">Riquewihr es considerado el pueblo más bonito de Alsacia. Rodeado de viñedos, su centro medieval está intacto, con casas del siglo XVI y murallas. Es pequeño, con encanto y muy romántico.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> escapada romántica, amantes del vino, fotografía</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Precioso, tranquilo, auténtico</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Caro, muy pequeño, lleno de turistas en verano</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏰 medieval | 🍷 viñedos | 📸 fotogénico</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Eguisheim -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🔄 Eguisheim <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 90-220€/noche</div>
+            <div class="alojamiento-descripcion">Eguisheim es famoso por su planta circular concéntrica, con calles que giran alrededor del castillo del siglo XIII. Es uno de los pueblos más bonitos de Francia, cuna de la viticultura alsaciana y rodeado de viñedos.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> amantes del vino, arquitectura, tranquilidad</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Único (diseño circular), auténtico, buenos restaurantes</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Muy pequeño, aparcamiento limitado</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🔄 circular | 🍇 cuna del vino | 🏰 castillo</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - Ribeauvillé -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏰 Ribeauvillé <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 80-180€/noche</div>
+            <div class="alojamiento-descripcion">Ribeauvillé es un pueblo medieval rodeado por tres castillos en las colinas. Es famoso por sus murallas, sus calles empedradas y por ser la "capital de los trovadores". Tiene una buena oferta de bodegas y restaurantes.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> senderismo, castillos, historia</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Menos turístico que Riquewihr, castillos impresionantes</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Cuesta arriba, algunas calles empinadas</div>
+                <div class="coche">🚗 <strong>Coche:</strong> Imprescindible</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏰 tres castillos | 🎵 trovadores | 🍷 bodegas</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="consejo-viajero">
+    💡 <b>Consejo viajero:</b>  
+    <p>Mi recomendación personal es alojarte en <strong>Colmar</strong> como base para explorar la Ruta del Vino. Colmar está en el centro de la región y tiene buenas conexiones. Si tienes coche (lo recomiendo), puedes visitar Riquewihr, Ribeauvillé y Eguisheim en excursiones de un día.</p>
+    <p style="margin-top: 10px;">🚗 <strong>Coche en Alsacia:</strong> Es la mejor forma de recorrer los pueblos pequeños. Los aparcamientos en los pueblos son de pago (3-7€ por día). En temporada alta, llega temprano (antes de las 10am) para encontrar sitio.</p>
+    <p style="margin-top: 10px;">🍷 <strong>Ruta del Vino de Alsacia:</strong> Tiene más de 170 km y atraviesa pueblos de cuento. No intentes verla toda en un día. Elige los pueblos que más te gusten (yo recomiendo Riquewihr, Ribeauvillé y Eguisheim en un día).</p>
+    <p style="margin-top: 10px;">🎄 <strong>Navidad:</strong> Si vas en diciembre, reserva alojamiento con MUCHA antelación (6-8 meses). Los mercadillos de Estrasburgo y Colmar son los más famosos, pero los pueblos pequeños (Riquewihr, Eguisheim) son aún más mágicos.</p>
+</div>
+
+---
+
+<h2 id="visitar">4. 🏰 Qué ver en Alsacia</h2>
+
+<!-- ================= ESTRASBURGO ================= -->
+
+<!-- Tarjeta 1 - Catedral de Estrasburgo -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia1.jpg" alt="Catedral de Estrasburgo">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>1. ⛪ Catedral de Estrasburgo (La maravilla gótica)</h3>
+    <p>
+      La Catedral de Estrasburgo es uno de los máximos exponentes del gótico europeo. Su fachada de arenisca rosa es impresionante, y su <strong>reloj astronómico</strong> del siglo XVI es una obra maestra de la ingeniería. La aguja de la catedral mide 142 metros y fue el edificio más alto del mundo entre 1647 y 1874.
+    </p>
+    <p>
+      Se puede subir a la plataforma (332 escalones) para disfrutar de unas vistas espectaculares de la ciudad y de la Selva Negra al fondo. El reloj astronómico da un espectáculo de autómatas al mediodía (no te lo pierdas). La catedral es gratuita, pero la subida a la plataforma es de pago.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Catedral: gratis. Subida a la plataforma: 8€. El espectáculo del reloj astronómico es a las 12:30h (llega con 20 min de antelación). Las colas para subir pueden ser largas.
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 2 - Petite France (Estrasburgo) -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia2.jpg" alt="Petite France - Estrasburgo">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>2. 🏘️ Petite France (El barrio más bonito de Estrasburgo)</h3>
+    <p>
+      La Petite France es el barrio más famoso y fotografiado de Estrasburgo. Situado en una isla rodeada por el río Ill, es un laberinto de calles empedradas con casas de entramado de madera (colombage) de los siglos XVI y XVII. Los canales, los puentes y las terrazas lo convierten en un lugar de ensueño.
+    </p>
+    <p>
+      Antiguamente era el barrio de los pescadores, curtidores y molineros. Los nombres de las calles recuerdan ese pasado (rue des tanneurs, rue des moulins). El <strong>Puente Cubierto</strong> y las <strong>presas del Vauban</strong> ofrecen las mejores vistas del barrio.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Entrada gratuita. El mejor momento es al atardecer o temprano por la mañana (sin gente). La terraza de la presa Vauban tiene vistas espectaculares.
+    </div>
+  </div>
+</div>
+
+<!-- ================= COLMAR ================= -->
+
+<!-- Tarjeta 3 - Petite Venise (Colmar) -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia3.jpg" alt="Petite Venise - Colmar">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>3. 🛶 Petite Venise (La Pequeña Venecia de Colmar)</h3>
+    <p>
+      La Petite Venise es el barrio más bonito de Colmar, una sucesión de canales bordeados de casas de colores con entramado de madera. Los jardineros usaban estos canales para transportar las verduras al mercado, de ahí el nombre "barrio de los jardineros". Es el rincón más fotogénico de la ciudad.
+    </p>
+    <p>
+      Se puede recorrer a pie el paseo del canal o tomar un <strong>paseo en barco</strong> (barcaza eléctrica) que dura unos 25 minutos y ofrece una perspectiva única. Las casas más famosas son la "Maison des Têtes" y la "Maison Pfister". El puente de la rue de Turenne es el punto más fotografiado.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Paseo en barco: 6-8€ por persona. El barrio está muy masificado en verano; ve temprano. Las casas de colores son más bonitas con luz de la mañana.
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 4 - Museo Unterlinden (Colmar) -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia4.jpg" alt="Museo Unterlinden - Colmar">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>4. 🎨 Museo Unterlinden (El Retablo de Issenheim)</h3>
+    <p>
+      El Museo Unterlinden es el museo más importante de Alsacia y uno de los más visitados de Francia. Está instalado en un antiguo convento dominico del siglo XIII. Su joya absoluta es el <strong>Retablo de Issenheim</strong>, una obra maestra del arte renacentista alemán pintada por Grünewald entre 1512 y 1516.
+    </p>
+    <p>
+      El retablo es impresionante: tiene dos series de paneles que se abren para mostrar diferentes escenas de la Pasión de Cristo y la vida de San Antonio. También alberga obras de Picasso, Monet, Renoir y arte contemporáneo. La arquitectura del museo (antiguo convento) es preciosa.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 13€. El Retablo de Issenheim es la obra imprescindible. Dedica al menos 2 horas. Reserva online en temporada alta.
+    </div>
+  </div>
+</div>
+
+<!-- ================= RIQUEWIHR ================= -->
+
+<!-- Tarjeta 5 - Riquewihr -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia7.jpg" alt="Riquewihr - Alsacia">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>5. 🏰 Riquewihr (El pueblo más bonito de Alsacia)</h3>
+    <p>
+      Riquewihr es, para muchos, el pueblo más bonito de Alsacia. Rodeado de murallas medievales y viñedos, su centro histórico está intacto desde el siglo XVI. Las calles empedradas, las casas de colores con entramado de madera, las fuentes y las tiendas de vinos lo convierten en un lugar de cuento.
+    </p>
+    <p>
+      El pueblo es pequeño y se recorre en una hora, pero merece la pena pasear sin prisas. La <strong>calle principal (rue du Général de Gaulle)</strong> es la más bonita, con casas como la "Maison des Vignerons" y la "Tour des Voleurs". Riquewihr es famoso por sus vinos (es la capital del Riesling). Hay muchas bodegas para hacer catas.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Es muy turístico. Llega antes de las 10am para evitar multitudes. El aparcamiento es de pago (5-7€). Dedicar 2-3 horas.
+    </div>
+  </div>
+</div>
+
+<!-- ================= RIBEAUVILLÉ ================= -->
+
+<!-- Tarjeta 6 - Ribeauvillé y sus tres castillos -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia6.jpg" alt="Ribeauvillé - Alsacia">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>6. 🏰 Ribeauvillé y los Tres Castillos</h3>
+    <p>
+      Ribeauvillé es un pueblo medieval rodeado por tres castillos en las colinas: el <strong>Château de Girsberg</strong>, el <strong>Château de Haut-Ribeaupierre</strong> y el <strong>Château de Saint-Ulrich</strong>. Desde el pueblo se pueden ver los tres, y se puede hacer una caminata hasta el más accesible (Saint-Ulrich) en unos 45 minutos.
+    </p>
+    <p>
+      El pueblo en sí es encantador, con murallas, torres y calles empedradas. Es famoso por ser la "capital de los trovadores" en la Edad Media. En septiembre se celebra la "Fête des Ménétriers" (fiesta de los músicos). Hay muchas bodegas familiares donde probar el vino local.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! La caminata al castillo de Saint-Ulrich es de dificultad baja (45 min subida). Las vistas del valle son espectaculares. Lleva calzado adecuado.
+    </div>
+  </div>
+</div>
+
+<!-- ================= EGUISHEIM ================= -->
+
+<!-- Tarjeta 7 - Eguisheim -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia5.jpg" alt="Eguisheim - Alsacia">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>7. 🔄 Eguisheim (El pueblo circular)</h3>
+    <p>
+      Eguisheim es famoso por su planta urbana circular y concéntrica, que se desarrolla alrededor del castillo del siglo XIII. Las calles forman anillos concéntricos, lo que lo hace único. Está rodeado de viñedos y es considerado la cuna de la viticultura alsaciana.
+    </p>
+    <p>
+      El pueblo tiene dos anillos principales: la <strong>Rue du Rempart Sud</strong> y la <strong>Rue du Rempart Nord</strong>, que son las más bonitas, llenas de casas de colores con flores en las ventanas. En el centro está el castillo de los condes de Eguisheim. Fue elegido "Pueblo Favorito de los Franceses" en 2013.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! El aparcamiento está en las afueras del pueblo (gratuito). El pueblo es pequeño (1 hora para recorrerlo). Las calles circulares son únicas. No te pierdas la Place du Château.
+    </div>
+  </div>
+</div>
+
+<!-- ================= RUTA DEL VINO ================= -->
+
+<!-- Tarjeta 8 - Ruta del Vino de Alsacia -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia8.jpg" alt="Ruta del Vino de Alsacia">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>8. 🍷 Ruta del Vino de Alsacia (La carretera de los pueblos de cuento)</h3>
+    <p>
+      La Ruta del Vino de Alsacia tiene más de 170 km y atraviesa algunos de los pueblos más bonitos de Francia. Fue creada en 1953 y recorre las estribaciones de los Vosgos, pasando por viñedos, castillos y pueblos con entramado de madera. Las siete variedades de uva alsacianas (Riesling, Gewurztraminer, Pinot Gris, Muscat, Sylvaner, Pinot Blanc y Pinot Noir) se cultivan aquí.
+    </p>
+    <p>
+      Los pueblos imprescindibles (además de Colmar) son: <strong>Riquewihr</strong>, <strong>Ribeauvillé</strong>, <strong>Eguisheim</strong>, <strong>Kaysersberg</strong>, <strong>Bergheim</strong> y <strong>Obernai</strong>. La mejor forma de recorrerla es en coche, parando en bodegas para hacer catas. Muchas bodegas ofrecen catas gratuitas si compras alguna botella.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! No intentes recorrer toda la ruta en un día. Elige 3-4 pueblos. Las catas de vino son económicas (3-5€ por 3-4 vinos). No bebas y conduzcas (escupir está bien visto).
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta 9 - Castillo del Haut-Kœnigsbourg -->
+<div class="tarjeta">
+  <div class="tarjeta-img">
+    <img src="img/alsacia/alsacia9.jpg" alt="Castillo de Haut-Kœnigsbourg">
+  </div>
+  <div class="tarjeta-texto">
+    <h3>9. 🏰 Castillo del Haut-Kœnigsbourg (El castillo imperial)</h3>
+    <p>
+      El Castillo del Haut-Kœnigsbourg es el castillo más famoso de Alsacia. Está situado a 757 metros de altitud, en la cima de una montaña, y se ve desde muchos kilómetros a la redonda. Fue reconstruido entre 1900 y 1908 por orden del emperador alemán Guillermo II, que lo quería como símbolo del poder germánico.
+    </p>
+    <p>
+      El castillo medieval original data del siglo XII. Desde sus murallas se obtienen unas vistas espectaculares de la llanura de Alsacia, la Selva Negra y, en días claros, los Alpes suizos. El interior está amueblado con piezas medievales y renacentistas. Es una visita imprescindible para los amantes de la historia.
+    </p>
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 11€. Está a 20 min de Colmar. El aparcamiento es grande pero se llena en temporada alta (llega temprano). Dedicar 2-3 horas. Las vistas son impresionantes.
+    </div>
+  </div>
+</div>
+
+<div class="consejo-viajero">
+💡 <b>Consejo viajero:</b>  
+<p>Alsacia es una región para disfrutar con calma. No intentes ver todos los pueblos en un solo día. Dedica al menos 2 días a la Ruta del Vino: un día para Riquewihr y Ribeauvillé, y otro día para Eguisheim y Kaysersberg.</p>
+<p><strong>Riquewihr y Eguisheim</strong> son los pueblos más bonitos, pero también los más turísticos. Ve muy temprano (antes de las 10am) o al atardecer para disfrutarlos sin masificaciones. En temporada alta, el aparcamiento puede ser un problema.</p>
+<p><strong>El Castillo de Haut-Kœnigsbourg</strong> merece mucho la pena. Las vistas son espectaculares y el castillo está muy bien conservado. Combínalo con una visita a un pueblo cercano (Bergheim o Ribeauvillé).</p>
+<p>La <strong>gastronomía alsaciana</strong> es contundente y deliciosa. No te vayas sin probar la flammekueche (tarta flambeada), el chucrut (choucroute) y el vino blanco (Riesling o Gewurztraminer).</p>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PRECIOS - ALSACIA ================= -->
+<div class="section-title" id="precios">
+    5. <i class="fas fa-utensils"></i> 💰 Precios en Alsacia: cuánto cuesta viajar en 2026
+</div>
+
+<div class="pais-fila" id="alsacia">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 Alsacia - Precios 2026</span>
+        <span class="pais-fecha">Primavera · 4 días</span>
+        <span class="pais-bandera">💰🍷</span>
+    </div>
+    <div class="tres-columnas">
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-landmark"></i> Monumentos y atracciones</div>
+            <div class="sabor-plato">⛪ Catedral de Estrasburgo</div>
+            <div class="sabor-precio">💰 Gratis / Subida a plataforma: 8€</div>
+            <div class="sabor-historia">La catedral es gratuita. Sube a la plataforma para vistas espectaculares.</div>
+        
+            <div class="sabor-plato">🛶 Paseo en barco (Colmar)</div>
+            <div class="sabor-precio">💰 6-8€</div>
+            <div class="sabor-historia">Recorrido de 25 minutos por la Pequeña Venecia. Muy recomendable.</div>
+        
+            <div class="sabor-plato">🎨 Museo Unterlinden (Colmar)</div>
+            <div class="sabor-precio">💰 13€</div>
+            <div class="sabor-historia">El Retablo de Issenheim es una obra maestra imprescindible.</div>
+        
+            <div class="sabor-plato">🏰 Castillo de Haut-Kœnigsbourg</div>
+            <div class="sabor-precio">💰 11€</div>
+            <div class="sabor-historia">El castillo más famoso de Alsacia. Vistas espectaculares.</div>
+        
+            <div class="sabor-plato">🍷 Cata de vinos en bodega</div>
+            <div class="sabor-precio">💰 3-5€ por 3-4 vinos</div>
+            <div class="sabor-historia">En Riquewihr, Eguisheim o Ribeauvillé. Muchas gratuitas si compras.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-ticket-alt"></i> Transporte y actividades</div>
+            <div class="sabor-plato">🚗 Alquiler de coche</div>
+            <div class="sabor-precio">💰 40-80€/día</div>
+            <div class="sabor-historia">Imprescindible para la Ruta del Vino. Reserva con antelación.</div>
+        
+            <div class="sabor-plato">🚆 Tren Estrasburgo - Colmar</div>
+            <div class="sabor-precio">💰 15-20€ (ida y vuelta)</div>
+            <div class="sabor-historia">Tren regional (TER). 30 minutos de trayecto. Trenes cada 30-60 min.</div>
+        
+            <div class="sabor-plato">🚌 Transporte a pueblos del vino</div>
+            <div class="sabor-precio">💰 Autobuses lanzadera en temporada alta</div>
+            <div class="sabor-historia">En verano y Navidad hay autobuses desde Colmar a Riquewihr y Eguisheim.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos para ahorrar</div>
+            <div class="proxima-item">
+                <strong>✅ Viaja en primavera u otoño</strong>
+                <div class="proxima-texto">Los precios bajan significativamente fuera de temporada alta. El clima sigue siendo agradable y hay menos turistas.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🍷 Compra vino directamente en bodegas</strong>
+                <div class="proxima-texto">El vino en las bodegas de los pueblos es más barato y de mejor calidad que en las tiendas turísticas. Una botella de Riesling cuesta 6-12€ en bodega.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🥨 Picnic en los viñedos</strong>
+                <div class="proxima-texto">Compra queso, pan y vino en una bodega y haz un picnic con vistas a los viñedos. Es más barato que comer en restaurantes turísticos.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN PLATOS TÍPICOS DE ALSACIA ================= -->
+<h2 class="section-title" id="comida">6. 🍽️ Qué comer en Alsacia</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Flammekueche (Tarte Flambée) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🔥 Flammekueche <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Tarta flambeada</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 10-15€</div>
+            <div class="historia">
+                La flammekueche (tarte flambée en francés) es la pizza alsaciana. Es una masa fina y crujiente cubierta de crème fraîche, cebollas y trocitos de tocino (lardons). Se cuece en un horno de leña y se come caliente. Es el plato más típico de Alsacia, ideal para compartir.
+            </div>
+            <div class="moraleja">🔥 Pide la flammekueche "gratinée" (con queso) o con champiñones. Es el entrante perfecto para abrir boca.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🔥 tarta flambeada | 🧀 crème fraîche | 🇫🇷 crujiente</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Choucroute (Chucrut) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥬 Choucroute <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Chucrut alsaciano</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 18-25€</div>
+            <div class="historia">
+                La choucroute es el plato nacional de Alsacia. Consiste en chucrut (col fermentada) cocinado con vino blanco de Alsacia y servido con una montaña de carnes: salchichas (saucisses), tocino (lardons), carne de cerdo (jarret) y a veces patatas. Es un plato contundente y perfecto para el invierno.
+            </div>
+            <div class="moraleja">🥬 La choucroute "royale" incluye más variedades de carne. Acompáñala con un Riesling o un Pinot Blanc.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥬 chucrut | 🐷 cerdo | 🇫🇷 contundente</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Baeckeoffe -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍲 Baeckeoffe <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Olla de cocción lenta</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 18-22€</div>
+            <div class="historia">
+                El baeckeoffe (que significa "horno de panadero") es un guiso de carnes marinadas (cordero, ternera y cerdo) con patatas, cebollas, puerros y vino blanco de Alsacia. Se cocina lentamente en una cazuela de barro sellada. Es el plato de los domingos en familia, contundente y lleno de sabor.
+            </div>
+            <div class="moraleja">🍲 Es el plato de aprovechamiento por excelencia. La carne se deshace. Pide pan para mojar en la salsa.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍲 guiso | 🥔 patatas | 🇫🇷 tradicional</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Kougelhopf -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥨 Kougelhopf <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Bizcocho alsaciano</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 3-5€ la porción</div>
+            <div class="historia">
+                El kougelhopf es un bizcocho con forma de corona acanalada, típico de Alsacia. Lleva pasas, almendras y se aromatiza con ron o kirsch. Es el dulce tradicional de los domingos y fiestas. Se come en el desayuno o con el café de la tarde. Está riquísimo.
+            </div>
+            <div class="moraleja">🥨 Cómpralo en una pastelería artesana. La versión salada (con tocino) también existe, pero la dulce es la auténtica.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥨 bizcocho | 🥃 ron | 🇫🇷 corona</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - Vino de Alsacia (Riesling, Gewurztraminer, Pinot Gris) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍷 Vino de Alsacia <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Riesling, Gewurztraminer, Pinot Gris</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 4-8€ la copa / 10-25€ la botella</div>
+            <div class="historia">
+                Alsacia produce algunos de los mejores vinos blancos del mundo. Las variedades principales son: <strong>Riesling</strong> (seco y mineral), <strong>Gewurztraminer</strong> (aromático y especiado), <strong>Pinot Gris</strong> (untuoso y dulce), <strong>Muscat</strong> (floral) y <strong>Sylvaner</strong> (fresco y ligero). También producen un tinto ligero de Pinot Noir.
+            </div>
+            <div class="moraleja">🍷 El Riesling es el rey, perfecto con chucrut. El Gewurztraminer es ideal con foie gras o postres.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍷 Riesling | 🍇 Gewurztraminer | 🇫🇷 blanco</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 - Foie gras alsaciano -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🦆 Foie gras alsaciano <span class="destino-badge">🇫🇷 Alsacia</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Paté de hígado de pato</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 15-25€ (entrante)</div>
+            <div class="historia">
+                Alsacia es una de las regiones productoras de foie gras más importantes de Francia. Se sirve como entrante, con pan de higo o brioche, y una cebolla caramelizada o chutney. El foie gras alsaciano es de alta calidad, cremoso y con un sabor intenso. Se acompaña con un vino dulce (Gewurztraminer Vendanges Tardives).
+            </div>
+            <div class="moraleja">🦆 Pide el foie gras "mi-cuit" (semicocido) para untar. Es un lujo que merece la pena probar en Alsacia.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🦆 foie gras | 🍞 brioche | 🇫🇷 lujo</span>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE COMER ================= -->
+<div class="section-title" id="comer">
+    7. <i class="fas fa-utensils"></i> 🍽️ Alsacia: restaurantes recomendados
+</div>
+
+<div class="cards-grid">
+
+    <!-- Tarjeta 1 - La Corde à Linge (Estrasburgo) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🔥 La Corde à Linge <span class="destino-badge">🇫🇷 Estrasburgo - Petite France</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 4 Rue de la Corde à Linge, Estrasburgo</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Flammekueche: 12€ / Choucroute: 20€</div>
+            <div class="historia">
+                Un restaurante típico alsaciano en el corazón de la Petite France, con casas de entramado de madera y terraza junto al canal. Probé la <strong>flammekueche a la forestière</strong> (con champiñones) y estaba espectacular: masa fina y crujiente, crema deliciosa. También tienen choucroute y baeckeoffe. El ambiente es muy acogedor y los precios son razonables para la ubicación.
+            </div>
+            <div class="moraleja">🔥 Pide la flammekueche y siéntate en la terraza con vistas al canal. Reserva en temporada alta.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🔥 flammekueche | 🏰 Petite France | 🍺 vino local</span>
+            <a href="https://www.bing.com/maps/search?q=La+Corde+%C3%A0+Linge+Estrasburgo" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Wistub Brenner (Colmar) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥬 Wistub Brenner <span class="destino-badge">🇫🇷 Colmar - Centro</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 2 Rue Saint-Nicolas, Colmar</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Choucroute: 22€ / Baeckeoffe: 20€</div>
+            <div class="historia">
+                Wistub Brenner es una institución en Colmar, un "winstub" (taberna alsaciana) tradicional con decoración de madera, manteles a cuadros y ambiente familiar. Pedí la <strong>choucroute "royale"</strong> que venía con salchichas, jarret de cerdo, tocino y patatas. Era enorme y deliciosa. La carne estaba tierna y el chucrut sabrosísimo. El personal es muy amable y te recomiendan el vino para maridar.
+            </div>
+            <div class="moraleja">🥬 La choucroute royale es para compartir o para llevar mucho apetito. Pide un Riesling para acompañar.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥬 choucroute | 🍷 vino local | 🇫🇷 winstub</span>
+            <a href="https://www.bing.com/maps/search?q=Wistub+Brenner+Colmar" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Au Vieux Riquewihr (Riquewihr) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍲 Au Vieux Riquewihr <span class="destino-badge">🇫🇷 Riquewihr</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 12 Rue du Général de Gaulle, Riquewihr</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Baeckeoffe: 19€ / Tarte flambée: 11€</div>
+            <div class="historia">
+                Un restaurante familiar en la calle principal de Riquewihr, con terraza en una placita tranquila. Probé el <strong>baeckeoffe</strong>, el guiso de tres carnes marinadas. La carne se deshacía en la boca y las patatas estaban impregnadas de la salsa de vino blanco. El servicio es amable y el ambiente es rústico y acogedor. Es ideal después de pasear por el pueblo.
+            </div>
+            <div class="moraleja">🍲 Pide el baeckeoffe (es el plato más auténtico) y un Pinot Gris de la región. Reserva en temporada alta.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍲 baeckeoffe | 🏰 Riquewihr | 🇫🇷 familiar</span>
+            <a href="https://www.bing.com/maps/search?q=Au+Vieux+Riquewihr" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Caveau d'Eguisheim (Eguisheim) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍷 Caveau d'Eguisheim <span class="destino-badge">🇫🇷 Eguisheim</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 11 Grand Rue, Eguisheim</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Cata de vinos: 5€ / Tabla de quesos: 12€</div>
+            <div class="historia">
+                Una bodega-caveau en el corazón de Eguisheim, especializada en vinos de la región. Hice una <strong>cata de 4 vinos</strong> (Riesling, Pinot Gris, Gewurztraminer y Muscat) por 5€, y la camarera explicó las características de cada uno. Acompañé la cata con una tabla de quesos alsacianos (Munster, Géromé, etc.). Es una experiencia imprescindible para los amantes del vino. Al final, compré una botella de Gewurztraminer por 12€.
+            </div>
+            <div class="moraleja">🍷 La cata es muy económica y te permite probar los mejores vinos. El Gewurztraminer es espectacular.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍷 cata de vinos | 🧀 tabla de quesos | 🇫🇷 bodega</span>
+            <a href="https://www.bing.com/maps/search?q=Caveau+d%27Eguisheim" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+</div>
+
+---
+
+<!-- ================= SECCIÓN CONSEJOS ================= -->
+<div class="section-title" id="consejos">
+    8. <i class="fas fa-lightbulb"></i> 💡 Consejos prácticos para viajar a Alsacia
+</div>
+
+<div class="pais-fila" id="consejos">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 Alsacia - Consejos y recomendaciones</span>
+        <span class="pais-fecha">Guía práctica 2026</span>
+        <span class="pais-bandera">🍇🏰</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Consejos generales -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos generales</div>
+            
+            <div class="sabor-plato">🚗 Alquila coche SÍ o SÍ</div>
+            <div class="sabor-precio">💰 40-80€ por día</div>
+            <div class="sabor-historia">Es la única forma de disfrutar de la Ruta del Vino con libertad. Los trenes no llegan a los pueblos pequeños (Riquewihr, Eguisheim). Reserva con antelación.</div>
+        
+            <div class="sabor-plato">🌅 Madrugar para los pueblos</div>
+            <div class="sabor-precio">⏰ Riquewihr y Eguisheim se llenan a las 10am</div>
+            <div class="sabor-historia">Los pueblos más bonitos (Riquewihr, Eguisheim) se llenan de turistas a partir de las 10am. Llega antes de las 9am para disfrutarlos con tranquilidad y buenas fotos sin gente.</div>
+        
+            <div class="sabor-plato">🍷 No bebas y conduzcas</div>
+            <div class="sabor-precio">🚫 Escupir en las catas está bien visto</div>
+            <div class="sabor-historia">En las catas de vino, es perfectamente aceptable escupir el vino después de probarlo para no pasarse con el alcohol. Así puedes visitar varias bodegas en un día.</div>
+        </div>
+        
+        <!-- Columna 2 - Equipaje y clima -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-suitcase"></i> Equipaje y clima</div>
+            
+            <div class="sabor-plato">🧥 Ropa de abrigo en invierno</div>
+            <div class="sabor-precio">🌡️ En Navidad: -5°C a 5°C</div>
+            <div class="sabor-historia">Los inviernos en Alsacia son fríos y pueden nevar. Lleva abrigo, bufanda, guantes y gorro si vas en diciembre o enero. En verano, ropa ligera y chaqueta para la noche.</div>
+        
+            <div class="sabor-plato">☔ Paraguas todo el año</div>
+            <div class="sabor-precio">🌧️ Lluvia posible en cualquier estación</div>
+            <div class="sabor-historia">Alsacia tiene un clima semicontinental con precipitaciones repartidas. Lleva siempre un paraguas pequeño o una chaqueta impermeable.</div>
+        
+            <div class="sabor-plato">🔌 Enchufes</div>
+            <div class="sabor-precio">💰 Tipo E/F (igual que España) | 230V, 50Hz</div>
+            <div class="sabor-historia">Los enchufes son los mismos que en España (tipo F). No necesitas adaptador. La corriente es de 230V.</div>
+        </div>
+        
+        <!-- Columna 3 - Idioma y cultura -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-language"></i> Idioma y cultura</div>
+            
+            <div class="sabor-plato">🗣️ Francés y alsaciano</div>
+            <div class="sabor-precio">🇫🇷 El inglés se habla en zonas turísticas</div>
+            <div class="sabor-historia">El idioma oficial es el francés. El alsaciano (dialecto alemán) se habla en los pueblos. En las zonas turísticas (Estrasburgo, Colmar, Riquewihr) te entenderán en inglés. Aprende "bonjour", "merci" y "au revoir".</div>
+        
+            <div class="sabor-plato">💶 Propinas</div>
+            <div class="sabor-precio">💰 No es obligatorio (5-10% en restaurantes)</div>
+            <div class="sabor-historia">El servicio está incluido en la cuenta en Francia. Dejar propina no es obligatorio, pero se agradece redondear la cuenta o dejar un 5-10% si el servicio fue excelente.</div>
+        
+            <div class="sabor-plato">🎟️ Tarjetas turísticas</div>
+            <div class="sabor-precio">💰 Pass'Alsace (descuentos en museos y actividades)</div>
+            <div class="sabor-historia">La tarjeta Pass'Alsace ofrece descuentos en unos 50 lugares. Puede merecer la pena si visitas muchos museos. Calcula antes de comprar.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<h2>Mapa de la ruta</h2>
+
+<div class="mapa">
+<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1SlvR5rLzV2oEaxOxA4qrFD_lO3bl5-k&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+---
+
+<h2 id="galeria">Galería de Alsacia</h2>
+
+<div class="galeria">
+<a href="img/alsacia/alsacia1.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia1.jpg"></a>
+<a href="img/alsacia/alsacia2.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia2.jpg"></a>
+<a href="img/alsacia/alsacia3.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia3.jpg"></a>
+<a href="img/alsacia/alsacia4.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia4.jpg"></a>
+<a href="img/alsacia/alsacia5.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia5.jpg"></a>
+<a href="img/alsacia/alsacia6.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia6.jpg"></a>
+<a href="img/alsacia/alsacia7.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia7.jpg"></a>
+<a href="img/alsacia/alsacia8.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia8.jpg"></a>
+<a href="img/alsacia/alsacia9.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia9.jpg"></a>
+<a href="img/alsacia/alsacia10.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia10.jpg"></a>
+<a href="img/alsacia/alsacia11.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia11.jpg"></a>
+<a href="img/alsacia/alsacia12.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia12.jpg"></a>
+<a href="img/alsacia/alsacia13.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia13.jpg"></a>
+<a href="img/alsacia/alsacia14.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia14.jpg"></a>
+<a href="img/alsacia/alsacia15.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia15.jpg"></a>
+<a href="img/alsacia/alsacia11.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia11.jpg"></a>
+<a href="img/alsacia/alsacia12.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia12.jpg"></a>
+<a href="img/alsacia/alsacia13.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia13.jpg"></a>
+<a href="img/alsacia/alsacia14.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia14.jpg"></a>
+<a href="img/alsacia/alsacia15.jpg" data-lightbox="alsacia"><img src="img/alsacia/alsacia15.jpg"></a>
+
+</div>
+
+</section>
+
+<script src="ciudades1.js"></script>
+
+</body>
+</html>
