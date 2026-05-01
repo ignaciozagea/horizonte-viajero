@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Viaje a París - Guía completa</title>
+
+<link rel="stylesheet" href="ciudades1.css">
+<link rel="stylesheet" href="logos1.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR MODERNO ================= -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container">
+        <!-- LOGO: cambia la ruta por tu imagen -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo17.png" alt="Horizonte Viajero">
+                <!-- Si no tienes imagen, descomenta esto y comenta el img -->
+                <!-- <span class="logo-text">🌍 Horizonte Viajero</span> -->
+            </a>
+        </div>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#guia">Guía práctica</a></li>
+            <li><a href="#alojamiento">Donde alojarse</a></li>
+            <li><a href="#visitar">Qué visitar</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#comida">Comida típica</a></li>
+            <li><a href="#comer">Dónde comer</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="menu-overlay" id="overlay"></div>
+
+<header class="header-destino" style="background-image:url('img/paris/paris.jpg')">
+
+<div class="header-text">
+
+<h1>París en 4 días</h1>
+<p>Ruta por la Ciudad de la Luz entre la Torre Eiffel, el Louvre y la gastronomía francesa</p>
+
+</div>
+
+</header>
+
+<section class="contenido">
+
+<h2>1. 🗼 Introducción</h2>
+
+<p>
+París es una de las ciudades más fascinantes del mundo. Su mezcla de historia, arquitectura, arte y gastronomía la convierten en uno de los destinos más visitados de Europa.
+</p>
+
+<p>París es conocida como la "Ciudad de la Luz" (La Ville Lumière) y es el corazón geográfico de la cultura francesa. Sus bulevares, sus terrazas, sus museos de talla mundial y sus monumentos icónicos la convierten en un destino único. Es la ciudad del romanticismo, la moda y la gastronomía.</p>
+<p>
+Recorrer París es como caminar por un museo al aire libre. En cada calle encontrarás historia, arte, rincones con encanto y algunos de los monumentos más importantes del mundo.
+</p>
+
+
+
+---
+
+<!-- ================= SECCIÓN INFORMACIÓN PRÁCTICA (época, vuelos, traslados) ================= -->
+<div class="section-title" id="guia">
+    2. 📅 Información práctica para tu viaje a París
+</div>
+
+<div class="pais-fila">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 París - Guía práctica</span>
+        <span class="pais-fecha">Temporada 2026</span>
+        <span class="pais-bandera">🗼🥐</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Mejor época para viajar -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-calendar-alt"></i> Mejor época para viajar</div>
+            
+            <div class="sabor-plato">🌼 Primavera (abril - junio)</div>
+            <div class="sabor-precio">🌡️ 12-22°C | 🌸 Jardines en flor</div>
+            <div class="sabor-historia">Es una de las mejores épocas para visitar París. Las temperaturas son suaves, los días son largos y los jardines (Luxemburgo, Tullerías) están en plena floración. Ideal para pasear sin sufrir el calor y sin agobios de turistas.</div>
+        
+            <div class="sabor-plato">☀️ Verano (julio - agosto)</div>
+            <div class="sabor-precio">🌡️ 20-30°C | 🎭 Temporada alta</div>
+            <div class="sabor-historia">Hace calor y es temporada alta, por lo que encontrarás más turistas y precios más elevados. Aun así, el ambiente es muy animado, con festivales, terrazas llenas y noches iluminadas.</div>
+        
+            <div class="sabor-plato">🍂 Otoño (septiembre - octubre)</div>
+            <div class="sabor-precio">🌡️ 10-20°C | 🍷 Menos aglomeraciones</div>
+            <div class="sabor-historia">Otra de las mejores opciones. El clima sigue siendo agradable y hay menos aglomeraciones que en verano. Los colores otoñales embellecen los parques y jardines de la ciudad.</div>
+        
+            <div class="sabor-plato">❄️ Invierno (noviembre - marzo)</div>
+            <div class="sabor-precio">🌡️ 3-10°C | 💰 Precios más bajos</div>
+            <div class="sabor-historia">Es la temporada más tranquila. Hay menos turistas y los precios suelen ser más bajos. Aunque hace más frío, los mercadillos navideños y las luces de Navidad son mágicos.</div>
+        </div>
+        
+        <!-- Columna 2 - Vuelos baratos -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-plane"></i> Vuelos baratos</div>
+            
+            <div class="sabor-plato">✈️ Aeropuertos de París</div>
+            <div class="sabor-precio">📍 Charles de Gaulle (CDG) y Orly (ORY)</div>
+            <div class="sabor-historia">París tiene dos aeropuertos internacionales: Charles de Gaulle (el principal, a 25 km del centro) y Orly (más pequeño, a 15 km del centro). Ambos están bien conectados con el centro.</div>
+        
+            <div class="sabor-plato">✈️ Vuelos directos desde Barcelona</div>
+            <div class="sabor-precio">💰 Durante todo el año</div>
+            <div class="sabor-historia">Desde Barcelona existen vuelos directos a París durante todo el año. Las principales aerolíneas (Air France, Vueling, EasyJet, Transavia) operan rutas a CDG o Orly.</div>
+        
+            <div class="sabor-plato">⏱️ Duración del vuelo</div>
+            <div class="sabor-precio">🕐 2 horas (directo)</div>
+            <div class="sabor-historia">El vuelo directo desde Barcelona a París tiene una duración aproximada de 2 horas. Es uno de los destinos europeos más rápidos desde España.</div>
+        
+            <div class="proxima-item">
+                <strong>💡 Consejo viajero:</strong>
+                <div class="proxima-texto">Para encontrar vuelos baratos intenta ser flexible con las fechas y reserva con varias semanas o meses de antelación. Utilizar comparadores de vuelos como Google Flights o Skyscanner te permitirá ver rápidamente qué días son más baratos para volar. Los vuelos a Orly suelen ser más baratos que a CDG.</div>
+            </div>
+        </div>
+        
+        <!-- Columna 3 - Traslado desde el aeropuerto -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-bus"></i> Traslado desde el aeropuerto</div>
+            
+            <div class="sabor-plato">🚆 RER B (desde CDG)</div>
+            <div class="sabor-precio">💰 12€ | ⏱️ 35-50 minutos</div>
+            <div class="sabor-historia">El tren RER B conecta el aeropuerto Charles de Gaulle con el centro de París (estaciones Gare du Nord, Châtelet, Saint-Michel). Es la opción más rápida y económica.</div>
+            <div class="proxima-item">
+                <a class="boton-hotel" href="https://www.ratp.fr/" target="_blank">Ver horarios RER</a>
+            </div>
+        
+            <div class="sabor-plato">🚌 Roissybus (desde CDG)</div>
+            <div class="sabor-precio">💰 14-17€ | ⏱️ 50-70 minutos</div>
+            <div class="sabor-historia">Servicio de autobús directo desde CDG hasta la Ópera de París. Es cómodo si llevas maletas grandes.</div>
+        
+            <div class="sabor-plato">🚌 Orlybus (desde ORY)</div>
+            <div class="sabor-precio">💰 10-12€ | ⏱️ 35-45 minutos</div>
+            <div class="sabor-historia">Autobús directo desde Orly hasta Denfert-Rochereau (centro). Es la mejor opción desde Orly.</div>
+        
+            <div class="sabor-plato">🚕 Taxi</div>
+            <div class="sabor-precio">💰 40-65€ (tarifa fija) | ⏱️ 40-60 minutos</div>
+            <div class="sabor-historia">Los taxis tienen tarifa fija: desde CDG a París: 55€ (margen derecha) o 60€ (margen izquierda). Desde Orly: 35-40€. Es la opción más cómoda pero la más cara.</div>
+            <div class="proxima-item">
+                <a class="boton-hotel" href="https://www.civitatis.com/es/paris/traslados/" target="_blank">Ver traslado privado</a>
+            </div>
+        
+            <div class="sabor-plato">🚆 Orlyval + RER B (desde ORY)</div>
+            <div class="sabor-precio">💰 15€ | ⏱️ 45 minutos</div>
+            <div class="sabor-historia">Conecta Orly con Antony y luego RER B hasta el centro. Es más caro y engorroso que el Orlybus.</div>
+        </div>
+        
+    </div>
+</div>
+
+---
+
+<!-- ================= SECCIÓN DÓNDE ALOJARSE EN PARÍS (estilo tarjetas de precios) ================= -->
+<h2 class="section-title" id="alojamiento">3. 🏨 Dónde alojarse en París</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Louvre / Ópera -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🏛️ Louvre / Ópera <span class="destino-badge">⭐⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 120-250€/noche</div>
+            <div class="alojamiento-descripcion">El corazón de París. Aquí están el Museo del Louvre, la Ópera Garnier, los grandes almacenes y los jardines de las Tullerías. Es la zona más céntrica, elegante y cara.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> primera visita, lujo, compras, cerca de todo</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Céntrico, elegante, cerca del Louvre y la Ópera</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Muy caro, turístico, ruidoso</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Líneas 1, 7, 8, 14</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🏛️ céntrico | 🎭 ópera | 🛍️ compras</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Barrio Latino / Saint-Germain -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>📚 Barrio Latino / Saint-Germain <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 90-200€/noche</div>
+            <div class="alojamiento-descripcion">El barrio más auténtico y bohemio de París. Calles empedradas, librerías, cafés históricos (Les Deux Magots, Café de Flore), la Sorbona y el Panteón. Ambiente intelectual y animado.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> intelectuales, cafeterías históricas, ambiente local</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Auténtico, buena comida, ambiente local</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Puede ser caro, algunas calles ruidosas</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Líneas 4, 10, RER B</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">📚 auténtico | ☕ cafés | 🎓 estudiantes</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Montmartre -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🎨 Montmartre <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 80-180€/noche</div>
+            <div class="alojamiento-descripcion">El barrio de los artistas, en lo alto de una colina. Aquí está la Basílica del Sacré-Cœur, la Place du Tertre, el Moulin Rouge y las calles empinadas con encanto.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> parejas, artistas, vistas, ambiente bohemio</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Precioso, vistas espectaculares, ambiente único</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Muchos turistas, cuesta arriba, alejado del centro</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Línea 2 (Anvers), 12 (Abbesses)</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🎨 Sacré-Cœur | 🎭 Moulin Rouge | 🥂 romántico</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Le Marais -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🛍️ Le Marais <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 100-220€/noche</div>
+            <div class="alojamiento-descripcion">El barrio más trendy de París. Calles medievales, galerías de arte, tiendas de moda vintage, bares de moda y una animada vida nocturna. También alberga la Place des Vosges.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> moda, vida nocturna, galerías de arte</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Trendy, buena oferta cultural, ambiente joven</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Caro, ruidoso por la noche</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Líneas 1, 4, 8</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🛍️ trendy | 👕 vintage | 🍸 bares</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - Torre Eiffel / Campos de Marte -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🗼 Torre Eiffel / Campos de Marte <span class="destino-badge">⭐⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 100-220€/noche</div>
+            <div class="alojamiento-descripcion">Zona residencial elegante alrededor de la Torre Eiffel. Tiene vistas al monumento más famoso de París, está cerca del Campo de Marte y del Sena. Es tranquilo y seguro.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> familias, vistas a la Torre Eiffel, tranquilidad</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Vistas a la torre, tranquilo, elegante</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Caro, menos vida nocturna, lejos del Louvre</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Línea 6 (Bir-Hakeim), 8 (École Militaire)</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🗼 Torre Eiffel | 🌳 Campo de Marte | 🌊 Sena</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 - Canal Saint-Martin -->
+    <div class="card precio-card">
+        <div class="card-header">
+            <h3>🚣 Canal Saint-Martin <span class="destino-badge">⭐⭐⭐</span></h3>
+        </div>
+        <div class="card-content">
+            <div class="precio-alojamiento"><i class="fas fa-euro-sign"></i> 70-150€/noche</div>
+            <div class="alojamiento-descripcion">Barrio trendy y hipster alrededor del canal. Calles peatonales, bares con terraza, tiendas de diseño y una animada vida de barrio. Es más auténtico y menos turístico que el centro.</div>
+            <div class="alojamiento-ideal">✅ <strong>Ideal para:</strong> jóvenes, hipsters, presupuesto medio, ambiente local</div>
+            <div class="comparativa-grid">
+                <div class="ventaja">👍 <strong>Ventajas:</strong> Auténtico, más barato, buena oferta de bares</div>
+                <div class="desventaja">👎 <strong>Desventajas:</strong> Más alejado de los monumentos principales</div>
+                <div class="coche">🚇 <strong>Metro:</strong> Línea 2 (Colonel Fabien), 11 (Goncourt)</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🚣 trendy | 🍻 terrazas | 🎨 hipster</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="consejo-viajero">
+    💡 <b>Consejo viajero:</b>  
+    <p>Mi recomendación personal es alojarse en el <strong>Barrio Latino o Saint-Germain</strong> si buscas autenticidad, cafés históricos y ambiente parisino. Si es tu primera vez y quieres estar cerca de los grandes monumentos, elige <strong>Louvre / Ópera</strong>. Para una experiencia más romántica y bohemia, <strong>Montmartre</strong>.</p>
+    <p style="margin-top: 10px;">🚇 <strong>Metro en París:</strong> La red de metro es densa y eficaz. Un billete sencillo cuesta 2,15€. El "carnet" de 10 billetes cuesta unos 17€. La tarjeta Navigo Easy es una buena opción. Compra el billete en las máquinas (aceptan tarjeta).</p>
+    <p style="margin-top: 10px;">🗼 <strong>Torre Eiffel:</strong> Reserva las entradas con semanas o meses de antelación, especialmente si quieres subir al último piso. Las colas en taquilla pueden ser de 2-3 horas. La torre se ilumina cada noche durante 5 minutos cada hora.</p>
+    <p style="margin-top: 10px;">🏠 <strong>Alternativas:</strong> Si viajas en grupo o quieres más espacio, los apartamentos turísticos (Airbnb) suelen ser más económicos que los hoteles, especialmente en zonas como Montmartre o Le Marais.</p>
+    <p style="margin-top: 10px;">🚫 <strong>Zonas a evitar:</strong> Evita alojarte cerca de la estación Gare du Nord (puede ser insegura por la noche) y los barrios periféricos alejados del centro como La Courneuve o Saint-Denis.</p>
+</div>
+
+---
+
+<h2 id="visitar">4. 🗼 Qué ver en París</h2>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris1.jpg" alt="Torre Eiffel">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>1. 🗼 Torre Eiffel</h3>
+    <p>
+      El monumento más famoso de París, construido por Gustave Eiffel para la Exposición Universal de 1889. Con 330 metros de altura, fue la estructura más alta del mundo durante 41 años. En sus tres niveles podrás disfrutar de las mejores vistas panorámicas de la ciudad.
+    </p>
+    <p>La Torre Eiffel es el símbolo indiscutible de París. Subir a la cima es una experiencia única, especialmente al atardecer, cuando la ciudad se ilumina. Cada noche, durante 5 minutos cada hora, la torre tiene un espectáculo de luces centelleantes.</p>
+
+    <div class="aviso">
+      📌 ¡Importante! Reserva entradas con antelación para evitar colas. Tienes 3 opciones: subir por escaleras (hasta el segundo piso), subir en ascensor o reservar una visita guiada. Las colas pueden superar las 2 horas.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-la-torre-eiffel-p994384/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris2.jpg" alt="Museo del Louvre">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>2. 🎨 Museo del Louvre</h3>
+    <p>
+    El museo más visitado del mundo, antiguo palacio real que alberga la Mona Lisa de Leonardo da Vinci, la Venus de Milo y la Victoria de Samotracia. Con más de 380.000 obras, es imposible verlo todo en un día.
+    </p>
+    <p>El Louvre no es solo un museo, es un palacio en sí mismo. La pirámide de cristal diseñada por I.M. Pei es una obra maestra de la arquitectura contemporánea. Recorrer sus salas es como viajar por la historia del arte occidental.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Reserva entradas con antelación para evitar colas. Dedica al menos 4 horas. La Mona Lisa está siempre abarrotada, ve a primera hora o a última para algo más de tranquilidad.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-louvre-entrada-para-individuales-p1037802/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris3.jpg" alt="Catedral de Notre-Dame">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>3. ⛪ Catedral de Notre-Dame</h3>
+    <p>
+    La catedral más famosa del mundo, obra maestra del gótico francés. Comenzó a construirse en 1163 y se terminó en 1345. Tras el devastador incendio de 2019, reabrió sus puertas en diciembre de 2024 completamente restaurada.
+    </p>
+    <p>Su fachada con las dos torres, sus impresionantes rosetones y sus famosas gárgolas la convierten en una visita imprescindible. La subida a las torres (donde está el famoso jorobado) ofrece una de las mejores vistas del centro de París.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! El acceso a la catedral es gratuito. Subida a las torres: 10-12€. Las colas pueden ser de 1-2 horas, especialmente desde la reapertura. Reserva online para las torres.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-notre-dame-y-subida-a-las-torres-p994312/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris4.jpg" alt="Arco del Triunfo">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>4. 🏛️ Arco del Triunfo</h3>
+    <p>
+    El Arco del Triunfo fue mandado construir por Napoleón en 1806 para celebrar sus victorias militares. Está en el centro de la Plaza de la Estrella, de donde parten 12 avenidas (incluidos los Campos Elíseos).
+    </p>
+    <p>Desde lo alto del arco se obtienen unas vistas espectaculares de París, especialmente de los Campos Elíseos y la Torre Eiffel. La Tumba del Soldado Desconocido, con su llama eterna, está en la base del arco.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 13€. Subida de 284 escalones (no hay ascensor). El acceso al arco es por un túnel subterráneo (no cruces la rotonda, es muy peligrosa).
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-arco-de-triunfo-entrada-y-acceso-a-la-terraza-p994345/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris5.jpg" alt="Basílica del Sacré-Cœur">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>5. 🎨 Basílica del Sacré-Cœur</h3>
+    <p>
+    Situada en lo alto de la colina de Montmartre, la basílica blanca del Sacré-Cœur es uno de los lugares más visitados de París. Fue construida entre 1875 y 1914 en estilo romano-bizantino.
+    </p>
+    <p>Desde su escalinata se tienen las mejores vistas panorámicas de París (junto con la Torre Eiffel y el Arco del Triunfo). El interior es impresionante, con un gran mosaico de Cristo en el ábside, uno de los más grandes del mundo.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada a la basílica: gratuita. Subir a la cúpula: 7€ (300 escalones). Cuidado con los vendedores de pulseras en la escalinata. Sube en funicular si no quieres las 200 escaleras.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-sacre-coeur-cumbre-p994321/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris6.jpg" alt="Museo de Orsay">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>6. 🖼️ Museo de Orsay</h3>
+    <p>
+    Instalado en una antigua estación de tren (Gare d'Orsay), el Museo de Orsay alberga la colección de arte más importante del mundo del período 1848-1914. Es el museo del Impresionismo por excelencia.
+    </p>
+    <p>Aquí encontrarás obras maestras de Monet, Manet, Degas, Renoir, Cézanne, Van Gogh, Millet y muchos otros. El gran reloj de la estación (que se ve desde dentro) es uno de los rincones más fotografiados de París.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 16€. Gratis el primer domingo de cada mes. Reserva online para evitar colas. Dedicar al menos 3 horas.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-museo-de-orsay-entrada-a-fast-track-p994361/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris7.jpg" alt="Panteón">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>7. 🏛️ Panteón</h3>
+    <p>
+    El Panteón es un imponente edificio neoclásico situado en el Barrio Latino. Originalmente una iglesia dedicada a Santa Genoveva, hoy es el mausoleo donde reposan los grandes hombres y mujeres de Francia.
+    </p>
+    <p>Están enterrados aquí figuras como Voltaire, Rousseau, Victor Hugo, Émile Zola, Louis Braille, Marie Curie (una de las pocas mujeres) y Alejandro Dumas. El péndulo de Foucault, que demuestra la rotación de la Tierra, se exhibe en la nave central.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 11,50€. La cripta es lo imprescindible. Las tumbas de Voltaire y Rousseau están enfrentadas (eran rivales en vida). Dedicar 1-2 horas.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-panteon-de-paris-entrada-a-fast-track-p994346/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris8.jpg" alt="Centro Pompidou">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>8. 🎭 Centro Pompidou</h3>
+    <p>
+    El Centro Pompidou es el museo de arte moderno y contemporáneo más importante de Europa. El edificio en sí es una obra arquitectónica radical: toda la estructura está en el exterior, pintada de colores.
+    </p>
+    <p>Alberga el Musée National d'Art Moderne, con obras de Picasso, Matisse, Kandinsky, Miró, Dalí, Warhol y Bacon. La biblioteca pública es enorme y siempre está llena de estudiantes. En la azotea hay un restaurante con vistas increíbles.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 15€. El museo cierra los martes. Las vistas desde la azotea se pueden ver sin pagar museo.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-el-centro-pompidou-entrada-a-fast-track-p1044518/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris9.jpg" alt="Paseo en barco por el Sena">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>9. 🚢 Paseo en barco por el Sena</h3>
+    <p>
+      Un paseo en barco por el Sena es una de las experiencias más románticas y completas de París. Desde el agua se ven los monumentos más emblemáticos: la Torre Eiffel, el Louvre, Notre-Dame, el Museo de Orsay, el Puente Alejandro III...
+    </p>
+    <p>Las principales compañías son Bateaux-Mouches (salida desde el Puente del Alma) y Vedettes de Paris (desde la Torre Eiffel). El recorrido dura aproximadamente 1 hora y hay audioguía en español. El mejor momento es al atardecer o al anochecer, cuando los monumentos están iluminados y la Torre Eiffel centellea.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Precio: 10-15€ por persona. Los barcos salen cada 30-45 minutos. Lleva chaqueta (el viento en el agua refresca). Hay opciones con cena (más caras).
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-paseo-en-barco-por-el-sena-p994358/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="tarjeta">
+  
+  <div class="tarjeta-img">
+    <img src="img/paris/paris10.jpg" alt="Palacio de Versalles">
+  </div>
+
+  <div class="tarjeta-texto">
+    <h3>10. 👑 Palacio de Versalles</h3>
+    <p>
+      A solo 45 minutos de París en tren RER, el Palacio de Versalles fue la residencia de los reyes de Francia Luis XIV, Luis XV y Luis XVI hasta la Revolución Francesa. Es el símbolo del absolutismo monárquico y del lujo más extremo.
+    </p>
+    <p>Los puntos imprescindibles son: la Galería de los Espejos (donde se firmó el Tratado de Versalles en 1919), los apartamentos del Rey y la Reina, y los enormes jardines con sus fuentes. El Palacio de la Reina y el Grand Trianon también merecen una visita.
+    </p>
+
+    <div class="aviso">
+      📌 ¡Importante! Entrada: 21€ (Palacio + Jardines). Tren RER C: 8€ ida y vuelta desde París. Dedicar un día entero. Llega temprano para evitar colas.
+    </div>
+    <a class="boton-hotel" href="https://www.tiqets.com/es/atracciones-paris-c69911/entradas-para-palacio-de-versalles-con-acceso-a-los-jardines-y-al-parque-p994641/" target="_blank">
+    Comprar entradas
+    </a>
+  </div>
+
+</div>
+
+<div class="consejo-viajero">
+
+💡 <b>Consejo viajero:</b>  
+<p>París es enorme y hay muchísimo que ver. No intentes abarcarlo todo en 3 días. Dedica al menos 4-5 días: 2 días para el centro histórico (Louvre, Notre-Dame, Torre Eiffel, Arco del Triunfo), 1 día para Montmartre y el Barrio Latino, 1 día para el Museo de Orsay y el Panteón, y 1 día de excursión a Versalles.</p>
+<p>El Louvre y la Torre Eiffel son los monumentos que registran las colas más largas. Reservar las entradas con tiempo es necesario para que puedas visitarlos el día que lo has planeado.</p>
+<p>El Museo de Orsay es mi favorito. Tiene el mejor ambiente y las mejores obras impresionistas. No te lo saltes por ir al Louvre.</p>
+</div>
+
+----
+
+<!-- ================= SECCIÓN PRECIOS - PARÍS ================= -->
+<div class="section-title">
+    5. <i class="fas fa-utensils" id="precios"></i> 💰 Precios en París: cuánto cuesta viajar en 2026
+</div>
+
+<div class="pais-fila" id="paris">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 París - Precios 2026</span>
+        <span class="pais-fecha">Primavera · 4 días</span>
+        <span class="pais-bandera">💰🗼</span>
+    </div>
+    <div class="tres-columnas">
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-landmark"></i> Monumentos y museos</div>
+            <div class="sabor-plato">🗼 Torre Eiffel (segundo piso)</div>
+            <div class="sabor-precio">💰 18-28€ (según nivel)</div>
+            <div class="sabor-historia">El monumento más famoso de París. Reserva online para evitar colas de 2 horas.</div>
+        
+            <div class="sabor-plato">🎨 Museo del Louvre</div>
+            <div class="sabor-precio">💰 Entrada: 22€ / Audioguía: +5€</div>
+            <div class="sabor-historia">La Mona Lisa, Venus de Milo y la Victoria de Samotracia. Reserva online obligatoria.</div>
+        
+            <div class="sabor-plato">⛪ Catedral de Notre-Dame</div>
+            <div class="sabor-precio">💰 Entrada: GRATIS / Torres: 10-12€</div>
+            <div class="sabor-historia">Reabierta en diciembre de 2024. La subida a las torres merece la pena.</div>
+        
+            <div class="sabor-plato">🎨 Museo de Orsay</div>
+            <div class="sabor-precio">💰 16€</div>
+            <div class="sabor-historia">El mejor museo de impresionistas. Obras de Monet, Van Gogh, Degas.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-ticket-alt"></i> Excursiones y actividades</div>
+            <div class="sabor-plato">🏛️ Arco del Triunfo</div>
+            <div class="sabor-precio">💰 13€</div>
+            <div class="sabor-historia">Vistas espectaculares de los Campos Elíseos. 284 escalones.</div>
+        
+            <div class="sabor-plato">🚢 Paseo en barco por el Sena</div>
+            <div class="sabor-precio">💰 10-15€ por persona</div>
+            <div class="sabor-historia">1 hora de recorrido. La mejor hora: atardecer o anochecer.</div>
+        
+            <div class="sabor-plato">👑 Palacio de Versalles</div>
+            <div class="sabor-precio">💰 21€ (Palacio + Jardines)</div>
+            <div class="sabor-historia">Excursión de día completo. Tren RER C desde París.</div>
+        
+            <div class="sabor-plato">🎭 Centro Pompidou</div>
+            <div class="sabor-precio">💰 15€</div>
+            <div class="sabor-historia">Arte moderno y contemporáneo. El edificio en sí es una obra de arte.</div>
+        </div>
+        
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-lightbulb"></i> Consejos para ahorrar</div>
+            <div class="proxima-item">
+                <strong>✅ Compra el Paris Museum Pass (75€/4 días)</strong>
+                <div class="proxima-texto">Incluye Louvre, Orsay, Arco del Triunfo, Panteón y Versalles. Ahorras si visitas 5 o más museos.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🚫 No compres agua en restaurantes</strong>
+                <div class="proxima-texto">Pide "une carafe d'eau" (jarra de agua). Es gratis y potable.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>📅 Primer domingo de mes: museos gratis</strong>
+                <div class="proxima-texto">El primer domingo de cada mes muchos museos públicos (Louvre, Orsay) son gratis. Pero hay muchísima gente.</div>
+            </div>
+            <div class="proxima-item">
+                <strong>🥖 Compra en panaderías</strong>
+                <div class="proxima-texto">Una baguette cuesta 1-2€, un croissant 1-1,50€. Mucho más barato que en restaurantes turísticos.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+---
+
+<!-- ================= SECCIÓN MAPA DE SABORES - PARÍS ================= -->
+<div class="section-title">
+   6. <i class="fas fa-utensils" id="comer"></i> París: restaurantes recomendados
+</div>
+<div class="cards-grid">
+
+    <!-- Tarjeta 1 - Bouillon Chartier (Restaurante tradicional histórico) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3 id="paris">🍲 Bouillon Chartier <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 7 rue du Faubourg Montmartre, París 9 (Grands Boulevards)</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Entrada + plato + postre: 15-20€ / Escargots: 8€</div>
+            <div class="historia">
+                Bouillon Chartier es una institución parisina desde 1896. Es un "bouillon" (restaurante económico que servía caldo a los obreros) con una decoración Art Nouveau espectacular. Entré sin reserva un martes a las 13:00 y esperé unos 20 minutos. Pedí <strong>escargots</strong> (6 unidades, deliciosos con su salsa de ajo y perejil), <strong>pollo asado con patatas</strong> y una <strong>crème brûlée</strong> de postre. Todo por menos de 20€. El camarero escribió la cuenta en el mantel de papel, como es tradición. Ambiente auténtico, bullicioso y lleno de historia.
+            </div>
+            <div class="moraleja">🍲 Ve con hambre y paciencia (las colas pueden ser largas, pero merece la pena). El escargot es un clásico. Pide el vino de la casa.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍲 económico | 🎨 Art Nouveau | 📅 desde 1896</span>
+            <a href="https://www.bing.com/maps/search?q=Bouillon+Chartier+Par%C3%ADs" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - L'As du Fallafel (Comida callejera en el Marais) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥙 L'As du Fallafel <span class="destino-badge">🇫🇷 París - Le Marais</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 34 rue des Rosiers, París 4 (barrio judío)</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Fallafel: 8-10€ / Faláfel especial: 10€</div>
+            <div class="historia">
+                En el corazón del barrio judío de París (Rue des Rosiers), L'As du Fallafel es el rey del fallafel. Llegué a la 13:30 y la cola llegaba hasta la esquina (buena señal). Pedí el <strong>fallafel spécial</strong> (con todas las salsas). El pan de pita estaba caliente y esponjoso, las bolas de garbanzos crujientes por fuera y tiernas por dentro, y las salsas (yogur, berenjena y harissa picante) le daban un sabor increíble. Se come de pie en la calle o para llevar. Es barato, rápido y delicioso.
+            </div>
+            <div class="moraleja">🥙 Pide el "fallafel spécial" con todas las salsas. La cola es larga pero rápida (avanzan mucho). No te sientes en los restaurantes cercanos, este es el auténtico.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥙 fallafel | 🧆 garbanzos | 🇮🇱 barrio judío</span>
+            <a href="https://www.bing.com/maps/search?q=L%27As+du+Fallafel+Par%C3%ADs" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Ladurée (Macarons y pastelería de lujo) -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍭 Ladurée <span class="destino-badge">🇫🇷 París - Champs-Élysées</span></h3>
+            <div class="lugar"><i class="fas fa-location-dot"></i> 75 avenue des Champs-Élysées, París 8</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> Macaron: 2,50€ la pieza / Caja de 8: 18-20€ / Té: 8-10€</div>
+            <div class="historia">
+                Ladurée es la pastelería más famosa de París, inventora del macaron moderno (dos galletas con relleno). La tienda de los Campos Elíseos es la más emblemática, con su decoración rosa y verde esmeralda. Probé los macarons de <strong>rosa</strong> (el más clásico, sabor delicado a pétalos de rosa), <strong>pistacho</strong> (intenso y ligeramente salado), <strong>caramelo salado</strong> (mi favorito) y <strong>vainilla</strong> (suave y cremoso). El té se sirve en teteras de plata. Es caro, pero la experiencia merece la pena.
+            </div>
+            <div class="moraleja">🍭 Los macarons Ladurée son el souvenir perfecto. La cola es larga pero rápida. Hay otras tiendas por París (menos colas). Prueba el de caramelo salado.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍭 macarons | 🌹 rosa | 🎁 souvenir</span>
+            <a href="https://www.bing.com/maps/search?q=Ladur%C3%A9e+Champs-%C3%89lys%C3%A9es" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Le Comptoir du Relais (Bistró de moda en Saint-Germain) -->
+<div class="card sabor">
+    <div class="card-header">
+        <h3>🍽️ Le Comptoir du Relais <span class="destino-badge">🇫🇷 París - Saint-Germain</span></h3>
+        <div class="lugar"><i class="fas fa-location-dot"></i> 9 Carrefour de l'Odéon, París 6 (cerca del Luxemburgo)</div>
+    </div>
+    <div class="card-content">
+        <div class="precio"><i class="fas fa-coins"></i> Menú del día: 35-45€ / Platos: 20-30€ / Copa de vino: 6-8€</div>
+        <div class="historia">
+            Le Comptoir du Relais es un bistró de moda regentado por el chef Yves Camdeborde, uno de los precursores de la "bistronomie" (bistró gourmet). Llegué a las 12:15 y ya había cola (abren a las 12:30). No aceptan reservas. Pedí el <strong>menú del día</strong>: paté en croûte de entrante, coq au vin (pollo al vino tinto) de plato principal, y crème brûlée de postre. El paté estaba espectacular, el pollo se deshacía y la salsa era profunda y sabrosa. El servicio es rápido y eficiente, el ambiente es animado y auténtico. No es barato, pero la calidad es excelente.
+        </div>
+        <div class="moraleja">🍽️ Llega antes de las 12:00 para comer. El menú del día es la mejor opción. La carta de vinos es excelente (pide consejo al camarero).</div>
+    </div>
+    <div class="card-footer">
+        <span class="tag-icon">⭐ bistronomie | 👨‍🍳 Yves Camdeborde | 💎 calidad</span>
+        <a href="https://www.bing.com/maps/search?q=Le+Comptoir+du+Relais+Par%C3%ADs" class="map-link" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver en mapa</a>
+    </div>
+</div>
+</div>
+
+----
+
+<!-- ================= SECCIÓN PLATOS TÍPICOS DE PARÍS ================= -->
+<h2 class="section-title" id="comida">7. 🍽️ Qué comer en París</h2>
+
+<div class="cards-grid">
+    
+    <!-- Tarjeta 1 - Baguette -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥖 Baguette <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> El pan más famoso del mundo</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 1-2€</div>
+            <div class="historia">
+                La baguette es el símbolo gastronómico de Francia. Crujiente por fuera, esponjosa por dentro. La mejor baguette es la recién horneada de la panadería del barrio. Se come en cualquier momento del día, sola o con mantequilla, queso o embutidos.
+            </div>
+            <div class="moraleja">🥖 Compra la baguette en una boulangerie (panadería), no en el supermercado. La "baguette de tradition" es la mejor.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥖 pan | 🥐 croissant | 🇫🇷 tradición</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 2 - Croissant -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥐 Croissant <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> El desayuno parisino por excelencia</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 1-2€</div>
+            <div class="historia">
+                El croissant es una masa de hojaldre laminada con mantequilla, horneada hasta que queda dorada y crujiente por fuera y suave por dentro. Es el desayuno típico parisino, acompañado de un café au lait.
+            </div>
+            <div class="moraleja">🥐 Un croissant caliente recién hecho es una de las mejores experiencias gastronómicas de París.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥐 hojaldre | ☕ café au lait | 🇫🇷 desayuno</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 3 - Queso francés -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🧀 Queso francés <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Camembert, Brie, Roquefort, Comté</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 3-10€ la pieza</div>
+            <div class="historia">
+                Francia tiene más de 1.200 variedades de queso. Los más famosos: Camembert (de Normandía, cremoso), Brie (más suave), Roquefort (azul fuerte), Comté (duro y frutal) y Chèvre (de cabra). Se come con pan y vino.
+            </div>
+            <div class="moraleja">🧀 Compra en una fromagería especializada. El Camembert debe estar en su punto (cremoso pero no líquido).</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🧀 camembert | 🍷 vino | 🇫🇷 cultura</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 4 - Steak frites -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🥩 Steak frites <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Bistec con patatas fritas</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 18-25€</div>
+            <div class="historia">
+                El steak frites es el plato de los bistrós parisinos. Un filete de ternera a la parrilla, servido con patatas fritas caseras y una salsa (beurre maître d'hôtel, pimienta, roquefort...). Acompañado de una ensalada verde.
+            </div>
+            <div class="moraleja">🥩 Pide la carne "saignant" (poco hecha) o "à point" (al punto). Las patatas fritas son dobles.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🥩 bistec | 🍟 patatas fritas | 🇫🇷 bistró</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 5 - Soupe à l'oignon -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🧅 Soupe à l'oignon <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Sopa de cebolla gratinada</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 8-12€</div>
+            <div class="historia">
+                La sopa de cebolla gratinada es el plato de los bistrós parisinos. Cebollas caramelizadas en mantequilla, cocidas en caldo de carne, servidas con pan tostado y cubiertas de queso gratinado. Es reconfortante, caliente y deliciosa.
+            </div>
+            <div class="moraleja">🧅 La sopa de cebolla debe servirse muy caliente, con el queso burbujeante. Perfecta para el invierno.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🧅 cebolla | 🧀 queso gratinado | 🇫🇷 bistró</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 - Crème brûlée -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍮 Crème brûlée <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> Crema quemada</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 6-10€</div>
+            <div class="historia">
+                La crème brûlée es un postre cremoso de yema de huevo, azúcar y nata, cubierto con una capa de azúcar caramelizado que se rompe con la cuchara. La contradicción entre la crema fría y el caramelo caliente es adictiva.
+            </div>
+            <div class="moraleja">🍮 El crujido del azúcar caramelizado al romperlo es parte de la experiencia. Se aromatiza con vainilla.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍮 crema | 🔥 caramelizado | 🇫🇷 postre</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta 7 - Macaron -->
+    <div class="card sabor">
+        <div class="card-header">
+            <h3>🍭 Macaron <span class="destino-badge">🇫🇷 París</span></h3>
+            <div class="lugar"><i class="fas fa-utensils"></i> El dulce más elegante</div>
+        </div>
+        <div class="card-content">
+            <div class="precio"><i class="fas fa-coins"></i> 2-3€ la pieza</div>
+            <div class="historia">
+                El macaron es un dulce pequeño y redondo hecho con claras de huevo, azúcar y almendras (merengue), con un relleno de ganache. Los de Pierre Hermé y Ladurée son los más famosos. Sabores: rosa, pistacho, chocolate, limón...
+            </div>
+            <div class="moraleja">🍭 El macaron debe crujir ligeramente al morderlo y ser suave por dentro. Las mejores pastelerías están en París.</div>
+        </div>
+        <div class="card-footer">
+            <span class="tag-icon">🍭 merengue | 🌹 rosa | 🇫🇷 Ladurée</span>
+        </div>
+    </div>
+
+</div>
+
+----
+
+<!-- ================= SECCIÓN CONSEJOS Y ENCHUFES (estilo tres columnas) ================= -->
+<div class="section-title">
+    8. <i class="fas fa-lightbulb" id="consejos"></i> 💡 Consejos prácticos para viajar a París
+</div>
+
+<div class="pais-fila" id="consejos">
+    <div class="pais-header">
+        <span class="pais-nombre">🇫🇷 París - Consejos y recomendaciones</span>
+        <span class="pais-fecha">Guía práctica 2026</span>
+        <span class="pais-bandera">🗼🥐</span>
+    </div>
+    <div class="tres-columnas">
+        
+        <!-- Columna 1 - Planificación y transporte -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-calendar-check"></i> Planificación y transporte</div>
+            
+            <div class="sabor-plato">🎟️ Compra entradas online</div>
+            <div class="sabor-precio">⏰ Evita colas de 2-3 horas</div>
+            <div class="sabor-historia">Muchos monumentos (Torre Eiffel, Louvre, Versalles) tienen largas colas. Comprar entradas con antelación puede ahorrarte mucho tiempo. Reserva online con semanas de antelación, especialmente en temporada alta.</div>
+        
+            <div class="sabor-plato">🚶‍♂️ Caminar por la ciudad</div>
+            <div class="sabor-precio">👟 Calzado cómodo imprescindible</div>
+            <div class="sabor-historia">París se disfruta caminando. Muchas de las principales atracciones están relativamente cerca entre sí. El centro histórico es llano y se puede recorrer a pie fácilmente. Prepárate para caminar muchos kilómetros al día.</div>
+        
+            <div class="sabor-plato">🚇 Usa el metro y RER</div>
+            <div class="sabor-precio">💰 Billete sencillo: 2,15€ (válido 90 min)</div>
+            <div class="sabor-historia">El metro de París es denso y eficaz. El RER es útil para Versalles y el aeropuerto. Compra el "carnet" de 10 billetes (17€) para ahorrar.</div>
+        </div>
+        
+        <!-- Columna 2 - Clima y gastronomía -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-thermometer-half"></i> Clima y gastronomía</div>
+            
+            <div class="sabor-plato">🌞 Evita las horas de más calor</div>
+            <div class="sabor-precio">🌡️ Verano: 30°C | ⏰ Salir temprano o al atardecer</div>
+            <div class="sabor-historia">En verano las temperaturas pueden superar los 30°C. Visita los monumentos al aire libre temprano por la mañana o al atardecer. En las horas centrales del día, refúgiate en museos o disfruta de un café en una terraza.</div>
+        
+            <div class="sabor-plato">🍝 Probar la gastronomía local</div>
+            <div class="sabor-precio">🥖 Baguette, 🧀 Queso, 🍷 Vino, 🍭 Macaron</div>
+            <div class="sabor-historia">No te vayas sin probar la baguette recién hecha, el queso francés, los macarons de Ladurée y una copa de vino en una terraza. Evita los restaurantes turísticos cerca de los monumentos (son caros y malos).</div>
+        
+            <div class="sabor-plato">💧 Agua gratis en restaurantes</div>
+            <div class="sabor-precio">🚰 Pide "une carafe d'eau"</div>
+            <div class="sabor-historia">En los restaurantes, pide "une carafe d'eau" (una jarra de agua). Es gratis y potable. No pagues por agua embotellada.</div>
+        </div>
+        
+        <!-- Columna 3 - Documentación y enchufes -->
+        <div class="columna">
+            <div class="columna-titulo"><i class="fas fa-passport"></i> Documentación y enchufes</div>
+            
+            <div class="sabor-plato">📱 Internet y móvil</div>
+            <div class="sabor-precio">✅ Roaming incluido para ciudadanos UE</div>
+            <div class="sabor-historia">Si eres ciudadano de la Unión Europea, el roaming está incluido en tu tarifa. Puedes usar tus datos móviles sin coste adicional. La cobertura es excelente en toda la ciudad.</div>
+        
+            <div class="sabor-plato">🪪 Pasaporte y visado</div>
+            <div class="sabor-precio">🆔 DNI válido para ciudadanos UE</div>
+            <div class="sabor-historia">Los ciudadanos de la Unión Europea pueden viajar a Francia con su DNI (pasaporte no es obligatorio). Francia es parte del espacio Schengen.</div>
+        
+            <div class="sabor-plato">🔌 Enchufes y corriente</div>
+            <div class="sabor-precio">💰 Tipo E/F (igual que España) | 230V, 50Hz</div>
+            <div class="sabor-historia">Los enchufes en Francia son tipo E/F (los mismos que en España). No necesitas adaptador. La corriente es de 230V.</div>
+        
+            <div class="sabor-plato">🏥 Sanidad</div>
+            <div class="sabor-precio">💳 Tarjeta Sanitaria Europea (TSE)</div>
+            <div class="sabor-historia">Lleva la Tarjeta Sanitaria Europea (TSE) para recibir atención médica gratuita o a bajo coste en caso de necesidad. Contrata un seguro de viaje adicional para mayor cobertura.</div>
+        </div>
+        
+    </div>
+</div>
+
+----
+
+<h2>Mapa de la ruta</h2>
+
+<div class="mapa">
+<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1Co61rhEdumGjR06PqQlhXCJDt7qwhpg&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+----
+
+<h2 id="galeria">Galería de París</h2>
+
+<div class="galeria">
+
+<a href="img/paris/paris1.jpg" data-lightbox="paris"><img src="img/paris/paris1.jpg"></a>
+<a href="img/paris/paris2.jpg" data-lightbox="paris"><img src="img/paris/paris2.jpg"></a>
+<a href="img/paris/paris3.jpg" data-lightbox="paris"><img src="img/paris/paris3.jpg"></a>
+<a href="img/paris/paris4.jpg" data-lightbox="paris"><img src="img/paris/paris4.jpg"></a>
+<a href="img/paris/paris5.jpg" data-lightbox="paris"><img src="img/paris/paris5.jpg"></a>
+<a href="img/paris/paris6.jpg" data-lightbox="paris"><img src="img/paris/paris6.jpg"></a>
+<a href="img/paris/paris7.jpg" data-lightbox="paris"><img src="img/paris/paris7.jpg"></a>
+<a href="img/paris/paris8.jpg" data-lightbox="paris"><img src="img/paris/paris8.jpg"></a>
+<a href="img/paris/paris9.jpg" data-lightbox="paris"><img src="img/paris/paris9.jpg"></a>
+<a href="img/paris/paris10.jpg" data-lightbox="paris"><img src="img/paris/paris10.jpg"></a>
+<a href="img/paris/paris11.jpg" data-lightbox="paris"><img src="img/paris/paris11.jpg"></a>
+<a href="img/paris/paris12.jpg" data-lightbox="paris"><img src="img/paris/paris12.jpg"></a>
+<a href="img/paris/paris13.jpg" data-lightbox="paris"><img src="img/paris/paris13.jpg"></a>
+<a href="img/paris/paris14.jpg" data-lightbox="paris"><img src="img/paris/paris14.jpg"></a>
+<a href="img/paris/paris15.jpg" data-lightbox="paris"><img src="img/paris/paris15.jpg"></a>
+<a href="img/paris/paris16.jpg" data-lightbox="paris"><img src="img/paris/paris16.jpg"></a>
+<a href="img/paris/paris17.jpg" data-lightbox="paris"><img src="img/paris/paris17.jpg"></a>
+<a href="img/paris/paris18.jpg" data-lightbox="paris"><img src="img/paris/paris18.jpg"></a>
+<a href="img/paris/paris19.jpg" data-lightbox="paris"><img src="img/paris/paris19.jpg"></a>
+<a href="img/paris/paris20.jpg" data-lightbox="paris"><img src="img/paris/paris20.jpg"></a>
+
+</div>
+
+</section>
+<script src="ciudades1.js"></script>
+</body>
+</html>
