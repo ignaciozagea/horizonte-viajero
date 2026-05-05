@@ -25,7 +25,7 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 - ✅ **JavaScript interactivo**: Funciones del menú y dinámicas
 - ✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
 
-### 🚀 Demo
+# 🚀 Demo
 
 > **URL de producción:** [https://horizonteviajero.ct.ws](https://horizonteviajero.ct.ws
 )
