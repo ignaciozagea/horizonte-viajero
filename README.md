@@ -25,7 +25,7 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 - ✅ **JavaScript interactivo**: Funciones del menú y dinámicas
 - ✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
 
-## 🚀 Demo
+### 🚀 Demo
 
 > **URL de producción:** [https://horizonteviajero.ct.ws](https://horizonteviajero.ct.ws
 )
@@ -110,7 +110,7 @@ viajes/
 ## Instalación Local
 ```
 # 1. Clonar el repositorio
-git clone https://github.com/ignaciozagea/viajes.git
+git clone https://github.com/ignaciozagea/horizonte-viajero.git
 cd viajes
 
 # 2. Abrir en el navegador
@@ -119,6 +119,7 @@ cd viajes
 # 3. O si tienes Python (para servir localmente)
 python -m http.server 8000
 # Luego abre http://localhost:8000
+```
 
 👤 Autor
 Ignacio Zamora Gea
