@@ -27,18 +27,21 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 
 ## 🚀 Demo
 
-> **URL de producción:** [https://tusitio.com/viajes](https://tusitio.com/viajes)
+> **URL de producción:** [https://horizonteviajero.ct.ws](https://horizonteviajero.ct.ws
+)
 
 ## 📸 Capturas de Pantalla
 
 ### Página Principal
-![Página Principal](./images/pagina-principal.png)
+<img width="1875" height="915" alt="pantalla_inicial" src="https://github.com/user-attachments/assets/88ee5037-8302-4114-b70d-073beb522efd" />
 
 ### Menú Hamburguesa (Móvil)
-![Menú Hamburguesa](./images/menu-hamburguesa.png)
+<img width="157" height="272" alt="movil" src="https://github.com/user-attachments/assets/f37006d7-7d1c-4bc3-bdb9-9265ee66489d" />
 
 ### Detalle de Destinos
-![Destinos](./images/destinos.png)
+
+<img width="1868" height="915" alt="destino" src="https://github.com/user-attachments/assets/2e0b7fe8-76d7-46ee-8c1a-61288952ab59" />
+
 
 ## 🛠️ Tecnologías Utilizadas
 
