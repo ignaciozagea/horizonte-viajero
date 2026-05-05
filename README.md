@@ -35,9 +35,6 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 ### Página Principal
 <img width="1875" height="915" alt="pantalla_inicial" src="https://github.com/user-attachments/assets/88ee5037-8302-4114-b70d-073beb522efd" />
 
-### Menú Hamburguesa (Móvil)
-<img width="157" height="272" alt="movil" src="https://github.com/user-attachments/assets/f37006d7-7d1c-4bc3-bdb9-9265ee66489d" />
-
 ### Detalle de Destinos
 
 <img width="1868" height="915" alt="destino" src="https://github.com/user-attachments/assets/2e0b7fe8-76d7-46ee-8c1a-61288952ab59" />
