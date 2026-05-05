@@ -16,14 +16,14 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 
 ## 🎯 Características Principales
 
-✅ **Galería de destinos**: Más de 15 destinos internacionales
-✅ **Páginas individuales**: Cada destino con su propia página
-✅ **Menú hamburguesa**: Navegación responsive para móviles
-✅ **Diseño responsive**: Adaptado a móviles, tablets y ordenadores
-✅ **Multimedia**: Fotos y vídeos de cada destino
-✅ **CSS moderno**: Efectos visuales y animaciones
-✅ **JavaScript interactivo**: Funciones del menú y dinámicas
-✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
+- ✅ **Galería de destinos**: Más de 15 destinos internacionales
+- ✅ **Páginas individuales**: Cada destino con su propia página
+- ✅ **Menú hamburguesa**: Navegación responsive para móviles
+- ✅ **Diseño responsive**: Adaptado a móviles, tablets y ordenadores
+- ✅ **Multimedia**: Fotos y vídeos de cada destino
+- ✅ **CSS moderno**: Efectos visuales y animaciones
+- ✅ **JavaScript interactivo**: Funciones del menú y dinámicas
+- ✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
 
 ## 🚀 Demo
 
