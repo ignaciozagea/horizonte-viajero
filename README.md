@@ -105,10 +105,10 @@ viajes/
 - Requisitos Previos
 - Navegador web moderno (Chrome, Firefox, Safari, Edge)
 
-Servidor web (opcional, para pruebas locales)
+- Servidor web (opcional, para pruebas locales)
 
-Instalación Local
-bash
+## Instalación Local
+```
 # 1. Clonar el repositorio
 git clone https://github.com/ignaciozagea/viajes.git
 cd viajes
