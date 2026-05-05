@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/License-MIT-4ADE80?style=for-the-badge"/>
 </div>
 
-# 🌍 Mis Viajes - Galería de Destinos
+## 🌍 Mis Viajes - Galería de Destinos
 
 Página web personal donde comparto mis aventuras y experiencias de viaje alrededor del mundo. Una colección visual de los destinos que he visitado, con información útil, fotografías y vídeos.
 
@@ -121,7 +121,7 @@ python -m http.server 8000
 # Luego abre http://localhost:8000
 ```
 
-👤 Autor
+## 👤 Autor
 Ignacio Zamora Gea
 
 GitHub: @ignaciozagea
