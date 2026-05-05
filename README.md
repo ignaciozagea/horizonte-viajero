@@ -91,19 +91,19 @@ viajes/
 ```
 
 
-🎨 Características del Diseño
-Archivos CSS
-Archivo	Función
-inicio.css	Estilos específicos de la página principal (grid de tarjetas, hero section)
-ciudades1.css	Estilos comunes a todas las páginas de destinos (menú, footer, tipografía)
-Archivos JavaScript
-Archivo	Función
-index.js	Funciones específicas de la página principal
-ciudades1.js	Funciones comunes (menú hamburguesa, scroll suave)
+## 🎨 Características del Diseño
+- Archivos CSS
+- Archivo	Función
+- inicio.css	Estilos específicos de la página principal (grid de tarjetas, hero section)
+- ciudades1.css	Estilos comunes a todas las páginas de destinos (menú, footer, tipografía)
+- Archivos JavaScript
+- Archivo	Función
+- index.js	Funciones específicas de la página principal
+- ciudades1.js	Funciones comunes (menú hamburguesa, scroll suave)
 
-🛠️ Instalación y Configuración
-Requisitos Previos
-Navegador web moderno (Chrome, Firefox, Safari, Edge)
+## 🛠️ Instalación y Configuración
+- Requisitos Previos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
 
 Servidor web (opcional, para pruebas locales)
 
