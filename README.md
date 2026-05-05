@@ -88,3 +88,6 @@ viajes/
 │   └── ...
 │
 └── 📄 README.md               # Documentación
+
+
+<div align="center"> <p>🌟 Cada viaje es una historia que contar 🌟</p> <p>🌍 ¡Explora el mundo conmigo! ✈️</p> <p>📱 Diseño responsive con menú hamburguesa para una experiencia óptima en móviles</p> <p>📂 Estructura organizada: CSS | JS | Images</p> </div> ```
