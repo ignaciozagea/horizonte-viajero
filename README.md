@@ -90,4 +90,38 @@ viajes/
 └── 📄 README.md               # Documentación
 
 
-<div align="center"> <p>🌟 Cada viaje es una historia que contar 🌟</p> <p>🌍 ¡Explora el mundo conmigo! ✈️</p> <p>📱 Diseño responsive con menú hamburguesa para una experiencia óptima en móviles</p> <p>📂 Estructura organizada: CSS | JS | Images</p> </div> ```
+🎨 Características del Diseño
+Archivos CSS
+Archivo	Función
+inicio.css	Estilos específicos de la página principal (grid de tarjetas, hero section)
+ciudades1.css	Estilos comunes a todas las páginas de destinos (menú, footer, tipografía)
+Archivos JavaScript
+Archivo	Función
+index.js	Funciones específicas de la página principal
+ciudades1.js	Funciones comunes (menú hamburguesa, scroll suave)
+
+🛠️ Instalación y Configuración
+Requisitos Previos
+Navegador web moderno (Chrome, Firefox, Safari, Edge)
+
+Servidor web (opcional, para pruebas locales)
+
+Instalación Local
+bash
+# 1. Clonar el repositorio
+git clone https://github.com/ignaciozagea/viajes.git
+cd viajes
+
+# 2. Abrir en el navegador
+# Simplemente abre el archivo index.html
+
+# 3. O si tienes Python (para servir localmente)
+python -m http.server 8000
+# Luego abre http://localhost:8000
+
+👤 Autor
+Ignacio Zamora Gea
+
+GitHub: @ignaciozagea
+
+Demo: https://horizonteviajero.ct.ws
