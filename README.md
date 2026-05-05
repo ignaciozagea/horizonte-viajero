@@ -88,6 +88,7 @@ viajes/
 │   └── ...
 │
 └── 📄 README.md               # Documentación
+```
 
 
 🎨 Características del Diseño
