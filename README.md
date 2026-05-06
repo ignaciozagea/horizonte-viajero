@@ -5,14 +5,17 @@
   <img src="https://img.shields.io/badge/Responsive-Yes-4ADE80?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-4ADE80?style=for-the-badge"/>
 </div>
+<br>
 
 ## 🌍 Mis Viajes - Galería de Destinos
 
 Página web personal donde comparto mis aventuras y experiencias de viaje alrededor del mundo. Una colección visual de los destinos que he visitado, con información útil, fotografías y vídeos.
+<br>
 
 ## 📋 Descripción
 
 Esta página web es un proyecto personal que recopila mis viajes más memorables. Cada destino tiene su propia página con información detallada, lugares de interés, recomendaciones, galería de fotos y vídeos. El diseño es limpio, moderno, completamente responsive e incluye un menú hamburguesa para una navegación óptima en dispositivos móviles.
+<br>
 
 ## 🎯 Características Principales
 
@@ -24,21 +27,34 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 - ✅ **CSS moderno**: Efectos visuales y animaciones
 - ✅ **JavaScript interactivo**: Funciones del menú y dinámicas
 - ✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
+<br>
 
 # 🚀 Demo
 
 > **URL de producción:** [https://horizonteviajero.ct.ws](https://horizonteviajero.ct.ws
 )
+<br>
 
 ## 📸 Capturas de Pantalla
 
-### Página Principal
-<img width="1875" height="915" alt="pantalla_inicial" src="https://github.com/user-attachments/assets/88ee5037-8302-4114-b70d-073beb522efd" />
+<div align="center">
+  
+| Página Principal | Lista de Paises |
+|:---:|:---:|
+| ![Página Principal](./img/index.png) | ![Liga](./img/pais.png) |
 
-### Detalle de Destinos
+| Cabecera de la Página | Información del viaje |
+|:---:|:---:|
+| ![cabecera](./img/cabecera.png) | ![Informacion](./img/informacion.png) |
 
-<img width="1868" height="915" alt="destino" src="https://github.com/user-attachments/assets/2e0b7fe8-76d7-46ee-8c1a-61288952ab59" />
+| Mapa | Galeria de Fotos |
+|:---:|:---:|
+| ![Mapa](./img/mapa.png) | ![Galeria de fotos](./img/fotos.png) |
 
+</div>
+
+
+<br>
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -49,6 +65,7 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 | JavaScript | ES6 | Menú hamburguesa, interactividad |
 | Flexbox/Grid | - | Diseño y maquetación |
 | Git | - | Control de versiones |
+<br>
 
 ## 📁 Estructura del Proyecto
 
@@ -89,6 +106,7 @@ viajes/
 │
 └── 📄 README.md               # Documentación
 ```
+<br>
 
 
 ## 🎨 Características del Diseño
@@ -100,6 +118,7 @@ viajes/
 - Archivo	Función
 - index.js	Funciones específicas de la página principal
 - ciudades1.js	Funciones comunes (menú hamburguesa, scroll suave)
+<br>
 
 ## 🛠️ Instalación y Configuración
 - Requisitos Previos
@@ -120,6 +139,7 @@ cd viajes
 python -m http.server 8000
 # Luego abre http://localhost:8000
 ```
+<br>
 
 ## 👤 Autor
 Ignacio Zamora Gea
