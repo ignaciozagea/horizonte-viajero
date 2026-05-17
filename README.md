@@ -31,7 +31,7 @@ Esta página web es un proyecto personal que recopila mis viajes más memorables
 
 # 🚀 Demo
 
-> **URL de producción:** [https://horizonteviajero.ct.ws](https://horizonteviajero.ct.ws
+> **URL de producción:** [https://horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev
 )
 <br>
 
