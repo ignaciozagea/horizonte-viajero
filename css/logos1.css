@@ -11,12 +11,12 @@
 }
 
 .logo img {
-    height: 65px;          /* Cambia este valor */
+    height: 95px;          /* Cambia este valor */
     width: auto;
     transition: all 0.3s ease;
     object-fit: contain;
 }
 
 .navbar.scrolled .logo img {
-    height: 45px;          /* Más pequeño al hacer scroll */
+    height: 75px;          /* Más pequeño al hacer scroll */
 }

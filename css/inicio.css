@@ -52,7 +52,7 @@
     }
 
     .logo img {
-        height: 65px;
+        height: 95px;
         width: auto;
         transition: all 0.3s ease;
         object-fit: contain;
@@ -607,11 +607,11 @@
         }
 
         .logo img {
-            height: 55px;
+            height: 95px;
         }
 
         .navbar.scrolled .logo img {
-            height: 38px;
+            height: 75px;
         }
 
         .hamburger {
