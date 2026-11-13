@@ -207,7 +207,7 @@
     /* ================= BOTONES ================= */
     .boton-hotel {
         display: inline-block;
-        background: linear-gradient(135deg, #1f1f1f, #13425b);
+        background: linear-gradient(135deg, #9382ad, #bec1c3);
         color: white;
         padding: 12px 22px;
         border-radius: 30px;
