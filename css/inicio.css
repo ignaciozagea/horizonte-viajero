@@ -5,15 +5,12 @@
     }
 
     body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eaf3fb;
-    background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%230077b6' stroke-opacity='0.13' stroke-width='1.6'%3E%3Cpath d='M30 30 L50 30 L45 36 L35 36 Z'/%3E%3Cpath d='M40 26 L40 40'/%3E%3Ccircle cx='130' cy='50' r='14'/%3E%3Cpath d='M130 36 L130 64 M116 50 L144 50 M120 40 L140 60 M140 40 L120 60'/%3E%3Cpath d='M20 120 Q 60 100 100 130 T 170 120'/%3E%3Cpath d='M60 160 L70 150 L80 160'/%3E%3C/g%3E%3C/svg%3E"),
-        radial-gradient(rgba(0, 119, 182, 0.06) 1.4px, transparent 1.4px);
-    background-size: 180px 180px, 24px 24px;
+    background-color: #f3f7fb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%230077b6' stroke-opacity='0.10' stroke-width='1.4'%3E%3Ccircle cx='60' cy='60' r='22'/%3E%3Ccircle cx='60' cy='60' r='14'/%3E%3Cpath d='M60 38 L60 82 M38 60 L82 60 M45 45 L75 75 M75 45 L45 75'/%3E%3Cpath d='M60 38 L64 60 L60 82 L56 60 Z' fill='%230077b6' fill-opacity='0.08'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 120px 120px;
     color: #1e293b;
     line-height: 1.6;
-    }
+}
 
 .navbar {
     position: fixed;
