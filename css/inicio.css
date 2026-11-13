@@ -21,8 +21,8 @@
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Cg fill='%232e7d32' fill-opacity='0.12'%3E%3C!-- Avión grande mirando a la derecha --%3E%3Cpath d='M40 60 L150 60 L185 60 L200 60 L210 68 L200 72 L185 72 L150 72 L40 72 Z'/%3E%3Cpath d='M150 60 L170 30 L178 30 L162 60 Z'/%3E%3Cpath d='M150 72 L170 102 L178 102 L162 72 Z'/%3E%3Cpath d='M60 60 L48 44 L54 44 L68 60 Z'/%3E%3Cpath d='M60 72 L48 88 L54 88 L68 72 Z'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 260px 120px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Cg fill='%232e7d32' fill-opacity='0.14'%3E%3Cpath d='M40 60 L150 60 L185 60 L200 60 L210 68 L200 72 L185 72 L150 72 L40 72 Z'/%3E%3Cpath d='M150 60 L170 30 L178 30 L162 60 Z'/%3E%3Cpath d='M150 72 L170 102 L178 102 L162 72 Z'/%3E%3Cpath d='M60 60 L48 44 L54 44 L68 60 Z'/%3E%3Cpath d='M60 72 L48 88 L54 88 L68 72 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 520px 240px;
     background-repeat: repeat;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -34,8 +34,8 @@
 .navbar.scrolled {
     padding: 8px 40px;
     background-color: rgba(255, 255, 255, 0.98);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Cg fill='%232e7d32' fill-opacity='0.12'%3E%3Cpath d='M40 60 L150 60 L185 60 L200 60 L210 68 L200 72 L185 72 L150 72 L40 72 Z'/%3E%3Cpath d='M150 60 L170 30 L178 30 L162 60 Z'/%3E%3Cpath d='M150 72 L170 102 L178 102 L162 72 Z'/%3E%3Cpath d='M60 60 L48 44 L54 44 L68 60 Z'/%3E%3Cpath d='M60 72 L48 88 L54 88 L68 72 Z'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 260px 120px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Cg fill='%232e7d32' fill-opacity='0.14'%3E%3Cpath d='M40 60 L150 60 L185 60 L200 60 L210 68 L200 72 L185 72 L150 72 L40 72 Z'/%3E%3Cpath d='M150 60 L170 30 L178 30 L162 60 Z'/%3E%3Cpath d='M150 72 L170 102 L178 102 L162 72 Z'/%3E%3Cpath d='M60 60 L48 44 L54 44 L68 60 Z'/%3E%3Cpath d='M60 72 L48 88 L54 88 L68 72 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 520px 240px;
     background-repeat: repeat;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
