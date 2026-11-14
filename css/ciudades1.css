@@ -438,9 +438,9 @@
 
     .map-link {
         text-decoration: none;
-        color: #e67e22;
+        color: #e74c3c;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 
     /* Icono (pin) del botón "Ver en mapa" */
