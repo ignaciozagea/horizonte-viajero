@@ -444,13 +444,6 @@
         padding: 1rem 1.5rem;
     }
 
-    /* Dirección / subtítulo bajo el nombre en "Qué comer" y "Dónde comer" */
-    .card.sabor .card-header .lugar {
-        color: rgba(255, 255, 255, 0.92);
-        font-size: 0.9rem;
-        margin-top: 4px;
-    }
-
     .precio-card .card-header h3, .card.sabor .card-header h3 {
         font-family: "Twemoji Country Flags", 'Playfair Display', serif;
         font-size: 1.4rem;
