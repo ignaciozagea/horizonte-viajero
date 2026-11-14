@@ -443,6 +443,14 @@
         font-size: 0.8rem;
     }
 
+    /* Icono (pin) del botón "Ver en mapa" */
+    .map-link i {
+        color: #e74c3c;
+        font-size: 1.1rem;
+        margin-right: 3px;
+        vertical-align: -2px;
+    }
+
     /* Sección de precios (3 columnas) */
     .pais-fila {
         background: white;
