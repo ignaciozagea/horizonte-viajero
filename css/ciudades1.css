@@ -182,13 +182,14 @@
 
     /* ================= CONTENIDO PRINCIPAL ================= */
     .contenido {
-        max-width: 900px;
-        margin: auto;
-        padding: 60px 25px;
-        background: rgb(144, 181, 147);
-        border-radius: 30px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+    background: rgba(144, 181, 147, 0.30); /* deja ver la foto del body */
+    backdrop-filter: blur(3px);             /* opcional: desenfoca un poco lo de detrás */
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
 
     .contenido h2 {
         font-size: 28px;
