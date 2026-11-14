@@ -5,11 +5,19 @@
     }
 
     body {
-        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #f4f7fb;
-        color: #1e293b;
-        line-height: 1.6;
-    }
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%232e7d32' stroke-opacity='0.10' stroke-width='2.2'%3E%3Ccircle cx='200' cy='200' r='150'/%3E%3Ccircle cx='200' cy='200' r='95'/%3E%3Cpath d='M200 50 L200 350 M50 200 L350 200 M94 94 L306 306 M306 94 L94 306'/%3E%3C/g%3E%3C/svg%3E"),
+        linear-gradient(rgba(232, 245, 233, 0.35), rgba(232, 245, 233, 0.35)),
+        url("../img/fondo.jpg");
+    background-size: 400px 400px, cover, cover;
+    background-position: center, center, center;
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-attachment: scroll, fixed, fixed;
+    background-color: #e8f5e9;
+    color: #1e293b;
+    line-height: 1.6;
+}
 
     /* ================= NAVBAR PRINCIPAL ================= */
     .navbar {
