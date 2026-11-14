@@ -25,10 +25,6 @@
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-100 -28 215 70'%3E%3Cg fill='%232e7d32'%3E%3Cpath d='M-100 0 L50 0 L85 0 L100 0 L112 8 L100 13 L85 13 L50 13 L-100 13 Z'/%3E%3Cpath d='M50 0 L72 -26 L80 -26 L66 0 Z'/%3E%3Cpath d='M50 13 L72 39 L80 39 L66 13 Z'/%3E%3Cpath d='M-85 0 L-96 -14 L-90 -14 L-76 0 Z'/%3E%3Cpath d='M-85 13 L-96 27 L-90 27 L-76 13 Z'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 96px 31px;
-    background-repeat: no-repeat;
-    background-position: right 25px center;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     z-index: 1000;
@@ -39,11 +35,28 @@
 .navbar.scrolled {
     padding: 8px 140px 8px 40px;
     background-color: rgba(255, 255, 255, 0.98);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-100 -28 215 70'%3E%3Cg fill='%232e7d32'%3E%3Cpath d='M-100 0 L50 0 L85 0 L100 0 L112 8 L100 13 L85 13 L50 13 L-100 13 Z'/%3E%3Cpath d='M50 0 L72 -26 L80 -26 L66 0 Z'/%3E%3Cpath d='M50 13 L72 39 L80 39 L66 13 Z'/%3E%3Cpath d='M-85 0 L-96 -14 L-90 -14 L-76 0 Z'/%3E%3Cpath d='M-85 13 L-96 27 L-90 27 L-76 13 Z'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 96px 31px;
-    background-repeat: no-repeat;
-    background-position: right 25px center;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Avión a la derecha del navbar (icono Font Awesome "plane"),
+   en el verde salvia de la foto de fondo del body (img/fondo.jpg) */
+.navbar::after {
+    content: "\f072";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-15deg);
+    font-size: 44px;
+    line-height: 1;
+    color: #acbb9b;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.navbar.scrolled::after {
+    font-size: 36px;
 }
 
     .navbar-container {
@@ -683,14 +696,16 @@
     @media (max-width: 968px) {
         .navbar {
             padding: 12px 90px 12px 20px;
-            background-size: 64px 21px;
-            background-position: right 15px center;
         }
 
         .navbar.scrolled {
             padding: 8px 90px 8px 20px;
-            background-size: 64px 21px;
-            background-position: right 15px center;
+        }
+
+        .navbar::after,
+        .navbar.scrolled::after {
+            right: 20px;
+            font-size: 30px;
         }
 
         .logo img {
