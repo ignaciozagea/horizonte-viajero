@@ -560,20 +560,27 @@
     /* Sección de precios (3 columnas) */
     .pais-fila {
         background: white;
-        border-radius: 32px;
+        border-radius: 24px;
         margin-bottom: 2.5rem;
         overflow: hidden;
-        border: 1px solid #eadbc8;
+        border: 1px solid #c8e6c9;
+        box-shadow: 0 4px 14px rgba(27, 94, 32, 0.06);
     }
 
+    /* Cabecera verde, igual que las tarjetas (antes salvia con título blanco 2,1:1) */
     .pais-header {
-        background: linear-gradient(135deg, #a8b89f 0%, #a8b89f 100%);
+        background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
         padding: 1rem 2rem;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
-        border-bottom: 4px solid #e6b17e;
+    }
+
+    /* "Temporada 2026", "invierno · 3 días"... */
+    .pais-fecha {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.9rem;
     }
 
     .pais-nombre {
@@ -590,17 +597,18 @@
         background: #eef0f7;
     }
 
+    /* Un solo fondo para todo el bloque (antes las columnas eran más oscuras) */
     .columna {
         padding: 1.5rem;
-        background: #e4e7ed;
+        background: transparent;
     }
 
     .columna:first-child {
-        border-right: 1px solid #f0e2d0;
+        border-right: 1px solid #c8e6c9;
     }
 
     .columna:last-child {
-        border-left: 1px solid #f0e2d0;
+        border-left: 1px solid #c8e6c9;
     }
 
     .columna-titulo {
@@ -611,9 +619,9 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        border-bottom: 2px dashed #e6cba0;
+        border-bottom: 2px dashed #c8e6c9;
         padding-bottom: 0.5rem;
-        color: #1b4965;
+        color: #1b5e20;
     }
 
     .sabor-plato {
@@ -624,7 +632,9 @@
     }
 
     .sabor-precio {
-        background: #f6efe5;
+        background: #e8f5e9;
+        border: 1px solid #c8e6c9;
+        color: #1b5e20;
         display: inline-block;
         padding: 0.15rem 0.7rem;
         border-radius: 20px;
@@ -642,7 +652,7 @@
     .proxima-item {
         margin-bottom: 1rem;
         padding-left: 0.5rem;
-        border-left: 2px solid #e6cba0;
+        border-left: 2px solid #c8e6c9;
     }
 
     /* Sin raya lateral cuando el bloque solo contiene un botón */
@@ -901,7 +911,7 @@
         .columna:first-child,
         .columna:last-child {
             border: none;
-            border-top: 1px solid #f0e2d0;
+            border-top: 1px solid #c8e6c9;
         }
 
         .cards-grid {
