@@ -4,15 +4,16 @@
         box-sizing: border-box;
     }
 
-   body {
-    background-image:
-        linear-gradient(rgba(232, 245, 233, 0.75), rgba(232, 245, 233, 0.75)),
-        url("../img/fondo.jpg");
+  body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #e8f5e9;
+    background-color: #e8f5e9; /* color de respaldo mientras carga */
+    color: #1e293b;
+    line-height: 1.6;
 }
 
 .navbar {
