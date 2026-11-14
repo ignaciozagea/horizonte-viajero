@@ -1,3 +1,13 @@
+/* Banderas en Windows: Windows no tiene emojis de banderas y muestra letras
+   ("IT", "ES"). Esta fuente solo contiene las banderas; el resto del texto
+   sigue usando la fuente normal. */
+@font-face {
+    font-family: "Twemoji Country Flags";
+    unicode-range: U+1F1E6-1F1FF, U+1F3F4, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+    src: url("https://cdn.jsdelivr.net/npm/country-flag-emoji-polyfill@0.1.8/dist/TwemojiCountryFlags.woff2") format("woff2");
+    font-display: swap;
+}
+
  * {
         margin: 0;
         padding: 0;
@@ -5,7 +15,7 @@
     }
 
     body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Twemoji Country Flags", 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%232e7d32' stroke-opacity='0.10' stroke-width='2.2'%3E%3Ccircle cx='200' cy='200' r='150'/%3E%3Ccircle cx='200' cy='200' r='95'/%3E%3Cpath d='M200 50 L200 350 M50 200 L350 200 M94 94 L306 306 M306 94 L94 306'/%3E%3C/g%3E%3C/svg%3E"),
         linear-gradient(rgba(232, 245, 233, 0.70), rgba(232, 245, 233, 0.70)),
@@ -170,7 +180,7 @@
     .header-text h1 {
         font-size: 48px;
         margin-bottom: 10px;
-        font-family: 'Playfair Display', serif;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
     }
 
     .header-text p {
@@ -323,13 +333,35 @@
     }
 
     /* ================= CONSEJO VIAJERO ================= */
+    /* Verde = consejo (los avisos "¡Importante!" son ámbar) */
     .consejo-viajero {
-        background: #b3b7c0;
-        border-left: 5px solid #ffb703;
-        padding: 20px;
+        background: #f1f8f1;
+        border: 1px solid #c8e6c9;
+        border-left: 5px solid #2e7d32;
+        color: #1e293b;
+        padding: 18px 22px;
         margin: 30px 0;
         border-radius: 16px;
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    /* Etiqueta "💡 Consejo viajero:" */
+    .consejo-viajero > b {
+        color: #1b5e20;
+        font-size: 1.05rem;
+    }
+
+    .consejo-viajero > p:first-of-type {
+        margin-top: 6px;
+    }
+
+    .consejo-viajero p + p {
+        margin-top: 10px;
+    }
+
+    .consejo-viajero strong {
+        color: #1b5e20;
     }
 
     /* ================= MAPA ================= */
@@ -372,7 +404,7 @@
 
     /* ================= SECCIONES ================= */
     .section-title {
-        font-family: 'Playfair Display', serif;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
         font-size: 1.8rem;
         font-weight: 600;
         margin: 2rem 0 1.5rem 0;
@@ -409,7 +441,7 @@
     }
 
     .precio-card .card-header h3, .card.sabor .card-header h3 {
-        font-family: 'Playfair Display', serif;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
         font-size: 1.4rem;
         font-weight: 700;
         color: white;
@@ -516,7 +548,7 @@
     }
 
     .pais-nombre {
-        font-family: 'Playfair Display', serif;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
         font-size: 1.6rem;
         font-weight: 700;
         color: white;
@@ -543,7 +575,7 @@
     }
 
     .columna-titulo {
-        font-family: 'Playfair Display', serif;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
         font-size: 1.3rem;
         font-weight: 600;
         margin-bottom: 1rem;
@@ -596,6 +628,27 @@
         font-size: 0.85rem;
     }
 
+    /* Texto bajo cada título de las columnas (consejos para ahorrar, etc.),
+       al mismo tamaño que el resto de la columna */
+    .proxima-texto {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: #3e3324;
+        margin-top: 2px;
+    }
+
+    /* Consejo pequeño dentro de las columnas: mini recuadro verde */
+    .proxima-item.consejo {
+        background: #f1f8f1;
+        border-left: 3px solid #2e7d32;
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+
+    .proxima-item.consejo strong {
+        color: #1b5e20;
+    }
+
 /* ================= APLICACIONES (app-card) ================= */
 .apps-intro {
     text-align: center;
@@ -632,7 +685,7 @@
 }
 
 .app-card .card-header h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Twemoji Country Flags", 'Playfair Display', serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: white;
