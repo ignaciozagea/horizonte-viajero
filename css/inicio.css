@@ -5,14 +5,14 @@
     }
 
    body {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e8f5e9;
     background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%232e7d32' stroke-opacity='0.13' stroke-width='2.2'%3E%3C!-- BRÚJULA GIGANTE --%3E%3Ccircle cx='200' cy='200' r='150'/%3E%3Ccircle cx='200' cy='200' r='130'/%3E%3Ccircle cx='200' cy='200' r='95'/%3E%3Ccircle cx='200' cy='200' r='60'/%3E%3Cpath d='M200 50 L200 350 M50 200 L350 200 M94 94 L306 306 M306 94 L94 306'/%3E%3Cpath d='M200 60 L214 200 L200 340 L186 200 Z' fill='%232e7d32' fill-opacity='0.12'/%3E%3Cpath d='M60 200 L200 186 L340 200 L200 214 Z' fill='%232e7d32' fill-opacity='0.06'/%3E%3C!-- marcas cardinales --%3E%3Cpath d='M200 50 L200 70 M200 330 L200 350 M50 200 L70 200 M330 200 L350 200'/%3E%3C!-- Avión 1 --%3E%3Cpath d='M40 60 L58 60 L54 66 L44 66 Z'/%3E%3Cpath d='M49 56 L49 70'/%3E%3C!-- Avión 2 --%3E%3Cpath d='M330 340 L344 340 L340 345 L334 345 Z'/%3E%3Cpath d='M337 337 L337 348'/%3E%3C/g%3E%3C/svg%3E"),
-        radial-gradient(rgba(46, 125, 50, 0.05) 1.4px, transparent 1.4px);
-    background-size: 400px 400px, 24px 24px;
-    color: #1e293b;
-    line-height: 1.6;
+        linear-gradient(rgba(232, 245, 233, 0.75), rgba(232, 245, 233, 0.75)),
+        url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #e8f5e9;
 }
 
 .navbar {
