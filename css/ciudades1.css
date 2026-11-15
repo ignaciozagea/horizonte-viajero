@@ -211,13 +211,40 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
+    /* Mismo estilo que .section-title: todos los títulos de sección iguales */
     .contenido h2 {
-        font-size: 28px;
-        margin-top: 45px;
-        margin-bottom: 15px;
+        font-family: "Twemoji Country Flags", 'Playfair Display', serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
         color: #1b5e20;
-        border-left: 5px solid #2e7d32;
-        padding-left: 10px;
+        border-left: 6px solid #2e7d32;
+        padding-left: 1rem;
+    }
+
+    /* Separador entre secciones: línea fina verde con un avión en el centro */
+    .separador {
+        position: relative;
+        height: 24px;
+        max-width: 280px;
+        margin: 44px auto;
+        border: 0;
+        background:
+            linear-gradient(#a5d6a7, #a5d6a7) left center / 42% 2px no-repeat,
+            linear-gradient(#a5d6a7, #a5d6a7) right center / 42% 2px no-repeat;
+    }
+
+    .separador::after {
+        content: "\f072";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-10deg);
+        color: #2e7d32;
+        font-size: 16px;
     }
 
     .ventaja {
@@ -519,14 +546,14 @@
     }
 
     .card.sabor .moraleja {
-        background: #fdfefd;
         padding: 0.6rem 1rem;
         border-radius: 16px;
         font-size: 0.85rem;
         font-weight: 500;
         margin-top: 1rem;
-        color: #a1582c;
-        border-left: 3px solid #e67e22;
+        color: #1b5e20;
+        background: #f1f8f1;
+        border-left: 3px solid #2e7d32;
     }
 
     .precio-card .card-footer, .card.sabor .card-footer {
