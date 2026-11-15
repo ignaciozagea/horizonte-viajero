@@ -68,16 +68,13 @@
                         if (dropdown !== parent && dropdown.classList.contains('active')) {
                             dropdown.classList.remove('active');
                             const otherSubmenu = dropdown.querySelector('.submenu');
-                            if (otherSubmenu) otherSubmenu.style.display = 'none';
+                            if (otherSubmenu) otherSubmenu.style.display = '';
                         }
                     });
                     
+                    // Solo se cambia la clase: el CSS decide cómo se muestra (dos columnas)
                     parent.classList.toggle('active');
-                    if (submenu.style.display === 'block') {
-                        submenu.style.display = 'none';
-                    } else {
-                        submenu.style.display = 'block';
-                    }
+                    if (submenu) submenu.style.display = '';
                 }
             });
         });

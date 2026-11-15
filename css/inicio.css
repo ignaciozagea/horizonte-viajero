@@ -831,3 +831,94 @@
             text-align: center;
         }
     }
+
+/* ================= MENÚ MÓVIL: .menu LATERAL ================= */
+@media (max-width: 968px) {
+    /* Fondo en degradado suave, esquina redondeada y sombra verdosa */
+    .menu {
+        background: linear-gradient(180deg, #ffffff 0%, #f1f8f1 55%, #e8f5e9 100%);
+        padding: 150px 18px 30px;
+        border-radius: 0 24px 24px 0;
+        box-shadow: 8px 0 30px rgba(27, 94, 32, 0.18);
+    }
+
+    /* Cabecera del panel: la ilustración del avión y el globo con el logo encima */
+    .menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 130px;
+        background:
+            url("../img/logo-hv.png") 20px 50% / auto 64px no-repeat,
+            linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+            url("../img/fondo1.jpg") center 30% / cover no-repeat;
+        border-bottom: 3px solid #2e7d32;
+        border-radius: 0 24px 0 0;
+    }
+
+    /* Fondo de detrás del panel: oscuro y algo desenfocado */
+    .menu-overlay.active {
+        background: rgba(15, 47, 68, 0.45);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
+
+    /* Continentes como tarjetas; el abierto, en verde */
+    .menu-principal {
+        gap: 10px;
+    }
+
+    .menu-principal > li > a {
+        background: #fff;
+        border: 1px solid #c8e6c9;
+        border-radius: 14px;
+        padding: 14px 16px;
+        font-size: 16px;
+        box-shadow: 0 2px 8px rgba(27, 94, 32, 0.06);
+    }
+
+    .menu-principal > li > a i {
+        color: #2e7d32;
+    }
+
+    .menu-principal > li.active > a {
+        background: #2e7d32;
+        border-color: #2e7d32;
+        color: #fff;
+    }
+
+    .menu-principal > li.active > a i {
+        color: #fff;
+    }
+
+    /* Destinos en dos columnas de "chips" en lugar de una lista larguísima */
+    .menu-principal > li.active .submenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        background: transparent;
+        padding: 10px 0 4px;
+    }
+
+    .submenu a {
+        background: #fff;
+        border: 1px solid #e0eee0;
+        border-radius: 12px;
+        padding: 9px 10px;
+        font-size: 13.5px;
+        gap: 8px;
+    }
+
+    .submenu a i {
+        width: 16px;
+        font-size: 13px;
+    }
+
+    .submenu a:hover {
+        padding-left: 10px;
+        background: #e8f5e9;
+        border-color: #c8e6c9;
+    }
+}

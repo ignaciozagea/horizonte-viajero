@@ -967,3 +967,90 @@
     .card, .tarjeta, .pais-fila {
         animation: fadeInUp 0.6s ease backwards;
     }
+
+/* ================= MENÚ MÓVIL: .nav-links LATERAL ================= */
+@media (max-width: 968px) {
+    /* Fondo en degradado suave, esquina redondeada y sombra verdosa */
+    .nav-links {
+        background: linear-gradient(180deg, #ffffff 0%, #f1f8f1 55%, #e8f5e9 100%);
+        padding: 150px 18px 30px;
+        border-radius: 0 24px 24px 0;
+        box-shadow: 8px 0 30px rgba(27, 94, 32, 0.18);
+    }
+
+    /* Cabecera del panel: la ilustración del avión y el globo con el logo encima */
+    .nav-links::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 130px;
+        background:
+            url("../img/logo-hv.png") 20px 50% / auto 64px no-repeat,
+            linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+            url("../img/fondo1.jpg") center 30% / cover no-repeat;
+        border-bottom: 3px solid #2e7d32;
+        border-radius: 0 24px 0 0;
+    }
+
+    /* Fondo de detrás del panel: oscuro y algo desenfocado */
+    .menu-overlay.active {
+        background: rgba(15, 47, 68, 0.45);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+    }
+
+    /* Secciones como tarjetas con un icono en un círculo verde */
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links li a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #fff;
+        border: 1px solid #e0eee0;
+        border-radius: 14px;
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+
+    .nav-links li a::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #e8f5e9;
+        color: #2e7d32;
+        font-size: 13px;
+    }
+
+    .nav-links li a[href="#guia"]::before        { content: "\f05a"; } /* información */
+    .nav-links li a[href="#alojamiento"]::before { content: "\f236"; } /* cama */
+    .nav-links li a[href="#visitar"]::before     { content: "\f279"; } /* mapa */
+    .nav-links li a[href="#precios"]::before     { content: "\f153"; } /* euro */
+    .nav-links li a[href="#comida"]::before      { content: "\f2e7"; } /* cubiertos */
+    .nav-links li a[href="#comer"]::before       { content: "\f54e"; } /* restaurante */
+    .nav-links li a[href="#consejos"]::before    { content: "\f0eb"; } /* bombilla */
+    .nav-links li a[href="#galeria"]::before     { content: "\f03e"; } /* foto */
+
+    /* Sección en la que está el lector, en verde */
+    .nav-links li a.activo {
+        background: #2e7d32;
+        border-color: #2e7d32;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    .nav-links li a.activo::before {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+}
