@@ -973,24 +973,21 @@
     /* Fondo en degradado suave, esquina redondeada y sombra verdosa */
     .nav-links {
         background: linear-gradient(180deg, #ffffff 0%, #f1f8f1 55%, #e8f5e9 100%);
-        padding: 210px 18px 30px;
+        padding: 150px 18px 30px;
         border-radius: 0 24px 24px 0;
         box-shadow: 8px 0 30px rgba(27, 94, 32, 0.18);
     }
 
-    /* Cabecera del panel: el logo arriba sobre blanco y, debajo, la ilustración
-       del avión y el globo apareciendo con un fundido (sin solaparse) */
+    /* Cabecera del panel: solo la ilustración del avión y el globo */
     .nav-links::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        height: 190px;
+        height: 130px;
         background:
-            url("../img/logo-hv.png") center 16px / auto 62px no-repeat,
-            linear-gradient(to bottom, #fff 0%, #fff 40%, rgba(255, 255, 255, 0) 62%),
-            url("../img/fondo1.jpg") center bottom / 100% auto no-repeat,
+            url("../img/fondo1.jpg") center bottom -20px / auto 165px no-repeat,
             #fff;
         border-bottom: 3px solid #2e7d32;
         border-radius: 0 24px 0 0;
