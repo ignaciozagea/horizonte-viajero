@@ -71,7 +71,7 @@
     .nav-links li a {
         text-decoration: none;
         color: #1e293b;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 15px;
         padding: 8px 12px;
         border-radius: 20px;
@@ -194,10 +194,13 @@
         font-size: 48px;
         margin-bottom: 10px;
         font-family: "Twemoji Country Flags", 'Playfair Display', serif;
+        font-weight: 700;
+        letter-spacing: -0.3px;
     }
 
     .header-text p {
         font-size: 20px;
+        font-weight: 300;
     }
 
     /* ================= CONTENIDO PRINCIPAL ================= */
@@ -210,6 +213,12 @@
     border-radius: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
+
+    /* Párrafos con Poppins: algo más pequeños y con más aire */
+    .contenido p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
 
     /* Mismo estilo que .section-title: todos los títulos de sección iguales */
     .contenido h2 {
