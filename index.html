@@ -92,19 +92,37 @@
 
 <!-- ================= HERO / BIENVENIDA ================= -->
 <div class="hero-wrapper">
-    <section class="hero" style="background-image: url('img/creta/creta30.jpg');">
+    <section class="hero">
+        <div class="hero-slides" aria-hidden="true">
+            <div class="hero-slide" style="background-image: url('img/creta/creta30.jpg');"><span>📍 Balos, Creta</span></div>
+            <div class="hero-slide" style="background-image: url('img/islandia/verstrahorn.jpg');"><span>📍 Vestrahorn, Islandia</span></div>
+            <div class="hero-slide" style="background-image: url('img/nuevayork/nuevayork1.jpg');"><span>📍 Nueva York</span></div>
+            <div class="hero-slide" style="background-image: url('img/puglia/puglia.jpg');"><span>📍 Alberobello, Puglia</span></div>
+            <div class="hero-slide" style="background-image: url('img/cerdeña/cerdeña15.jpg');"><span>📍 Cerdeña</span></div>
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
+            <span class="hero-kicker">✈️ Blog de viajes</span>
             <h1 class="hero-titulo">Horizonte Viajero</h1>
             <p class="hero-descripcion">Descubre guías de viaje, consejos y rutas para tus próximas aventuras</p>
+            <div class="hero-botones">
+                <a class="btn-hero principal" href="#ultimos"><i class="fas fa-compass"></i> Ver destinos</a>
+                <a class="btn-hero secundario" href="#top"><i class="fas fa-star"></i> Viajes TOP</a>
             </div>
+            <ul class="hero-datos">
+                <li><strong>+30</strong> destinos</li>
+                <li>🌍 Europa · Asia · América</li>
+                <li>💶 Precios 2026</li>
+            </ul>
+        </div>
+        <a class="hero-bajar" href="#ultimos" aria-label="Bajar a los destinos"><i class="fas fa-chevron-down"></i></a>
     </section>
 </div>
 
 <div class="menu-overlay" id="overlay"></div>
 
 <main>
-    <section class="guias">
+    <section class="guias" id="ultimos">
         <h2 class="titulo-guias">✈ Últimos viajes</h2>
         <div class="contenedor-guias">
             <a href="laponia.html" class="card-guia">
@@ -135,7 +153,7 @@
         </div>
     </section>
 
-    <section class="guias">
+    <section class="guias" id="top">
         <h2 class="titulo-guias">⭐ Viajes TOP</h2>
         <div class="contenedor-guias">
             <a href="ruta66.html" class="card-guia">
