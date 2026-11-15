@@ -11,12 +11,17 @@
 }
 
 .logo img {
-    height: 95px;          /* Cambia este valor */
+    height: 72px;          /* Cambia este valor */
     width: auto;
     transition: all 0.3s ease;
     object-fit: contain;
 }
 
 .navbar.scrolled .logo img {
-    height: 75px;          /* Más pequeño al hacer scroll */
+    height: 58px;          /* Más pequeño al hacer scroll */
+}
+
+@media (max-width: 968px) {
+    .logo img { height: 64px; }
+    .navbar.scrolled .logo img { height: 54px; }
 }
