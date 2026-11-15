@@ -38,7 +38,7 @@
     /* Imagen de fondo del navbar (si no carga, se ve el blanco) */
     background-image: url("../img/fondo1.jpg");
     background-size: cover;
-    background-position: center 25%;
+    background-position: center 15%;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -76,6 +76,8 @@
         font-weight: 600;
         font-size: 15px;
         transition: color 0.3s ease;
+        /* Halo blanco para que el texto se lea sobre los dibujos del fondo */
+        text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 12px #fff;
     }
 
     .nav-links li a:hover {

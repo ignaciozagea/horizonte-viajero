@@ -38,7 +38,7 @@
     /* Imagen de fondo del navbar (si no carga, se ve el blanco) */
     background-image: url("../img/fondo1.jpg");
     background-size: cover;
-    background-position: center 25%;
+    background-position: center 15%;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -111,6 +111,8 @@
         gap: 6px;
         transition: color 0.3s ease;
         letter-spacing: 0.3px;
+        /* Halo blanco para que el texto se lea sobre los dibujos del fondo */
+        text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 12px #fff;
     }
 
     .menu-principal > li > a i {
