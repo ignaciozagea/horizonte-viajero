@@ -56,3 +56,30 @@
             navbar.classList.remove('scrolled');
         }
     });
+
+    // ================= SECCIÓN ACTIVA EN EL MENÚ =================
+    // Resalta en el menú la sección que se está leyendo
+    (function() {
+        const enlaces = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+        const secciones = enlaces
+            .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+            .filter(Boolean);
+        if (!secciones.length) return;
+
+        function marcar() {
+            const linea = window.scrollY + 140;
+            // La sección más cercana por encima de la línea de lectura
+            // (no se asume que el orden del menú sea el de la página)
+            let actual = null, mejor = -Infinity;
+            secciones.forEach(s => {
+                const top = s.getBoundingClientRect().top + window.scrollY;
+                if (top <= linea && top > mejor) { mejor = top; actual = s; }
+            });
+            enlaces.forEach(a => {
+                a.classList.toggle('activo', !!actual && a.getAttribute('href') === '#' + actual.id);
+            });
+        }
+
+        window.addEventListener('scroll', marcar, { passive: true });
+        window.addEventListener('load', marcar);
+    })();

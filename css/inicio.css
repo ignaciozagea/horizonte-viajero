@@ -34,23 +34,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
-    /* Imagen de fondo del navbar (si no carga, se ve el blanco) */
-    background-image: url("../img/fondo1.jpg");
-    background-size: cover;
-    background-position: center 15%;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    /* Cristal blanco translúcido con línea verde abajo */
+    background-color: rgba(255, 255, 255, 0.86);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
+    box-shadow: 0 2px 18px rgba(27, 94, 32, 0.10);
+    border-bottom: 3px solid #2e7d32;
     z-index: 1000;
     transition: all 0.4s ease;
-    padding: 15px 40px;
+    padding: 8px 40px;
 }
 
 .navbar.scrolled {
-    padding: 8px 40px;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 4px 40px;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 6px 24px rgba(27, 94, 32, 0.12);
 }
 
     .navbar-container {
@@ -74,14 +72,14 @@
     }
 
     .logo img {
-        height: 95px;
+        height: 72px;
         width: auto;
         transition: all 0.3s ease;
         object-fit: contain;
     }
 
     .navbar.scrolled .logo img {
-        height: 75px;
+        height: 58px;
     }
 
     /* ================= MENÚ ================= */
@@ -93,7 +91,7 @@
     .menu-principal {
         display: flex;
         list-style: none;
-        gap: 25px;
+        gap: 6px;
     }
 
     .menu-principal > li {
@@ -105,14 +103,13 @@
         color: #1e293b;
         font-weight: 600;
         font-size: 15px;
-        padding: 10px 0;
+        padding: 8px 12px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         gap: 6px;
-        transition: color 0.3s ease;
+        transition: color 0.2s ease, background 0.2s ease;
         letter-spacing: 0.3px;
-        /* Halo blanco para que el texto se lea sobre los dibujos del fondo */
-        text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 12px #fff;
     }
 
     .menu-principal > li > a i {
@@ -121,7 +118,8 @@
     }
 
     .menu-principal > li > a:hover {
-        color: #0077b6;
+        color: #1b5e20;
+        background: #e8f5e9;
     }
 
     .menu-principal > li:hover > a i {
@@ -144,7 +142,7 @@
         transform: translateY(-10px);
         transition: all 0.3s ease;
         z-index: 100;
-        border: 1px solid rgba(0, 119, 182, 0.1);
+        border: 1px solid #c8e6c9;
     }
 
     .menu-principal > li:hover .submenu {
@@ -172,12 +170,12 @@
     .submenu a i {
         width: 20px;
         font-size: 14px;
-        color: #0077b6;
+        color: #2e7d32;
     }
 
     .submenu a:hover {
-        background: linear-gradient(90deg, #eef2ff 0%, transparent 100%);
-        color: #0077b6;
+        background: linear-gradient(90deg, #e8f5e9 0%, transparent 100%);
+        color: #1b5e20;
         padding-left: 25px;
     }
 
@@ -247,9 +245,10 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 88vh;
-    min-height: 560px;
-    max-height: 860px;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 900px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -472,7 +471,7 @@
     .hero {
         height: auto;
         min-height: 88vh;
-        padding: 40px 0 70px;
+        padding: 110px 0 70px;
         border-radius: 0 0 24px 24px;
     }
 
@@ -520,7 +519,8 @@
 
     /* ================= SECCIONES GENERALES ================= */
     main {
-        margin-top: 90px;
+        /* El hero empieza arriba del todo, detrás del navbar de cristal */
+        margin-top: 0;
     }
 
     .guias {
@@ -682,19 +682,19 @@
     /* ================= RESPONSIVE - MENÚ EN IZQUIERDA ================= */
     @media (max-width: 968px) {
         .navbar {
-            padding: 12px 20px;
-        }
-
-        .navbar.scrolled {
             padding: 8px 20px;
         }
 
+        .navbar.scrolled {
+            padding: 4px 20px;
+        }
+
         .logo img {
-            height: 95px;
+            height: 64px;
         }
 
         .navbar.scrolled .logo img {
-            height: 75px;
+            height: 54px;
         }
 
         .hamburger {
@@ -736,7 +736,7 @@
         }
 
         .menu-principal > li > a {
-            padding: 12px 0;
+            padding: 12px;
             justify-content: space-between;
         }
 
@@ -789,7 +789,7 @@
 
     @media (max-width: 600px) {
         main {
-            margin-top: 70px;
+            margin-top: 0;
         }
 
         .guias {
