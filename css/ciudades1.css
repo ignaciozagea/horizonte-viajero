@@ -419,9 +419,10 @@
         max-width: 900px;
         margin: 50px auto;
         padding: 15px;
-        background: rgb(207, 216, 222);
+        background: #e8f5e9;
+        border: 1px solid #c8e6c9;
         border-radius: 20px;
-        box-shadow: 0 15px 35px rgba(3, 3, 3, 0.15);
+        box-shadow: 0 10px 30px rgba(27, 94, 32, 0.10);
     }
 
     .mapa iframe {
@@ -1089,3 +1090,51 @@
         color: #fff;
     }
 }
+
+    /* Tarjetas de consejos con icono (Oporto) */
+    .galeria-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin: 10px 0 20px;
+    }
+
+    .card-img {
+        background: #fff;
+        border: 1px solid #c8e6c9;
+        border-radius: 18px;
+        padding: 22px;
+        text-align: center;
+        box-shadow: 0 4px 14px rgba(27, 94, 32, 0.06);
+    }
+
+    .card-img-icono {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #e8f5e9;
+        color: #2e7d32;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .card-img h3 {
+        font-size: 1.05rem;
+        color: #1b5e20;
+        margin-bottom: 6px;
+    }
+
+    .card-img p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 600px) {
+        .galeria-cards {
+            grid-template-columns: 1fr;
+        }
+    }

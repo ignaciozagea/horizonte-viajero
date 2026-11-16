@@ -1,0 +1,6 @@
+# Redirecciones para Cloudflare Pages
+# Cerdeña cambió de nombre: cerdeña.html -> cerdena.html (sin ñ en la dirección)
+/cerde%C3%B1a.html  /cerdena.html  301
+/cerdeña.html  /cerdena.html  301
+/cerde%C3%B1a  /cerdena  301
+/cerdeña  /cerdena  301
