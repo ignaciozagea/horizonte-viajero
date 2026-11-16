@@ -2,148 +2,172 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Responsive-Yes-4ADE80?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-4ADE80?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Responsive-Sí-2E7D32?style=for-the-badge"/>
 </div>
 <br>
 
-## 🌍 Mis Viajes - Galería de Destinos
+# 🌍 Horizonte Viajero
 
-Página web personal donde comparto mis aventuras y experiencias de viaje alrededor del mundo. Una colección visual de los destinos que he visitado, con información útil, fotografías y vídeos.
+Blog personal de viajes donde comparto mis rutas, consejos y experiencias por el mundo. Cada destino tiene su propia guía con qué ver, dónde dormir, qué comer, cuánto cuesta y una galería con mis fotos.
+
+> **Web:** [https://horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev)
+
 <br>
 
-## 📋 Descripción
+## ✨ Características
 
-Esta página web es un proyecto personal que recopila mis viajes más memorables. Cada destino tiene su propia página con información detallada, lugares de interés, recomendaciones, galería de fotos y vídeos. El diseño es limpio, moderno, completamente responsive e incluye un menú hamburguesa para una navegación óptima en dispositivos móviles.
+### Contenido
+- 🗺️ **35 guías de viaje** en 20 países de Europa, Asia y América, más rutas por España.
+- 📋 **Guías completas**: información práctica, dónde alojarse, qué ver, precios, qué comer, dónde comer, consejos, mapa de la ruta y galería.
+- 📅 **Fecha de actualización y tiempo de lectura** en la cabecera de cada guía.
+- 🔗 **"Otras guías que te pueden interesar"** al final de cada destino, elegidas por afinidad (país, continente y tipo de viaje).
+
+### Portada
+- 🖼️ **Pase de fotos** de varios destinos con fundido y zoom suave.
+- 🌐 **Mapa del mundo interactivo** con un punto por destino, enlazado a su guía, y zoom a Europa, América y Asia.
+- 🧭 Secciones de **últimos viajes, viajes TOP, fin de semana y verano**.
+
+### Experiencia
+- 📱 **Diseño responsive** con menú lateral en el móvil.
+- 🔍 **Visor de fotos propio** en las galerías: flechas, teclado (← → Esc) y deslizar con el dedo.
+- 🎬 **Vídeos** con portada que no se descargan hasta darle al play.
+- ♿ **Accesibilidad**: textos alternativos en todas las imágenes, foco visible y respeto a "reducir movimiento".
+
+### Rendimiento y SEO
+- ⚡ Imágenes con **carga diferida** (`loading="lazy"`) y **comprimidas**.
+- 🚫 **Sin jQuery ni librerías pesadas**: todo el JavaScript es propio.
+- 🔎 **Descripción, Open Graph y datos estructurados** (schema.org) en cada página, con **sitemap.xml** y **robots.txt**.
+- 🖼️ **Vista previa al compartir** en WhatsApp y redes con la foto de cada guía.
+
+### Privacidad
+- 🍪 **Aviso de cookies**: la web no usa cookies propias y los mapas de Google Maps no se cargan hasta que el visitante lo acepta.
+- ⚖️ **Aviso legal, política de privacidad y política de cookies.**
+
 <br>
 
-## 🎯 Características Principales
-
-- ✅ **Galería de destinos**: Más de 15 destinos internacionales
-- ✅ **Páginas individuales**: Cada destino con su propia página
-- ✅ **Menú hamburguesa**: Navegación responsive para móviles
-- ✅ **Diseño responsive**: Adaptado a móviles, tablets y ordenadores
-- ✅ **Multimedia**: Fotos y vídeos de cada destino
-- ✅ **CSS moderno**: Efectos visuales y animaciones
-- ✅ **JavaScript interactivo**: Funciones del menú y dinámicas
-- ✅ **Estructura organizada**: Separación por carpetas (CSS, JS, imágenes)
-<br>
-
-# 🚀 Demo
-
-> **URL de producción:** [https://horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev
-)
-<br>
-
-## 📸 Capturas de Pantalla
+## 📸 Capturas
 
 <div align="center">
-  
-| Página Principal | Lista de Paises |
-|:---:|:---:|
-| ![Página Principal](./img/index.png) | ![Liga](./img/pais.png) |
 
-| Cabecera de la Página | Información del viaje |
+| Portada | Mapa de viajes |
 |:---:|:---:|
-| ![cabecera](./img/cabecera.png) | ![Informacion](./img/informacion.png) |
+| ![Portada](./docs/capturas/portada.jpg) | ![Mapa de viajes](./docs/capturas/mapa.jpg) |
 
-| Mapa | Galeria de Fotos |
+| Cabecera de una guía | Dónde alojarse |
 |:---:|:---:|
-| ![Mapa](./img/mapa.png) | ![Galeria de fotos](./img/fotos.png) |
+| ![Cabecera de una guía](./docs/capturas/guia.jpg) | ![Dónde alojarse](./docs/capturas/alojamiento.jpg) |
+
+| Galería en mosaico | Visor de fotos |
+|:---:|:---:|
+| ![Galería](./docs/capturas/galeria.jpg) | ![Visor de fotos](./docs/capturas/visor.jpg) |
+
+| Móvil: portada y menú |
+|:---:|
+| ![Móvil](./docs/capturas/movil.jpg) |
 
 </div>
 
+<br>
+
+## 🛠️ Tecnologías
+
+| Tecnología | Uso |
+|------------|-----|
+| HTML5 | Estructura de las páginas |
+| CSS3 (Flexbox, Grid, columnas) | Diseño, animaciones y responsive |
+| JavaScript (sin frameworks) | Menú, mapa, visor de fotos, aviso de cookies |
+| [Font Awesome 6](https://fontawesome.com/) | Iconos |
+| [Google Fonts](https://fonts.google.com/) | Tipografías Playfair Display y Poppins |
+| [Twemoji Country Flags](https://github.com/talkjs/country-flag-emoji-polyfill) | Banderas de países en Windows |
+| [Natural Earth](https://www.naturalearthdata.com/) | Contornos del mapa del mundo (dominio público) |
+| Cloudflare Pages | Alojamiento y publicación automática |
 
 <br>
 
-## 🛠️ Tecnologías Utilizadas
-
-| Tecnología | Versión | Uso |
-|------------|---------|-----|
-| HTML5 | - | Estructura de las páginas |
-| CSS3 | - | Estilos, animaciones, responsive |
-| JavaScript | ES6 | Menú hamburguesa, interactividad |
-| Flexbox/Grid | - | Diseño y maquetación |
-| Git | - | Control de versiones |
-<br>
-
-## 📁 Estructura del Proyecto
+## 📁 Estructura del proyecto
 
 ```text
-viajes/
+horizonte-viajero/
 │
-├── 📄 index.html              # Página principal (galería de destinos)
+├── 📄 index.html                 # Portada: pase de fotos, mapa y secciones de destinos
+├── 📄 roma.html, japon.html…     # 35 guías de destino (una página por destino)
+├── 📄 aviso-legal.html           # Aviso legal
+├── 📄 privacidad.html            # Política de privacidad
+├── 📄 cookies.html               # Política de cookies
+├── 📄 404.html                   # Página de error (rutas absolutas)
 │
-├── 🌍 PÁGINAS DE DESTINOS/
-│   ├── 📄 alsacia.html
-│   ├── 📄 amsterdam.html
-│   ├── 📄 bahamas.html
-│   ├── 📄 belgica.html
-│   ├── 📄 berlin.html
-│   ├── 📄 cerdena.html
-│   ├── 📄 cpenhague.html
-│   ├── 📄 creta.html
-│   ├── 📄 estambul.html
-│   ├── 📄 florencia.html
-│   ├── 📄 formentera.html
-│   ├── 📄 fuerteventura.html
-│   ├── 📄 lanzarote.html
-│   └── 📄 paris.html
+├── 📄 sitemap.xml                # Mapa del sitio para los buscadores
+├── 📄 robots.txt                 # Indicaciones para los buscadores
+├── 📄 _redirects                 # Redirecciones de Cloudflare Pages
+├── 📄 favicon.ico                # Icono de la web
 │
 ├── 📁 css/
-│   ├── 📄 inicio.css          # Estilos de la página principal
-│   └── 📄 ciudades1.css       # Estilos comunes de las ciudades
+│   ├── inicio.css                # Estilos de la portada
+│   ├── ciudades1.css             # Estilos de las guías
+│   ├── pie.css                   # Pie de página y aviso de cookies (todas las páginas)
+│   └── logos1.css                # Tamaño del logo
 │
 ├── 📁 js/
-│   ├── 📄 index.js            # JavaScript de la página principal
-│   └── 📄 ciudades1.js        # JS común (menú hamburguesa, etc.)
+│   ├── index.js                  # Portada: menú, pase de fotos y mapa
+│   ├── ciudades1.js              # Guías: menú y sección activa
+│   ├── visor.js                  # Visor de fotos de las galerías
+│   └── cookies.js                # Aviso de cookies y carga de los mapas
 │
-├── 📁 images/                 # Carpeta de imágenes
-│   ├── alsacia/
-│   ├── amsterdam/
-│   ├── paris/
-│   └── ...
+├── 📁 img/
+│   ├── roma/, japon/…            # Fotos de cada destino
+│   ├── og/                       # Fotos para la vista previa al compartir (1200×630)
+│   └── videos/                   # Portadas de los vídeos
 │
-└── 📄 README.md               # Documentación
+└── 📁 docs/capturas/             # Capturas de este README
 ```
+
 <br>
 
+## ➕ Cómo añadir un destino nuevo
 
-## 🎨 Características del Diseño
-- Archivos CSS
-- Archivo	Función
-- inicio.css	Estilos específicos de la página principal (grid de tarjetas, hero section)
-- ciudades1.css	Estilos comunes a todas las páginas de destinos (menú, footer, tipografía)
-- Archivos JavaScript
-- Archivo	Función
-- index.js	Funciones específicas de la página principal
-- ciudades1.js	Funciones comunes (menú hamburguesa, scroll suave)
+1. Crea la página copiando una guía parecida (por ejemplo `roma.html`) y cambia el contenido.
+2. Guarda las fotos en `img/<destino>/` con nombres sin espacios ni "ñ" (`destino1.jpg`, `destino2.jpg`…).
+3. Añade su tarjeta en `index.html`, en la sección que corresponda, y su enlace en el menú.
+4. Añade su punto en el mapa del mundo de la portada (necesita latitud y longitud).
+5. Crea su foto de vista previa en `img/og/<destino>.jpg` (1200×630).
+6. Añade la página a `sitemap.xml`.
+7. Añade su bloque de "Otras guías" y revisa los de los destinos relacionados.
+
 <br>
 
-## 🛠️ Instalación y Configuración
-- Requisitos Previos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+## 💻 Probar en local
 
-- Servidor web (opcional, para pruebas locales)
-
-## Instalación Local
-```
+```bash
 # 1. Clonar el repositorio
 git clone https://github.com/ignaciozagea/horizonte-viajero.git
-cd viajes
+cd horizonte-viajero
 
-# 2. Abrir en el navegador
-# Simplemente abre el archivo index.html
-
-# 3. O si tienes Python (para servir localmente)
-python -m http.server 8000
-# Luego abre http://localhost:8000
+# 2. Servirlo con un servidor local, por ejemplo:
+#    - XAMPP: copiar la carpeta en htdocs y abrir http://localhost/horizonte-viajero/
+#    - Python: python -m http.server 8000  →  http://localhost:8000
 ```
+
+> La página `404.html` usa rutas absolutas (`/css/…`) para funcionar en cualquier dirección de Cloudflare Pages, así que en XAMPP se ve sin estilos.
+
+<br>
+
+## 🚀 Publicación
+
+La web se publica automáticamente en **Cloudflare Pages** con cada cambio en la rama `main`. Cada mejora se hace en su propia rama `feature/…` y se integra en `main` mediante una *pull request*.
+
 <br>
 
 ## 👤 Autor
-Ignacio Zamora Gea
 
-GitHub: @ignaciozagea
+**Iñaki Zamora Gea**
 
-Demo: https://horizonteviajero.ct.ws
+- GitHub: [@ignaciozagea](https://github.com/ignaciozagea)
+- Instagram: [@inyaki_zagea](https://www.instagram.com/inyaki_zagea/)
+- Web: [horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev)
+
+<br>
+
+## 📄 Derechos
+
+© 2026 Horizonte Viajero · Iñaki Zamora Gea. Todos los textos y fotografías propias son del autor; no está permitido reproducirlos sin permiso. Los contornos del mapa proceden de Natural Earth (dominio público).
