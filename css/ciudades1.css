@@ -1272,3 +1272,169 @@
             aspect-ratio: 16 / 9;
         }
     }
+
+    /* ================= VISOR DE FOTOS (sustituye a Lightbox) ================= */
+    .visor {
+        position: fixed;
+        inset: 0;
+        z-index: 3000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 80px;
+        background: rgba(6, 18, 10, 0.97);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+    }
+
+    .visor[hidden] {
+        display: none;
+    }
+
+    .visor-figura {
+        margin: 0;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .visor-img {
+        max-width: 100%;
+        max-height: calc(100vh - 140px);
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    .visor-img.visible {
+        opacity: 1;
+    }
+
+    .visor-pie {
+        color: #e8f5e9;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .visor-boton {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .visor-boton:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .visor-boton:focus-visible {
+        outline: 3px solid #ffb703;
+        outline-offset: 3px;
+    }
+
+    .visor-boton[hidden] {
+        display: none;
+    }
+
+    .visor-cerrar {
+        top: 18px;
+        right: 18px;
+    }
+
+    .visor-anterior {
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .visor-siguiente {
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media (max-width: 600px) {
+        .visor {
+            padding: 70px 10px 90px;
+        }
+
+        /* En el móvil las flechas van abajo, para no tapar la foto */
+        .visor-anterior,
+        .visor-siguiente {
+            top: auto;
+            bottom: 24px;
+            transform: none;
+        }
+
+        .visor-anterior {
+            left: calc(50% - 64px);
+        }
+
+        .visor-siguiente {
+            right: calc(50% - 64px);
+        }
+    }
+
+    /* Fecha de actualización y tiempo de lectura bajo el título de cada guía */
+    .header-text .header-meta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .header-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 6px 14px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.35);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+    }
+
+    @media (max-width: 600px) {
+        .header-text .header-meta {
+            font-size: 12px;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .header-meta span {
+            padding: 4px 10px;
+        }
+    }
+
+    /* Cabecera de las guías en tablet y móvil: altura mínima (crece si el texto es largo) */
+    @media (max-width: 968px) {
+        .header-destino {
+            height: auto;
+            min-height: 300px;
+            padding: 28px 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .header-destino {
+            min-height: 250px;
+            padding: 22px 0;
+        }
+    }
