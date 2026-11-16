@@ -6,6 +6,12 @@
 <meta charset="UTF-8">
 <title>Viaje a Oporto - Guía completa</title>
 
+<!-- Icono de la web (favicon) -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
 <!-- Tipografías: Playfair Display (títulos) y Poppins (texto) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -493,25 +499,25 @@ Sus calles empedradas, restaurantes tradicionales y ambiente animado lo conviert
 <div class="galeria-cards">
 
 <div class="card-img">
-<img src="img/icono26.png" alt="">
+<span class="card-img-icono" aria-hidden="true"><i class="fas fa-ticket"></i></span>
 <h3>Compra entradas online</h3>
 <p>Evita colas en las visitas más turísticas comprando con antelación.</p>
 </div>
 
 <div class="card-img">
-<img src="img/icono6.png" alt="">
+<span class="card-img-icono" aria-hidden="true"><i class="fas fa-person-walking"></i></span>
 <h3>Camina mucho</h3>
 <p>Oporto es una ciudad hecha para caminar, pero hay muchas cuestas y escaleras, lleva calzado cómodo.</p>
 </div>
 
 <div class="card-img">
-<img src="img/icono25.png" alt="">
+<span class="card-img-icono" aria-hidden="true"><i class="fas fa-utensils"></i></span>
 <h3>Prueba la gastronomía</h3>
 <p>Disfruta del bacalao, francesinha y los pasteles de nata. No te pierdas un vino de Oporto en las bodegas.</p>
 </div>
 
 <div class="card-img">
-<img src="img/icono24.png" alt="">
+<span class="card-img-icono" aria-hidden="true"><i class="fas fa-clock"></i></span>
 <h3>Hora de la siesta</h3>
 <p>Al mediodía muchos locales se toman un descanso. Planifica actividades interiores para el calor.</p>
 </div>
@@ -890,7 +896,7 @@ Sus calles empedradas, restaurantes tradicionales y ambiente animado lo conviert
 
 <h2>Mapa de la ruta</h2>
 <div class="mapa">
-<iframe src="https://www.google.com/maps/d/u/2/embed?mid=1h5tK18k9VGUEIgGode78Qgj1tdwgIL4&ehbc=2E312F"></iframe>
+<iframe data-src="https://www.google.com/maps/d/u/2/embed?mid=1h5tK18k9VGUEIgGode78Qgj1tdwgIL4&ehbc=2E312F" loading="lazy" title="Mapa de Google Maps"></iframe>
 </div>
 
 <hr class="separador">
@@ -937,6 +943,7 @@ Sus calles empedradas, restaurantes tradicionales y ambiente animado lo conviert
     </div>
     <div class="footer-inferior">
         <p class="copyright">© 2026 Horizonte Viajero · Iñaki</p>
+        <p class="footer-legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <button type="button" class="abrir-cookies">Configurar cookies</button></p>
         <a href="#" class="footer-arriba"><i class="fas fa-arrow-up"></i> Volver arriba</a>
     </div>
 </footer>
@@ -965,5 +972,6 @@ Sus calles empedradas, restaurantes tradicionales y ambiente animado lo conviert
         }
     }
 </style>
+<script src="js/cookies.js"></script>
 </body>
 </html>

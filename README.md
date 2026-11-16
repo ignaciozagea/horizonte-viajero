@@ -80,7 +80,7 @@ viajes/
 │   ├── 📄 bahamas.html
 │   ├── 📄 belgica.html
 │   ├── 📄 berlin.html
-│   ├── 📄 cerdeña.html
+│   ├── 📄 cerdena.html
 │   ├── 📄 cpenhague.html
 │   ├── 📄 creta.html
 │   ├── 📄 estambul.html
