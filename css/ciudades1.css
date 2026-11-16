@@ -70,6 +70,7 @@
 
     .nav-links li a {
         text-decoration: none;
+        white-space: nowrap;
         color: #1e293b;
         font-weight: 500;
         font-size: 15px;
@@ -1136,5 +1137,38 @@
     @media (max-width: 600px) {
         .galeria-cards {
             grid-template-columns: 1fr;
+        }
+    }
+
+    /* Vídeos del viaje (verticales): portada y controles, sin descargar hasta darle al play */
+    .video-viaje {
+        max-width: 340px;
+        margin: 28px auto;
+    }
+
+    .video-viaje video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+        background: #0f2f44;
+        border-radius: 20px;
+        box-shadow: 0 12px 30px rgba(27, 94, 32, 0.18);
+    }
+
+    /* Pantallas medianas (portátiles pequeños, tablets en horizontal): menú más compacto
+       para que las 8 secciones quepan en una línea */
+    @media (min-width: 969px) and (max-width: 1250px) {
+        .nav-links {
+            gap: 2px;
+        }
+
+        .nav-links li a {
+            font-size: 13px;
+            padding: 6px 7px;
+        }
+
+        .navbar .logo img {
+            height: 60px;
         }
     }
