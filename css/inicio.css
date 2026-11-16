@@ -984,3 +984,134 @@
         padding: 6px 12px;
     }
 }
+
+/* ================= MAPA DE VIAJES (portada) ================= */
+.mapa-viajes {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px 10px;
+    text-align: center;
+}
+
+.mapa-resumen {
+    margin: 4px 0 14px;
+    font-size: 16px;
+    color: #37474f;
+}
+
+.mapa-resumen strong {
+    font-size: 20px;
+    color: #1b5e20;
+}
+
+.mapa-zonas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.mapa-lienzo {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #f4faf4 0%, #e6f2e6 100%);
+    border: 1px solid #c8e6c9;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(27, 94, 32, 0.10);
+}
+
+.mapa-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mapa-tierra {
+    fill: #b5d9b5;
+    stroke: #ffffff;
+    stroke-width: 0.7;
+    vector-effect: non-scaling-stroke;
+}
+
+.mapa-punto circle {
+    fill: #e53935;
+    stroke: #ffffff;
+    stroke-width: 1.6;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+
+.mapa-punto:hover circle,
+.mapa-punto:focus circle {
+    fill: #b71c1c;
+}
+
+.mapa-punto:focus {
+    outline: none;
+}
+
+.mapa-punto:focus-visible circle {
+    stroke: #ffb703;
+    stroke-width: 3;
+}
+
+/* Etiqueta con el nombre del destino */
+.mapa-etiqueta {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, calc(-100% - 12px));
+    padding: 6px 12px;
+    font-family: "Twemoji Country Flags", 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    background: #1b5e20;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.mapa-etiqueta::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    background: #1b5e20;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* Si el punto está muy arriba, la etiqueta va debajo */
+.mapa-etiqueta.abajo {
+    transform: translate(-50%, 16px);
+}
+
+.mapa-etiqueta.abajo::after {
+    top: -5px;
+    bottom: auto;
+}
+
+.mapa-ayuda {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #546e7a;
+}
+
+@media (max-width: 600px) {
+    .mapa-viajes {
+        padding: 30px 15px 10px;
+    }
+
+    .mapa-lienzo {
+        border-radius: 16px;
+    }
+
+    .mapa-etiqueta {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
