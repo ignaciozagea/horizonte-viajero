@@ -863,70 +863,7 @@
     }
 }
 
-/* ================= BUSCADOR DE DESTINOS (portada) ================= */
-.buscador {
-    max-width: 900px;
-    margin: 44px auto 10px;
-    padding: 28px 24px 22px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #c8e6c9;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(27, 94, 32, 0.10);
-    scroll-margin-top: 110px;
-}
-
-.buscador-titulo {
-    font-family: "Twemoji Country Flags", 'Playfair Display', Georgia, serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1b5e20;
-    margin: 0 0 16px;
-}
-
-.buscador-campo {
-    position: relative;
-    max-width: 620px;
-    margin: 0 auto;
-}
-
-.buscador-campo i {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #2e7d32;
-    font-size: 16px;
-    pointer-events: none;
-}
-
-.buscador-campo input {
-    width: 100%;
-    padding: 14px 20px 14px 50px;
-    font-family: inherit;
-    font-size: 16px;
-    color: #1e293b;
-    background: #f9fcf9;
-    border: 2px solid #c8e6c9;
-    border-radius: 40px;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.buscador-campo input:focus {
-    border-color: #2e7d32;
-    background: #fff;
-    box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.15);
-}
-
-.buscador-filtros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
-}
-
+/* ================= BOTONES TIPO PÍLDORA (zonas del mapa) ================= */
 .filtro {
     font-family: "Twemoji Country Flags", 'Poppins', 'Segoe UI', sans-serif;
     font-size: 14px;
@@ -955,30 +892,7 @@
     outline-offset: 2px;
 }
 
-.buscador-resultado {
-    margin: 14px 0 0;
-    min-height: 1.4em;
-    font-size: 14px;
-    font-weight: 500;
-    color: #37474f;
-}
-
-/* Las tarjetas y secciones ocultas por el buscador */
-.card-guia[hidden],
-.guias[hidden] {
-    display: none;
-}
-
 @media (max-width: 600px) {
-    .buscador {
-        margin: 30px 15px 0;
-        padding: 22px 16px 18px;
-    }
-
-    .buscador-titulo {
-        font-size: 22px;
-    }
-
     .filtro {
         font-size: 13px;
         padding: 6px 12px;
@@ -991,6 +905,7 @@
     margin: 0 auto;
     padding: 40px 20px 10px;
     text-align: center;
+    scroll-margin-top: 100px;
 }
 
 .mapa-resumen {
