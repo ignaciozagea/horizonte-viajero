@@ -95,3 +95,61 @@
             navbar.classList.remove('scrolled');
         }
     });
+
+    // ================= BUSCADOR Y FILTROS DE DESTINOS =================
+    (function () {
+        const input = document.getElementById('buscar-destino');
+        if (!input) return;
+        const botones = document.querySelectorAll('.buscador-filtros .filtro');
+        const resultado = document.querySelector('.buscador-resultado');
+        const secciones = document.querySelectorAll('.guias');
+        let filtro = 'todos';
+
+        // Minúsculas y sin acentos: "Japón" y "japon" son lo mismo
+        const normalizar = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+
+        function aplicar() {
+            const palabras = normalizar(input.value).split(/\s+/).filter(Boolean);
+            const encontradas = new Set();   // un destino puede salir en varias secciones
+
+            secciones.forEach(seccion => {
+                let visibles = 0;
+                seccion.querySelectorAll('.card-guia').forEach(tarjeta => {
+                    const texto = tarjeta.dataset.buscar || '';
+                    const tipos = (tarjeta.dataset.tipos || '').split(' ');
+                    const pasaFiltro = filtro === 'todos' || tarjeta.dataset.continente === filtro || tipos.includes(filtro);
+                    const pasaTexto = palabras.every(p => texto.includes(p));
+                    const ver = pasaFiltro && pasaTexto;
+                    tarjeta.hidden = !ver;
+                    if (ver) {
+                        visibles++;
+                        encontradas.add(tarjeta.getAttribute('href'));
+                    }
+                });
+                seccion.hidden = visibles === 0;
+            });
+
+            const buscando = palabras.length > 0 || filtro !== 'todos';
+            if (!buscando) {
+                resultado.textContent = '';
+            } else if (encontradas.size === 0) {
+                resultado.textContent = 'No hay guías que coincidan. Prueba con otro destino o quita el filtro.';
+            } else {
+                resultado.textContent = encontradas.size === 1 ? '1 guía encontrada' : encontradas.size + ' guías encontradas';
+            }
+        }
+
+        input.addEventListener('input', aplicar);
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                filtro = boton.dataset.filtro;
+                botones.forEach(b => {
+                    const activo = b === boton;
+                    b.classList.toggle('activo', activo);
+                    b.setAttribute('aria-pressed', activo);
+                });
+                aplicar();
+            });
+        });
+    })();
