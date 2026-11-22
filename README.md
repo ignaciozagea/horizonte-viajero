@@ -11,7 +11,7 @@
 
 Blog personal de viajes donde comparto mis rutas, consejos y experiencias por el mundo. Cada destino tiene su propia guía con qué ver, dónde dormir, qué comer, cuánto cuesta y una galería con mis fotos.
 
-> **Web:** [https://horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev)
+> **Web:** [https://horizonte-viajero.com](https://horizonte-viajero.com)
 
 <br>
 
@@ -164,7 +164,7 @@ La web se publica automáticamente en **Cloudflare Pages** con cada cambio en la
 
 - GitHub: [@ignaciozagea](https://github.com/ignaciozagea)
 - Instagram: [@inyaki_zagea](https://www.instagram.com/inyaki_zagea/)
-- Web: [horizonte-viajero.pages.dev](https://horizonte-viajero.pages.dev)
+- Web: [horizonte-viajero.com](https://horizonte-viajero.com)
 
 <br>
 
